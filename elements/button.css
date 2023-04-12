@@ -1,18 +1,15 @@
 input[type="submit"] {
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--text-alt);
-  }
-  
-  input[type="submit"]:hover,
-  input[type="submit"]:active {
-    background-color: var(--btn-bg-hover) !important;
-  }
-  
-  input[type="submit"]:active {
-    color:  var(--btn-text-active);
-    
-  }
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--text-alt);
+}
+input[type="submit"]:hover {
+  background-color: var(--btn-bg-hover);
+}
+input[type="submit"]:active {
+  background-color: var(--btn-bg-hover);
+  color: var(--btn-text-active);
+}

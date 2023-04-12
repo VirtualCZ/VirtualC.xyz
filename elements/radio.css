@@ -1,51 +1,46 @@
 .radio-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .radio{
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: var(--radio-bg);
-    border: 1px solid var(--radio-border);
-  }
-
-  .radio-container:hover .radio{
-    background-color: var(--radio-bg-hover);
-  }
-  
-  .radio span {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--text-alt);
-  }
-  
-  .radio-container:hover span{
-    width: 12px;
-    height: 12px;
-  }
-  
-  input[type="radio"]:checked + .radio {
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    display: block;
-  }
-  
-  input[type="radio"]:checked + .radio span {
-    display: block;
-  }
-  
-  input[type="radio"] {
-    display: none;
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.radio-container:hover .radio {
+  background-color: var(--radio-bg-hover);
+}
+.radio-container:hover span {
+  width: 12px;
+  height: 12px;
+}
+.radio {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--radio-bg);
+  border: 1px solid var(--radio-border);
+  transition: width 0.2s ease-in height 0.2s ease-in;
+}
+.radio span {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: width 0.2s ease-out height 0.2s ease-out;
+  background-color: var(--text-alt);
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + .radio {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  display: block;
+}
+input[type="radio"]:checked + .radio span {
+  display: block;
+}

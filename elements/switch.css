@@ -1,72 +1,62 @@
 .switch-label {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 16px;
-    color: var(--text);
-    line-height: 28px;
-  }
-  
-  .switch {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 0px;
-  }
-  
-  .switch input {
-    display: none;
-  }
-
-  .slider {
-    position: relative;
-    width: 40px;
-    height: 20px;
-    margin: 0 10px;
-    background-color: var(--switch-bg);
-    border-radius: 34px;
-    border-color: var(--switch-off);
-    border-width: 1px;
-    border-style: solid;
-    transition: all 0.2s ease-out;
-  }
-  
-  .slider.round {
-    border-radius: 50px;
-  }
-  
-  .slider::before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    top: 2px;
-    left: 2px;
-    background-color: var(--switch-off);
-    border-radius: 50%;
-    transition: all 0.2s ease-out;
-  }
-
-  input:checked + .slider {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-  }
-  
-  input:checked + .slider::before {
-    transform: translateX(20px);
-    transition-delay: 0.1s;
-    background-color: var(--text-alt);
-  }
-  
-  .switch-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  .switch-container:hover .slider.round{
-    background-color: var(--switch-bg-hover);
-  }
-
-  .switch-container:hover input:checked + .slider.round{
-    background-color: var(--switch-on-bg-hover);
-  }
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 28px;
+}
+.switch {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  margin: 0 10px;
+  background-color: var(--switch-bg);
+  border-radius: 34px;
+  border-color: var(--switch-off);
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.2s ease-out;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  top: 2px;
+  left: 2px;
+  background-color: var(--switch-off);
+  border-radius: 50%;
+  transition: all 0.2s ease-out;
+}
+.slider.round {
+  border-radius: 50px;
+}
+input:checked + .slider {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+input:checked + .slider::before {
+  transform: translateX(20px);
+  transition-delay: 0.1s;
+  background-color: var(--text-alt);
+}
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.switch-container:hover .slider.round {
+  background-color: var(--switch-bg-hover);
+}
+.switch-container:hover input:checked + .slider.round {
+  background-color: var(--switch-on-bg-hover);
+}
