@@ -10,33 +10,52 @@
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.2s ease-out;
 }
 
 body {
   font-family: Segoe UI, Arial, sans-serif;
   background-color: var(--body-bg);
   color: var(--text);
-  transition: all 0.2s ease-out;
+  margin: 0 calc(50vw - 600px);
+}
+
+  .xl{display: block;}
+  .md{display: none;}
+  .sm{display: none;}
+@media screen and (max-width: 1440px) {
+  body {
+    margin: 0 20%;
+  }
+  .xl{display: none;}
+  .md{display: block;}
+  .sm{display: none;}
+}
+@media screen and (max-width: 960px) {
+  body {
+    margin: 0 10%;
+  }
+  .xl{display: none;}
+  .md{display: none;}
+  .sm{display: block;}
 }
 
 form, .news {
-  width: 400px;
+  width: 100%;
   margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--form-bg);
-  transition: background-color 0.2s ease-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .construction {
-  width: 400px;
+  width: 100%;
   margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--color-caution);
   color: #ffffff;
-  transition: background-color 0.2s ease-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

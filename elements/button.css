@@ -4,16 +4,15 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
-    color: #ffffff;
-    transition: background-color 0.2s;
+    color: var(--text-alt);
   }
   
   input[type="submit"]:hover,
   input[type="submit"]:active {
-    background-color: #3e8ede !important;
-    transition: background-color 0.2s;
+    background-color: var(--btn-bg-hover) !important;
   }
   
   input[type="submit"]:active {
-    color: #d9d9d9;
+    color:  var(--btn-text-active);
+    
   }

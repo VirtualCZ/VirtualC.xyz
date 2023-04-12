@@ -18,26 +18,27 @@
   
   .text-input {
     border: none;
-    background-color: #f0f0f0;
+    background-color: var(--text-input-bg);
     height: 40px;
     width: 100%;
     font-size: 16px;
-    color: #000;
+    color: var(--text);
     padding: 0 10px;
     box-sizing: border-box;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
-    border-bottom: 2px solid #d1d1d1;
+    border-bottom: 2px solid var(--text-input-border-bot);
   }
+
+  .text-input::placeholder {
+    color: var(--text-input-placeholder);
+}
   
   .text-input:hover:not(:focus) {
-    background-color: #e0e0e0;
-    border-bottom: 2px solid #d1d1d1;
+    background-color: var(--text-input-bg-hover);
   }
   
   .text-input:focus {
     outline: none;
-    background-color: #ffffff;
-    border-color: #5c9bd1;
-    border-bottom: 2px solid #5c9bd1;
+    background-color: var(--text-input-bg-focus);
+    border-bottom: 2px solid var(--primary-color);
   }

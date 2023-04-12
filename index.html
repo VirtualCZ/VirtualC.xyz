@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Webpage</title>
     <link rel="stylesheet" href="default.css" id="theme-default" />
-    <link rel="stylesheet" href="light-mode.css" id="theme-style" />
+    <link rel="stylesheet" href="themes/light-mode.css" id="theme-style" />
   </head>
   <body>
     <div class="construction">Under construction</div>
     <form onsubmit="sendToConsole(event)">
       <div class="switch-container">
-        <label for="theme-toggle" class="switch-label">Toggle Switch</label>
+        <label for="theme-toggle" class="switch-label">Toggle Theme</label>
         <label class="switch">
           <input type="checkbox" id="theme-toggle" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="switch-container">
+        <label for="switch-toggle" class="switch-label">Toggle Switch</label>
+        <label class="switch">
+          <input type="checkbox" id="switch-toggle" />
           <span class="slider round"></span>
         </label>
       </div>
@@ -40,7 +48,7 @@
       <div class="checkbox-container">
         <input type="checkbox" id="checkbox1" />
         <label for="checkbox1" class="checkbox"><span></span></label>
-        <span>Checkbox Label</span>
+        <label for="checkbox1">Checkbox Label</label>
       </div>
 
       <div class="input-container">
@@ -77,6 +85,8 @@
       <p>Added & styled Button</p>
       
     </div>
+
+    <h2 class="xl">1920 (xl)</h2>  <h2 class="md">1440 (md)</h2>  <h2  class="sm">960 (sm)</h2>
 
 <h1>Heading 1</h1>
 <h2>Heading 2</h1>

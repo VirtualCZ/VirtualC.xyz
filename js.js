@@ -14,9 +14,9 @@ if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
-    themeHref.setAttribute("href", "dark-mode.css");
+    themeHref.setAttribute("href", "themes/dark-mode.css");
   } else {
-    themeHref.setAttribute("href", "light-mode.css");
+    themeHref.setAttribute("href", "themes/light-mode.css");
   }
 }
 
@@ -24,13 +24,13 @@ function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
-    themeHref.setAttribute("href", "dark-mode.css");
+    themeHref.setAttribute("href", "themes/dark-mode.css");
 
     console.log("dark");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
-    themeHref.setAttribute("href", "light-mode.css");
+    themeHref.setAttribute("href", "themes/light-mode.css");
 
     console.log("light");
   }
