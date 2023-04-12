@@ -8,16 +8,83 @@
     <link rel="stylesheet" href="light-mode.css" id="theme-style" />
   </head>
   <body>
-    <label class="switch">
-      <input type="checkbox" id="theme-toggle" />
-      <span class="slider round"></span>
-    </label>
+    <div class="construction">Under construction</div>
     <form onsubmit="sendToConsole(event)">
-      <label for="text-input">Enter text:</label>
-      <input type="text" id="text-input" name="text-input" />
+      <div class="switch-container">
+        <label for="theme-toggle" class="switch-label">Toggle Switch</label>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="radio-container">
+        <input type="radio" id="radio1" name="radio-group" />
+        <label for="radio1" class="radio"><span></span></label>
+        <label for="radio1">Radio Label 1</label>
+      </div>
+      
+      <div class="radio-container">
+        <input type="radio" id="radio2" name="radio-group" />
+        <label for="radio2" class="radio"><span></span></label>
+        <label for="radio2">Radio Label 2</label>
+      </div>
+
+      <div class="radio-container">
+        <input type="radio" id="radio3" name="radio-group" />
+        <label for="radio3" class="radio"><span></span></label>
+        <label for="radio3">Radio Label 3</label>
+      </div>
+      
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1" class="checkbox"><span></span></label>
+        <span>Checkbox Label</span>
+      </div>
+
+      <div class="input-container">
+        <div class="input-row">
+          <label for="text-input" class="input-label">Name:</label>
+        </div>
+        <div class="input-row">
+          <input
+            type="text"
+            id="text-input"
+            name="text-input"
+            class="text-input"
+            placeholder="Enter your name"
+          />
+        </div>
+      </div>
+
       <input type="submit" value="Submit" />
     </form>
     <h1 id="text-output"></h1>
+
+    <div class="news">
+      <h2>News</h2>
+      <h3>12/04/2023</h3>
+      <br>
+      <p><strong>Went online!</strong></p>
+      <br>
+      <p>Added typography</p>
+      <p>Added basic colors</p>
+      <p>Added Theme functionality (I still need to rewrite CSS to use more variables)</p>
+      <p>Added & styled Radio buttons</p>
+      <p>Added & styled Switch</p>
+      <p>Added & styled Input box</p>
+      <p>Added & styled Button</p>
+      
+    </div>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h1>
+<h3>Heading 3</h1>
+<h4>Heading 4</h1>
+<p>Normal <strong>Strong</strong> p text</h1>
+<p class="caption">Caption text</h1>
+
     <script src="js.js"></script>
   </body>
 </html>

@@ -1,0 +1,48 @@
+/* Caption */
+p.caption {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+  }
+  
+  /* Body */
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+  }
+  
+  /* Body Strong */
+  p strong{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  
+  /* Subtitle */
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  
+  /* Title */
+  h3{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+  
+  /* Title Large */
+  h2 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 600;
+  }
+  
+  /* Display */
+  h1 {
+    font-size: 68px;
+    line-height: 92px;
+    font-weight: 600;
+  }
