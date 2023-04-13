@@ -1,6 +1,9 @@
 @import 'elements/button.css';
 @import "elements/checkbox.css";
+@import "elements/color-picker.css";
+@import "elements/dropdown.css";
 @import "elements/radio.css";
+@import "elements/split-button.css";
 @import "elements/switch.css";
 @import "elements/text-input.css";
 @import "typography.css";
@@ -10,6 +13,8 @@
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+*:not(.jscolor){
   transition: all 0.2s ease-out;
 }
 

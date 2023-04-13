@@ -1,98 +1,138 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Webpage</title>
-    <link rel="stylesheet" href="default.css" id="theme-default" />
-    <link rel="stylesheet" href="themes/light-mode.css" id="theme-style" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VirtualC - Main Page</title>
+  <link rel="stylesheet" href="default.css" id="theme-default" />
+  <link rel="stylesheet" href="themes/light-mode.css" id="theme-style" />
+</head>
+
+<body>
+  <script src="javascript/jscolor.js"></script>
     <div class="construction">Under construction</div>
-    <form onsubmit="sendToConsole(event)">
-      <div class="switch-container">
-        <label for="theme-toggle" class="switch-label">Toggle Theme</label>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle" />
-          <span class="slider round"></span>
-        </label>
-      </div>
+  <form onsubmit="sendToConsole(event)">
+    Color: <input value="#3399FF80" data-jscolor="{}">
 
-      <div class="switch-container">
-        <label for="switch-toggle" class="switch-label">Toggle Switch</label>
-        <label class="switch">
-          <input type="checkbox" id="switch-toggle" />
-          <span class="slider round"></span>
-        </label>
-      </div>
-
-      <div class="radio-container">
-        <input type="radio" id="radio1" name="radio-group" />
-        <label for="radio1" class="radio"><span></span></label>
-        <label for="radio1">Radio Label 1</label>
-      </div>
-
-      <div class="radio-container">
-        <input type="radio" id="radio2" name="radio-group" />
-        <label for="radio2" class="radio"><span></span></label>
-        <label for="radio2">Radio Label 2</label>
-      </div>
-
-      <div class="radio-container">
-        <input type="radio" id="radio3" name="radio-group" />
-        <label for="radio3" class="radio"><span></span></label>
-        <label for="radio3">Radio Label 3</label>
-      </div>
-
-
-      <div class="checkbox-container">
-        <input type="checkbox" id="checkbox1" />
-        <label for="checkbox1" class="checkbox"><span></span></label>
-        <label for="checkbox1">Checkbox Label</label>
-      </div>
-
-      <div class="input-container">
-        <div class="input-row">
-          <label for="text-input" class="input-label">Name:</label>
-        </div>
-        <div class="input-row">
-          <input type="text" id="text-input" name="text-input" class="text-input" placeholder="Enter your name" />
-        </div>
-      </div>
-
-      <input type="submit" value="Submit" />
-    </form>
-    <h1 id="text-output"></h1>
-
-    <div class="news">
-      <h2>News</h2>
-      <h3>12/04/2023</h3>
-      <br>
-      <p><strong>Went online!</strong></p>
-      <br>
-      <p>Added typography</p>
-      <p>Added basic colors</p>
-      <p>Added Theme functionality (I still need to rewrite CSS to use more variables)</p>
-      <p>Added & styled Radio buttons</p>
-      <p>Added & styled Switch</p>
-      <p>Added & styled Input box</p>
-      <p>Added & styled Button</p>
-
+    <div class="dropdown selectable">
+      <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false"> Dropdown Button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+      </ul>
     </div>
 
-    <h2 class="xl">1920 (xl)</h2>
-    <h2 class="md">1440 (md)</h2>
-    <h2 class="sm">960 (sm)</h2>
+    <div class="dropdown">
+      <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false"> Dropdown Button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+      </ul>
+    </div>
 
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h1>
+    <div class="dropdown2">
+      <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false"> Dropdown Button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+      </ul>
+    </div>
+
+    <div class="switch-container">
+      <label for="theme-toggle" class="switch-label">Toggle Theme</label>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="switch-container">
+      <label for="switch-toggle" class="switch-label">Toggle Switch</label>
+      <label class="switch">
+        <input type="checkbox" id="switch-toggle" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <input type="radio" id="radio1" name="radio-group" />
+      <label for="radio1" class="radio"><span></span></label>
+      <label for="radio1">Radio Label 1</label>
+    </div>
+
+    <div class="radio-container">
+      <input type="radio" id="radio2" name="radio-group" />
+      <label for="radio2" class="radio"><span></span></label>
+      <label for="radio2">Radio Label 2</label>
+    </div>
+
+    <div class="radio-container">
+      <input type="radio" id="radio3" name="radio-group" />
+      <label for="radio3" class="radio"><span></span></label>
+      <label for="radio3">Radio Label 3</label>
+    </div>
+
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="checkbox1" />
+      <label for="checkbox1" class="checkbox"><span></span></label>
+      <label for="checkbox1">Checkbox Label</label>
+    </div>
+
+    <div class="input-container">
+      <div class="input-row">
+        <label for="text-input" class="input-label">Name:</label>
+      </div>
+      <div class="input-row">
+        <input type="text" id="text-input" name="text-input" class="text-input" placeholder="Enter your name" />
+      </div>
+    </div>
+
+    <input type="submit" value="Submit" />
+  </form>
+  <h1 id="text-output"></h1>
+
+  <div class="news">
+    <h2>News</h2>
+    <h3>12/04/2023</h3>
+    <br>
+    <p><strong>Went online!</strong></p>
+    <br>
+    <p>Added typography</p>
+    <p>Added basic colors</p>
+    <p>Added Theme functionality (I still need to rewrite CSS to use more variables)</p>
+    <p>Added & styled Radio buttons</p>
+    <p>Added & styled Switch</p>
+    <p>Added & styled Input box</p>
+    <p>Added & styled Button</p>
+
+  </div>
+
+  <h2 class="xl">1920 (xl)</h2>
+  <h2 class="md">1440 (md)</h2>
+  <h2 class="sm">960 (sm)</h2>
+
+  <p>Normal <a href="#">Strong</a> p text and <a class="disabled">disabled</a> hyperlink</h1>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h1>
     <h3>Heading 3</h1>
-    <h4>Heading 4</h1>
-    <p>Normal <strong>Strong</strong> p text</h1>
-    <p class="caption">Caption text</h1>
-    <script src="javascript/theme.js"></script>
-    <script src="javascript/name.js"></script>
-  </body>
+      <h4>Heading 4</h1>
+        <p>Normal <strong>Strong</strong> p text</h1>
+        <p class="caption">Caption text</h1>
+          <script src="javascript/theme.js"></script>
+          <script src="javascript/name.js"></script>
+          <script src="javascript/dropdown.js"></script>
+          <script src="javascript/color-picker.js"></script>
+</body>
+
 </html>

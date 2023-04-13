@@ -2,6 +2,8 @@
     --primary-color: #0067c0;
     --text: #000000;
     --text-alt: #ffffff;
+    --hypertext-hover-bg: #eaeaea;
+    --text-disabled: #9b9b9b;
     --body-bg: #f0f0f0;
     --form-bg: #ffffff;
 
@@ -17,7 +19,6 @@
     --switch-off: #5a5a5a;
     --switch-on-bg-hover: #1975c5;
 
-
     --text-input-bg: #fbfbfb;
     --text-input-bg-hover: #f6f6f6;
     --text-input-placeholder: #5f5f5f;
@@ -28,6 +29,11 @@
     --checkbox-bg-hover: #e5e5e5;
     --checkbox-border: #5d5d5d;
     --checkbox-on-bg-hover: #1975c5;
+
+    --dropdown-toggle-text-hover: #1a1a1a;
+    --dropdown-toggle-border: #e5e5e5;
+    --dropdown-menu-bg: #f7f7f7;
+    --dropdown-menu-bg-hover: #f0f0f0;
 
     --color-success: #0f7b0f;
     --color-success-bg: #dff6dd;

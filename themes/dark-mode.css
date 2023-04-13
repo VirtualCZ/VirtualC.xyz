@@ -2,6 +2,8 @@
     --primary-color: #4cc2ff;
     --text: #ffffff;
     --text-alt: #000000;
+    --hypertext-hover-bg: #2d2d2d;
+    --text-disabled: #717171;
     --body-bg: #282828;
     --form-bg: #333333;
 
@@ -27,6 +29,11 @@
     --checkbox-bg-hover: #2a2a2a;
     --checkbox-border: #a8a8a8;
     --checkbox-on-bg-hover: #47b1e8;
+
+    --dropdown-toggle-text-hover: #1a1a1a;
+    --dropdown-toggle-border: #303030;
+    --dropdown-menu-bg: #303030;
+    --dropdown-menu-bg-hover: #3b3b3b;
 
     --color-success: #0f7b0f;
     --color-success-bg: #dff6dd;
