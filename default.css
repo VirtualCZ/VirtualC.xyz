@@ -2,7 +2,10 @@
 @import "elements/checkbox.css";
 @import "elements/color-picker.css";
 @import "elements/dropdown.css";
+@import "elements/navbar.css";
+@import "elements/rating.css";
 @import "elements/radio.css";
+@import "elements/slider.css";
 @import "elements/split-button.css";
 @import "elements/switch.css";
 @import "elements/text-input.css";

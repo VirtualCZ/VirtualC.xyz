@@ -1,0 +1,21 @@
+.rating{
+    margin-bottom: 20px;
+}
+.star {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px
+}
+
+.star path{
+    fill: none;
+    stroke: var(--text);
+}
+
+.star.filled path {
+    fill: var(--primary-color);
+    stroke: var(--primary-color);
+}
+

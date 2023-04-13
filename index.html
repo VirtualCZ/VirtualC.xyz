@@ -13,6 +13,91 @@
   <script src="javascript/jscolor.js"></script>
     <div class="construction">Under construction</div>
   <form onsubmit="sendToConsole(event)">
+
+    <div class="custom-slider">
+      <input type="range" min="0" max="100" value="34" class="slider-range">
+    </div>  
+    
+    
+
+  <div class="rating">
+    <input type="hidden" name="rating" id="rating-value" value="0">
+    <span class="star" data-rating="1">
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.67 566.67">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: none;
+              stroke: #000;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-width: 33.33px;
+            }
+          </style>
+        </defs>
+        <path class="cls-1" d="M371.67,181.09L299.51,26.97c-6.43-13.73-25.92-13.73-32.35,0l-72.16,154.12L31.85,206.08c-14.37,2.2-20.24,19.78-10.09,30.21l118.64,121.91-27.82,170.96c-2.4,14.76,13.22,25.79,26.28,18.56l144.47-80.06,144.47,80.06c13.05,7.23,28.68-3.8,26.28-18.56l-27.82-170.96,118.64-121.91c10.15-10.43,4.28-28.01-10.09-30.21l-163.15-24.99Z"/>
+      </svg>
+    </span>
+    <span class="star" data-rating="2">    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.67 566.67">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+            stroke: #000;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 33.33px;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M371.67,181.09L299.51,26.97c-6.43-13.73-25.92-13.73-32.35,0l-72.16,154.12L31.85,206.08c-14.37,2.2-20.24,19.78-10.09,30.21l118.64,121.91-27.82,170.96c-2.4,14.76,13.22,25.79,26.28,18.56l144.47-80.06,144.47,80.06c13.05,7.23,28.68-3.8,26.28-18.56l-27.82-170.96,118.64-121.91c10.15-10.43,4.28-28.01-10.09-30.21l-163.15-24.99Z"/>
+    </svg></span>
+    <span class="star" data-rating="3">    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.67 566.67">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+            stroke: #000;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 33.33px;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M371.67,181.09L299.51,26.97c-6.43-13.73-25.92-13.73-32.35,0l-72.16,154.12L31.85,206.08c-14.37,2.2-20.24,19.78-10.09,30.21l118.64,121.91-27.82,170.96c-2.4,14.76,13.22,25.79,26.28,18.56l144.47-80.06,144.47,80.06c13.05,7.23,28.68-3.8,26.28-18.56l-27.82-170.96,118.64-121.91c10.15-10.43,4.28-28.01-10.09-30.21l-163.15-24.99Z"/>
+    </svg></span>
+    <span class="star" data-rating="4">    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.67 566.67">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+            stroke: #000;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 33.33px;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M371.67,181.09L299.51,26.97c-6.43-13.73-25.92-13.73-32.35,0l-72.16,154.12L31.85,206.08c-14.37,2.2-20.24,19.78-10.09,30.21l118.64,121.91-27.82,170.96c-2.4,14.76,13.22,25.79,26.28,18.56l144.47-80.06,144.47,80.06c13.05,7.23,28.68-3.8,26.28-18.56l-27.82-170.96,118.64-121.91c10.15-10.43,4.28-28.01-10.09-30.21l-163.15-24.99Z"/>
+    </svg></span>
+    <span class="star" data-rating="5">    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.67 566.67">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+            stroke: #000;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 33.33px;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M371.67,181.09L299.51,26.97c-6.43-13.73-25.92-13.73-32.35,0l-72.16,154.12L31.85,206.08c-14.37,2.2-20.24,19.78-10.09,30.21l118.64,121.91-27.82,170.96c-2.4,14.76,13.22,25.79,26.28,18.56l144.47-80.06,144.47,80.06c13.05,7.23,28.68-3.8,26.28-18.56l-27.82-170.96,118.64-121.91c10.15-10.43,4.28-28.01-10.09-30.21l-163.15-24.99Z"/>
+    </svg></span>
+  </div>
+    
+
+
     Color: <input value="#3399FF80" data-jscolor="{}">
 
     <div class="dropdown selectable">
@@ -109,6 +194,8 @@
     <br>
     <p>Added & styled 3 Dropdowns</p>
     <p>Added better themes, basic container</p>
+    <p>Added & styled Slider</p>
+    <p>Added & styled Rtar rating</p>
     <br>
     <p>Added typography</p>
     <p>Added basic colors</p>
@@ -145,8 +232,9 @@
         <p class="caption">Caption text</h1>
           <script src="javascript/theme.js"></script>
           <script src="javascript/name.js"></script>
+          <script src="javascript/slider.js"></script>
           <script src="javascript/dropdown.js"></script>
-          <script src="javascript/color-picker.js"></script>
+          <script src="javascript/rating.js"></script>
 </body>
 
 </html>
