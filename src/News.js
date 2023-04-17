@@ -3,7 +3,16 @@ const News = () => {
     <div className="news">
       <h2>News</h2>
       <br />
-      <h3>12/04/2023</h3>
+      <h3>14-15/04/2023</h3>
+      <br />
+      <p>
+        Moved the project to ReactJS (rewritten basically 100% of the current
+        code)
+      </p>
+      <p>Added basic API functionality</p>
+      <p>(Broke the submit function - rendering of name)</p>
+      <br />
+      <h3>13/04/2023</h3>
       <br />
       <p>Added & styled 3 Dropdowns</p>
       <p>Added better themes, basic container</p>
