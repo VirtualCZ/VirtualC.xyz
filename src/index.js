@@ -7,9 +7,13 @@ import reportWebVitals from "./reportWebVitals";
 // import awsExports from "./aws-exports";
 // Amplify.configure(awsExports);
 
+import { BrowserRouter } from "react-router-dom";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
