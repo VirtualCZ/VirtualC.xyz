@@ -5,22 +5,28 @@ import React from "react";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
 
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Navigator from "./elements/navbar/Navbar";
 import NotFound from "./pages/NotFound";
+import Construction from "./elements/Construction";
+import Sidebar from "./elements/sidebar/Sidebar";
 
 Amplify.configure(awsExports);
 
 const App = () => {
   return (
-    <>
-      <Navigator />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
+    <div className="App">
+      <Construction />
+      <div className="main-layut">
+        <Sidebar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </div>
+    </div>
   );
 };
 

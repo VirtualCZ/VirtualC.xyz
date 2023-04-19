@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 import CheckBox from "../elements/checkbox/CheckBox";
-import Construction from "../elements/Construction";
 import DropdownButton from "../elements/dropdownButton/DropdownButton";
 import RadioButton from "../elements/radioButton/RadioButton";
 import Rating from "../elements/rating/Rating";
@@ -72,36 +71,8 @@ const Home = () => {
   }
 
   return (
-    <div className="App">
-      {Construction}
-      <h1>Super Simple React App</h1>
-      <div>
-        <input
-          placeholder="customer id"
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
-      </div>
-      <br />
-      <button onClick={() => getCustomer({ input })}>
-        Get Customer From Backend
-      </button>
-
-      <h2 style={{ visibility: customers.length > 0 ? "visible" : "hidden" }}>
-        Response
-      </h2>
-      {customers.map((thisCustomer, index) => {
-        return (
-          <div key={thisCustomer.customerId}>
-            <span>
-              <b>CustomerId:</b> {thisCustomer.customerId} - <b>CustomerName</b>
-              : {thisCustomer.customerName}
-            </span>
-          </div>
-        );
-      })}
-
+    <>
+      <h1>Home</h1>
       <form onSubmit={handleSubmit}>
         <Slider
           value={sliderValue}
@@ -113,6 +84,7 @@ const Home = () => {
         <Rating value={ratingValue} setValue={setRatingValue} />
 
         <DropdownButton
+          name="Normal"
           options={[
             {
               option: "Option 1",
@@ -137,6 +109,7 @@ const Home = () => {
           ]}
         />
         <DropdownButton
+          name="Centered"
           centered={true}
           options={[
             {
@@ -162,7 +135,36 @@ const Home = () => {
           ]}
         />
         <DropdownButton
+          name="Selectable"
           selectable={true}
+          options={[
+            {
+              option: "Option 1",
+              onClick: () => {
+                console.log("skskssk");
+              },
+            },
+            {
+              option: "Option 2",
+              href: "https://www.google.com/",
+              onClick: () => {
+                console.log("pspsps");
+              },
+            },
+            {
+              option: "Option 3",
+              href: "https://www.google.com/",
+              onClick: () => {
+                console.log("grgrgr");
+              },
+            },
+          ]}
+        />
+
+        <DropdownButton
+          name="Selectable centered"
+          selectable={true}
+          centered={true}
           options={[
             {
               option: "Option 1 center",
@@ -231,7 +233,35 @@ const Home = () => {
         Normal <strong>Strong</strong> p text
       </p>
       <p className="caption">Caption text</p>
-    </div>
+
+      <h1>VirtualC - Homepage </h1>
+      <div>
+        <input
+          placeholder="customer id"
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+      </div>
+      <br />
+      <button onClick={() => getCustomer({ input })}>
+        Get Customer From Backend
+      </button>
+
+      <h2 style={{ visibility: customers.length > 0 ? "visible" : "hidden" }}>
+        Response
+      </h2>
+      {customers.map((thisCustomer, index) => {
+        return (
+          <div key={thisCustomer.customerId}>
+            <span>
+              <b>CustomerId:</b> {thisCustomer.customerId} - <b>CustomerName</b>
+              : {thisCustomer.customerName}
+            </span>
+          </div>
+        );
+      })}
+    </>
   );
 };
 

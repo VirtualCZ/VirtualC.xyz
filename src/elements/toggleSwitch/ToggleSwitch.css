@@ -1,19 +1,19 @@
-.switch-label {
+.switch-container .switch-label {
   display: inline-block;
   margin-right: 10px;
   font-size: 16px;
   color: var(--text);
   line-height: 28px;
 }
-.switch {
+.switch-container .switch {
   display: inline-flex;
   align-items: center;
   margin-bottom: 0px;
 }
-.switch input {
+.switch-container .switch input {
   display: none;
 }
-.slider {
+.switch-container .slider {
   position: relative;
   width: 40px;
   height: 20px;
@@ -25,7 +25,7 @@
   border-style: solid;
   transition: all 0.2s ease-out;
 }
-.slider::before {
+.switch-container .slider::before {
   position: absolute;
   content: "";
   height: 14px;
@@ -36,14 +36,14 @@
   border-radius: 50%;
   transition: all 0.2s ease-out;
 }
-.slider.round {
+.switch-container .slider.round {
   border-radius: 50px;
 }
-input:checked + .slider {
+.switch-container input:checked + .slider {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
-input:checked + .slider::before {
+.switch-container input:checked + .slider::before {
   transform: translateX(20px);
   transition-delay: 0.1s;
   background-color: var(--text-alt);

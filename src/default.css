@@ -1,7 +1,6 @@
 @import './elements/button.css';
 @import "./elements/checkbox/Checkbox.css";
 @import "./elements/dropdownButton/DropdownButton.css";
-@import "./elements/navbar/Navbar.css";
 @import "./elements/radioButton/RadioButton.css";
 @import "./elements/rating/Rating.css";
 @import "./elements/slider/Slider.css";
@@ -23,7 +22,8 @@ body {
   font-family: Segoe UI, Arial, sans-serif;
   background-color: var(--body-bg);
   color: var(--text);
-  margin: 0 calc(50vw - 600px);
+  display: flex;
+  justify-content: center;
 }
 
   .xl{display: block;}
@@ -31,7 +31,7 @@ body {
   .sm{display: none;}
 @media screen and (max-width: 1440px) {
   body {
-    margin: 0 20%;
+    /* margin: 0 20%; */
   }
   .xl{display: none;}
   .md{display: block;}
@@ -39,7 +39,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   body {
-    margin: 0 10%;
+    /* margin: 0 10%; */
   }
   .xl{display: none;}
   .md{display: none;}
@@ -48,11 +48,15 @@ body {
 
 form, .news {
   width: 100%;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--form-bg);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form{
+  margin-top:0;
 }
 
 .construction {

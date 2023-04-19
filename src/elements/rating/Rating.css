@@ -1,7 +1,7 @@
-.rating{
+.rating-container{
     margin-bottom: 20px;
 }
-.star {
+.rating-container .star {
     width: 15px;
     height: 15px;
     display: inline-block;
@@ -9,12 +9,12 @@
     margin: 0 2px
 }
 
-.star path{
+.rating-container .star path{
     fill: none;
     stroke: var(--text);
 }
 
-.star.filled path {
+.rating-container .star.filled path {
     fill: var(--primary-color);
     stroke: var(--primary-color);
 }
