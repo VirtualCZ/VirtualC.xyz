@@ -3,6 +3,15 @@ const News = () => {
     <div className="news">
       <h2>News</h2>
       <br />
+      <h3>19/04/2023</h3>
+      <br />
+      <p>Edit the css files a bit</p>
+      <p>Added 404 page, moved App.js to Home.js</p>
+      <p>Added LESS support</p>
+      <p>Improved dropdowns</p>
+      <p>Changed the layout a bit</p>
+      <p>Added navigator, sidebar</p>
+      <br />
       <h3>14-15/04/2023</h3>
       <br />
       <p>
