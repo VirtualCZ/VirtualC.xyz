@@ -23,6 +23,8 @@ const News = () => {
           { line: "Removed comments from index.html" },
           { line: "Fixed a typo in App.js" },
           { line: "Removed App.css" },
+          { line: "News now uses components" },
+          { line: "Improved the page design" },
         ]}
       />
       <NewsItem
