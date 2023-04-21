@@ -10,6 +10,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  flex: 1;
 }
 
 .sidebar-container li {
@@ -57,21 +58,19 @@
 }
 
 .sidebar-container .sidebar-bottom {
-  display: flex;
-  flex: 1;
+  flex: 0;
 }
+
 .sidebar-container .sidebar-bottom li {
-  flex: 1;
-  align-self: flex-end;
   margin-bottom: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px), (pointer: none), (pointer: coarse) {
   .main-layout {
     border-radius: 0;
   }
   .sidebar-container {
-    width: 66px;
+    max-width: 66px;
   }
   .sidebar-container p {
     display: none;
@@ -80,7 +79,7 @@
     height: 19px;
     margin-right: 0;
   }
-  .sidebar-container li:hover {
+  /* .sidebar-container li:hover {
     position: relative;
     height: 35px;
   }
@@ -94,5 +93,5 @@
   }
   .sidebar-container li:hover svg {
     margin-right: 6px;
-  }
+  } */
 }

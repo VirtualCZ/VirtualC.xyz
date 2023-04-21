@@ -105,3 +105,14 @@ code {
     width: 1170px;
   }
 }
+
+@media (pointer: none), (pointer: coarse) {
+  .main-layout {
+    border-radius: 0;
+    height: 100vh;
+  }
+  .App {
+    margin: 0;
+    width: 100%;
+  }
+}
