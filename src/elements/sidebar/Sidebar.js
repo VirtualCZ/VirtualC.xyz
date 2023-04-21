@@ -13,22 +13,22 @@ function Sidebar() {
       <ul>
         <li>
           <NavLink exact to="/">
-            <RiHomeLine /> Home
+            <RiHomeLine /> <p>Home</p>
           </NavLink>
         </li>
         <li>
           <NavLink to="/settings">
-            <RiSettingsLine /> Settings
+            <RiSettingsLine /> <p>Settings</p>
           </NavLink>
         </li>
         <li>
           <NavLink to="/contacts">
-            <RiContactsLine /> Contacts
+            <RiContactsLine /> <p>Contacts</p>
           </NavLink>
         </li>
         <li>
           <NavLink to="/404">
-            <RiErrorWarningLine /> 404
+            <RiErrorWarningLine /> <p>404</p>
           </NavLink>
         </li>
       </ul>

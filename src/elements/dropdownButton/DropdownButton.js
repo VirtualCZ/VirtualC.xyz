@@ -3,7 +3,7 @@ import "./DropdownButton.css";
 
 const DropdownButton = ({
   name = "Drop",
-  options,
+  options = [],
   centered = false,
   selectable = false,
 }) => {
@@ -41,7 +41,7 @@ const DropdownButton = ({
       </button>
       <ul className={dropdownMenuClassName}>
         {options.map((option) => (
-          <li key={option.id}>
+          <li key={option.option}>
             <a href="#" onClick={() => handleOptionClick(option)}>
               {option.option}
             </a>

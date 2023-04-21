@@ -1,67 +1,14 @@
-@import './elements/button.css';
-@import "./elements/checkbox/Checkbox.css";
-@import "./elements/dropdownButton/DropdownButton.css";
-@import "./elements/radioButton/RadioButton.css";
-@import "./elements/rating/Rating.css";
-@import "./elements/slider/Slider.css";
-@import "./elements/textInput/TextInput.css";
-@import "./elements/toggleSwitch/ToggleSwitch.css";
 @import "./typography.css";
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-*:not(.jscolor){
-  transition: all 0.2s ease-out;
-}
+@import "./layout.css";
+@import "./elements/button.css";
 
-body {
-  font-family: Segoe UI, Arial, sans-serif;
-  background-color: var(--body-bg);
-  color: var(--text);
-  display: flex;
-  justify-content: center;
-}
-
-  .xl{display: block;}
-  .md{display: none;}
-  .sm{display: none;}
-@media screen and (max-width: 1440px) {
-  body {
-    /* margin: 0 20%; */
-  }
-  .xl{display: none;}
-  .md{display: block;}
-  .sm{display: none;}
-}
-@media screen and (max-width: 960px) {
-  body {
-    /* margin: 0 10%; */
-  }
-  .xl{display: none;}
-  .md{display: none;}
-  .sm{display: block;}
-}
-
-form, .news {
-  width: 100%;
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: var(--form-bg);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form{
-  margin-top:0;
+form {
+  margin-top: 0;
 }
 
 .construction {
   width: 100%;
-  margin: 50px auto;
+  margin-bottom: 15px;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--color-caution);
@@ -69,9 +16,7 @@ form{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-#text-output{
+#text-output {
   width: 400px;
   margin: auto;
   text-align: center;

@@ -1,3 +1,5 @@
+import "./Slider.css";
+
 const Slider = ({ value, onChange }) => {
   const setSliderBg = () => {
     const percent = ((value - 0) / (100 - 0)) * 100;

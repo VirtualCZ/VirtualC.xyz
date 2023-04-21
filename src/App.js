@@ -1,5 +1,4 @@
 // import logo from "./logo.svg";
-import "./App.css";
 import "./default.css";
 import React from "react";
 import { Amplify } from "aws-amplify";
@@ -8,7 +7,6 @@ import awsExports from "./aws-exports";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import Construction from "./elements/Construction";
 import Sidebar from "./elements/sidebar/Sidebar";
 
 Amplify.configure(awsExports);
@@ -16,8 +14,7 @@ Amplify.configure(awsExports);
 const App = () => {
   return (
     <div className="App">
-      <Construction />
-      <div className="main-layut">
+      <div className="main-layout">
         <Sidebar />
         <div className="content">
           <Routes>

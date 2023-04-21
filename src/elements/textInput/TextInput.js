@@ -1,3 +1,5 @@
+import "./TextInput.css";
+
 const TextInput = ({ label, placeholder, onChange }) => {
   return (
     <div className="input-container">

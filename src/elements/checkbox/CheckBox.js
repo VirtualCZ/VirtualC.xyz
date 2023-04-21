@@ -1,3 +1,5 @@
+import "./Checkbox.css";
+
 const CheckBox = () => {
   return (
     <div className="checkbox-container">

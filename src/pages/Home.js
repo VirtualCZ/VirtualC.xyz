@@ -7,8 +7,9 @@ import Rating from "../elements/rating/Rating";
 import Slider from "../elements/slider/Slider";
 import TextInput from "../elements/textInput/TextInput";
 import ToggleSwitch from "../elements/toggleSwitch/ToggleSwitch";
-import News from "../elements/News";
+import News from "../elements/news/News";
 import { API } from "aws-amplify";
+import Construction from "../elements/Construction";
 
 const Home = () => {
   document.title = "VirtualC - Home";
@@ -72,8 +73,9 @@ const Home = () => {
 
   return (
     <>
+      <Construction />
       <h1>Home</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="card w-100" onSubmit={handleSubmit}>
         <Slider
           value={sliderValue}
           onChange={(event) => {
@@ -210,57 +212,64 @@ const Home = () => {
 
         <input type="submit" value="Submit" />
       </form>
-      <h1 id="text-output">{""}</h1>
 
-      <News />
-
-      <h2 className="xl">1920 (xl)</h2>
-      <h2 className="md">1440 (md)</h2>
-      <h2 className="sm">960 (sm)</h2>
-
-      <p>
-        Normal <a href="/">Strong</a> p text and{" "}
-        <a className="disabled" href="/">
-          disabled
-        </a>
-        hyperlink
-      </p>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <p>
-        Normal <strong>Strong</strong> p text
-      </p>
-      <p className="caption">Caption text</p>
-
-      <h1>VirtualC - Homepage </h1>
-      <div>
-        <input
-          placeholder="customer id"
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
+      <div className="card w-100">
+        <h1 id="text-output">{inputValue}</h1>
       </div>
-      <br />
-      <button onClick={() => getCustomer({ input })}>
-        Get Customer From Backend
-      </button>
 
-      <h2 style={{ visibility: customers.length > 0 ? "visible" : "hidden" }}>
-        Response
-      </h2>
-      {customers.map((thisCustomer, index) => {
-        return (
-          <div key={thisCustomer.customerId}>
-            <span>
-              <b>CustomerId:</b> {thisCustomer.customerId} - <b>CustomerName</b>
-              : {thisCustomer.customerName}
-            </span>
-          </div>
-        );
-      })}
+      <div className="card w-100">
+        <News />
+      </div>
+
+      <div className="card w-100">
+        <h2 className="xl">1920 (xl)</h2>
+        <h2 className="md">1440 (md)</h2>
+        <h2 className="sm">960 (sm)</h2>
+
+        <p>
+          Normal <a href="/">Strong</a> p text and{" "}
+          <a className="disabled" href="/">
+            disabled
+          </a>
+          hyperlink
+        </p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <p>
+          Normal <strong>Strong</strong> p text
+        </p>
+        <p className="caption">Caption text</p>
+
+        <h2>API </h2>
+        <div>
+          <input
+            placeholder="customer id"
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+        </div>
+        <br />
+        <button onClick={() => getCustomer({ input })}>
+          Get Customer From Backend
+        </button>
+
+        <h2 style={{ visibility: customers.length > 0 ? "visible" : "hidden" }}>
+          Response
+        </h2>
+        {customers.map((thisCustomer, index) => {
+          return (
+            <div key={thisCustomer.customerId}>
+              <span>
+                <b>CustomerId:</b> {thisCustomer.customerId} -{" "}
+                <b>CustomerName</b>: {thisCustomer.customerName}
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };

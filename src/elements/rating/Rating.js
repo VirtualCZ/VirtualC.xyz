@@ -1,3 +1,5 @@
+import "./Rating.css";
+
 const Rating = ({ value, setValue }) => {
   function handleStarClick(index) {
     setValue(index + 1);

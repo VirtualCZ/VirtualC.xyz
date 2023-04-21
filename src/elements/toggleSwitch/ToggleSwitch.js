@@ -1,3 +1,5 @@
+import "./ToggleSwitch.css";
+
 const ToggleSwitch = ({ label, checked, onChange, id }) => {
   return (
     <div className="switch-container">
