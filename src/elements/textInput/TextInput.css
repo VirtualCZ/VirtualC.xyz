@@ -10,7 +10,6 @@
   margin-bottom: 10px;
 }
 .input-container .input-label {
-  font-size: 16px;
   margin-right: 10px;
 }
 .input-container .text-input {
@@ -18,7 +17,6 @@
   background-color: var(--text-input-bg);
   height: 40px;
   width: 100%;
-  font-size: 16px;
   color: var(--text);
   padding: 0 10px;
   box-sizing: border-box;

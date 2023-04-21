@@ -41,7 +41,6 @@
   color: var(--text);
   text-decoration: none;
   padding: 8px 10px;
-  font-size: 16px;
   border-radius: 10px;
 }
 
@@ -66,11 +65,9 @@
 }
 
 @media (max-width: 767px), (pointer: none), (pointer: coarse) {
-  .main-layout {
-    border-radius: 0;
-  }
   .sidebar-container {
-    max-width: 66px;
+    max-width: 45px;
+    padding: 5px;
   }
   .sidebar-container p {
     display: none;
@@ -79,19 +76,4 @@
     height: 19px;
     margin-right: 0;
   }
-  /* .sidebar-container li:hover {
-    position: relative;
-    height: 35px;
-  }
-  .sidebar-container li:hover a {
-    position: absolute;
-    width: auto;
-    z-index: 1000;
-  }
-  .sidebar-container li:hover p {
-    display: block;
-  }
-  .sidebar-container li:hover svg {
-    margin-right: 6px;
-  } */
 }

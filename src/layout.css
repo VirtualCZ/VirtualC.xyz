@@ -115,4 +115,9 @@ code {
     margin: 0;
     width: 100%;
   }
+  .content {
+    min-width: calc(100vw - 45px);
+    max-width: calc(100vw - 45px);
+    padding: 10px;
+  }
 }
