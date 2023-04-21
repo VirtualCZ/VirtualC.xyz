@@ -1,34 +1,31 @@
 :root {
   --primary-color: #0067c0;
+  --primary-color-alt: #1975c5;
   --text: #000000;
   --text-alt: #ffffff;
   --hypertext-hover-bg: #eaeaea;
   --text-disabled: #9b9b9b;
-  --body-bg: #f0f0f0;
-  --form-bg: #ffffff;
 
-  --btn-bg-hover: #1975c5;
+  --body-bg: #bccee2;
+
+  --main-layout-bg: #f3f3f3;
+  --content-bg: #f9f9f9;
+  --card-bg: #fdfdfd;
+
   --btn-text-active: #ffffffa8; /* 66% transparency */
 
-  --radio-border: #5a5a5a;
-  --radio-bg: #00000005; /* 2% transparency */
-  --radio-bg-hover: #0000000f; /* 6% transparency */
+  --element-border: #5a5a5a;
+  --element-bg: #00000005; /* 2% transparency */
+  --element-bg-hover: #0000000f; /* 6% transparency */
+  --element-disabled-bg: #5a5a5a;
 
-  --switch-bg: #00000005; /* 2% transparency */
-  --switch-bg-hover: #0000000f; /* 6% transparency */
-  --switch-off: #5a5a5a;
-  --switch-on-bg-hover: #1975c5;
+  --sidebar-item-bg: #ededed;
 
   --text-input-bg: #fbfbfb;
   --text-input-bg-hover: #f6f6f6;
   --text-input-placeholder: #5f5f5f;
   --text-input-bg-focus: transparent;
   --text-input-border-bot: #5e5e5e;
-
-  --checkbox-bg: #ededed;
-  --checkbox-bg-hover: #e5e5e5;
-  --checkbox-border: #5d5d5d;
-  --checkbox-on-bg-hover: #1975c5;
 
   --dropdown-toggle-text-hover: #1a1a1a;
   --dropdown-toggle-border: #e5e5e5;

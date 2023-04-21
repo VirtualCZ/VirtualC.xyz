@@ -18,9 +18,9 @@
   width: 40px;
   height: 20px;
   margin: 0 10px;
-  background-color: var(--switch-bg);
+  background-color: var(--element-bg);
   border-radius: 34px;
-  border-color: var(--switch-off);
+  border-color: var(--element-border);
   border-width: 1px;
   border-style: solid;
   transition: all 0.2s ease-out;
@@ -32,7 +32,7 @@
   width: 14px;
   top: 2px;
   left: 2px;
-  background-color: var(--switch-off);
+  background-color: var(--element-disabled-bg);
   border-radius: 50%;
   transition: all 0.2s ease-out;
 }
@@ -55,8 +55,8 @@
   margin-bottom: 20px;
 }
 .switch-container:hover .slider.round {
-  background-color: var(--switch-bg-hover);
+  background-color: var(--element-bg-hover);
 }
 .switch-container:hover input:checked + .slider.round {
-  background-color: var(--switch-on-bg-hover);
+  background-color: var(--primary-color-alt);
 }

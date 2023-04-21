@@ -4,7 +4,7 @@
   margin-bottom: 20px;
 }
 .radio-container:hover .radio {
-  background-color: var(--radio-bg-hover);
+  background-color: var(--element-bg-hover);
 }
 .radio-container:hover span {
   width: 12px;
@@ -17,8 +17,8 @@
   height: 20px;
   margin-right: 10px;
   border-radius: 50%;
-  background-color: var(--radio-bg);
-  border: 1px solid var(--radio-border);
+  background-color: var(--element-bg);
+  border: 1px solid var(--element-border);
   transition: width 0.2s ease-in height 0.2s ease-in;
 }
 .radio-container span {
