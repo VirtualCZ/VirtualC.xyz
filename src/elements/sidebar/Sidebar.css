@@ -2,6 +2,8 @@
   width: 250px;
   padding: 15px;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-container ul {
@@ -52,6 +54,16 @@
 
 .sidebar-container li.active a {
   font-weight: bold;
+}
+
+.sidebar-container .sidebar-bottom {
+  display: flex;
+  flex: 1;
+}
+.sidebar-container .sidebar-bottom li {
+  flex: 1;
+  align-self: flex-end;
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {

@@ -17,11 +17,6 @@ function Sidebar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/settings">
-            <RiSettingsLine /> <p>Settings</p>
-          </NavLink>
-        </li>
-        <li>
           <NavLink to="/contacts">
             <RiContactsLine /> <p>Contacts</p>
           </NavLink>
@@ -29,6 +24,13 @@ function Sidebar() {
         <li>
           <NavLink to="/404">
             <RiErrorWarningLine /> <p>404</p>
+          </NavLink>
+        </li>
+      </ul>
+      <ul className="sidebar-bottom">
+        <li>
+          <NavLink to="/settings">
+            <RiSettingsLine /> <p>Settings</p>
           </NavLink>
         </li>
       </ul>
