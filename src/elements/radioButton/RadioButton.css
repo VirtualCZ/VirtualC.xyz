@@ -31,7 +31,7 @@
   height: 10px;
   border-radius: 50%;
   transition: width 0.2s ease-out height 0.2s ease-out;
-  background-color: var(--text-alt);
+  background-color: var(--content-bg);
 }
 .radio-container input[type="radio"] {
   display: none;
