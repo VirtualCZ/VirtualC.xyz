@@ -64,16 +64,18 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 767px), (pointer: none), (pointer: coarse) {
-  .sidebar-container {
-    max-width: 45px;
-    padding: 5px;
-  }
-  .sidebar-container p {
-    display: none;
-  }
-  .sidebar-container svg {
-    height: 19px;
-    margin-right: 0;
+@media (max-width: 767px) {
+  @media (pointer: none), (pointer: coarse) {
+    .sidebar-container {
+      max-width: 45px;
+      padding: 5px;
+    }
+    .sidebar-container p {
+      display: none;
+    }
+    .sidebar-container svg {
+      height: 19px;
+      margin-right: 0;
+    }
   }
 }
