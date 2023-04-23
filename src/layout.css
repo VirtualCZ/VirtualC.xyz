@@ -9,22 +9,6 @@
   transition: all 0.2s ease-out;
 }
 
-.w-100 {
-  width: 100%;
-}
-.w-75 {
-  width: 75%;
-}
-.w-66 {
-  width: calc(2 / 3);
-}
-.w-50 {
-  width: 50%;
-}
-.w-25 {
-  width: 25%;
-}
-
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -44,14 +28,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.card {
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: var(--card-bg);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main-layout {

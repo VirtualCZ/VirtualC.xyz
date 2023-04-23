@@ -18,6 +18,13 @@ const News = () => {
         </a>
       </p>
       <NewsItem
+        heading={"23/4/2023"}
+        text={[
+          { line: "New Card system" },
+          { line: "Styled scrollbar for WebKit browsers" },
+        ]}
+      />
+      <NewsItem
         heading={"21/4/2023"}
         text={[
           { line: "Removed comments from index.html" },

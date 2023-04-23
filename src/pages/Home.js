@@ -11,6 +11,7 @@ import News from "../elements/news/News";
 import { API } from "aws-amplify";
 import Construction from "../elements/Construction";
 import Card from "../elements/card/Card";
+import CardHolder from "../elements/card/CardHolder";
 
 const Home = () => {
   document.title = "VirtualC - Home";
@@ -76,9 +77,22 @@ const Home = () => {
     <>
       <Construction />
       <h1>Home</h1>
-      <Card width="25">
-        <p>jfdidfiosjfod</p>
-      </Card>
+
+      <CardHolder>
+        <Card>
+          <p>jfdidfiosjfod</p>
+        </Card>
+        <Card>
+          <p>jfdidfiosjfod</p>
+        </Card>
+        <Card>
+          <p>jfdidfiosjfod</p>
+        </Card>
+        <Card>
+          <p>jfdidfiosjfod</p>
+        </Card>
+      </CardHolder>
+
       <Card>
         <form onSubmit={handleSubmit}>
           <Slider
@@ -218,15 +232,12 @@ const Home = () => {
           <input type="submit" value="Submit" />
         </form>
       </Card>
-
       <Card>
         <h1 id="text-output">{inputValue}</h1>
       </Card>
-
       <Card>
         <News />
       </Card>
-
       <Card>
         <h2 className="xl">1920 (xl)</h2>
         <h2 className="md">1440 (md)</h2>
