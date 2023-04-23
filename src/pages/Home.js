@@ -10,6 +10,7 @@ import ToggleSwitch from "../elements/toggleSwitch/ToggleSwitch";
 import News from "../elements/news/News";
 import { API } from "aws-amplify";
 import Construction from "../elements/Construction";
+import Card from "../elements/card/Card";
 
 const Home = () => {
   document.title = "VirtualC - Home";
@@ -75,6 +76,9 @@ const Home = () => {
     <>
       <Construction />
       <h1>Home</h1>
+      <Card width="25">
+        <p>jfdidfiosjfod</p>
+      </Card>
       <form className="card w-100" onSubmit={handleSubmit}>
         <Slider
           value={sliderValue}
