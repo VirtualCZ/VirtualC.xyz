@@ -219,15 +219,15 @@ const Home = () => {
         </form>
       </Card>
 
-      <div className="card w-100">
+      <Card>
         <h1 id="text-output">{inputValue}</h1>
-      </div>
+      </Card>
 
-      <div className="card w-100">
+      <Card>
         <News />
-      </div>
+      </Card>
 
-      <div className="card w-100">
+      <Card>
         <h2 className="xl">1920 (xl)</h2>
         <h2 className="md">1440 (md)</h2>
         <h2 className="sm">960 (sm)</h2>
@@ -275,7 +275,7 @@ const Home = () => {
             </div>
           );
         })}
-      </div>
+      </Card>
     </>
   );
 };
