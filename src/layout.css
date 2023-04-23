@@ -138,11 +138,6 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(128, 128, 128);
+  background: var(--element-border);
   border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(153, 153, 153);
 }

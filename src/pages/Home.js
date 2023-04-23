@@ -79,143 +79,145 @@ const Home = () => {
       <Card width="25">
         <p>jfdidfiosjfod</p>
       </Card>
-      <form className="card w-100" onSubmit={handleSubmit}>
-        <Slider
-          value={sliderValue}
-          onChange={(event) => {
-            setSliderValue(event.target.value);
-          }}
-        />
+      <Card>
+        <form onSubmit={handleSubmit}>
+          <Slider
+            value={sliderValue}
+            onChange={(event) => {
+              setSliderValue(event.target.value);
+            }}
+          />
 
-        <Rating value={ratingValue} setValue={setRatingValue} />
+          <Rating value={ratingValue} setValue={setRatingValue} />
 
-        <DropdownButton
-          name="Normal"
-          options={[
-            {
-              option: "Option 1",
-              onClick: () => {
-                console.log("skskssk");
+          <DropdownButton
+            name="Normal"
+            options={[
+              {
+                option: "Option 1",
+                onClick: () => {
+                  console.log("skskssk");
+                },
               },
-            },
-            {
-              option: "Option 2",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("pspsps");
+              {
+                option: "Option 2",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("pspsps");
+                },
               },
-            },
-            {
-              option: "Option 3",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("grgrgr");
+              {
+                option: "Option 3",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("grgrgr");
+                },
               },
-            },
-          ]}
-        />
-        <DropdownButton
-          name="Centered"
-          centered={true}
-          options={[
-            {
-              option: "Option 1 center",
-              onClick: () => {
-                console.log("skskssk");
+            ]}
+          />
+          <DropdownButton
+            name="Centered"
+            centered={true}
+            options={[
+              {
+                option: "Option 1 center",
+                onClick: () => {
+                  console.log("skskssk");
+                },
               },
-            },
-            {
-              option: "Option 2",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("pspsps");
+              {
+                option: "Option 2",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("pspsps");
+                },
               },
-            },
-            {
-              option: "Option 3",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("grgrgr");
+              {
+                option: "Option 3",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("grgrgr");
+                },
               },
-            },
-          ]}
-        />
-        <DropdownButton
-          name="Selectable"
-          selectable={true}
-          options={[
-            {
-              option: "Option 1",
-              onClick: () => {
-                console.log("skskssk");
+            ]}
+          />
+          <DropdownButton
+            name="Selectable"
+            selectable={true}
+            options={[
+              {
+                option: "Option 1",
+                onClick: () => {
+                  console.log("skskssk");
+                },
               },
-            },
-            {
-              option: "Option 2",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("pspsps");
+              {
+                option: "Option 2",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("pspsps");
+                },
               },
-            },
-            {
-              option: "Option 3",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("grgrgr");
+              {
+                option: "Option 3",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("grgrgr");
+                },
               },
-            },
-          ]}
-        />
+            ]}
+          />
 
-        <DropdownButton
-          name="Selectable centered"
-          selectable={true}
-          centered={true}
-          options={[
-            {
-              option: "Option 1 center",
-              onClick: () => {
-                console.log("skskssk");
+          <DropdownButton
+            name="Selectable centered"
+            selectable={true}
+            centered={true}
+            options={[
+              {
+                option: "Option 1 center",
+                onClick: () => {
+                  console.log("skskssk");
+                },
               },
-            },
-            {
-              option: "Option 2",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("pspsps");
+              {
+                option: "Option 2",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("pspsps");
+                },
               },
-            },
-            {
-              option: "Option 3",
-              href: "https://www.google.com/",
-              onClick: () => {
-                console.log("grgrgr");
+              {
+                option: "Option 3",
+                href: "https://www.google.com/",
+                onClick: () => {
+                  console.log("grgrgr");
+                },
               },
-            },
-          ]}
-        />
+            ]}
+          />
 
-        <ToggleSwitch
-          label="Toggle Theme"
-          id="theme-toggle"
-          checked={checked}
-          onChange={toggleChecked}
-        />
+          <ToggleSwitch
+            label="Toggle Theme"
+            id="theme-toggle"
+            checked={checked}
+            onChange={toggleChecked}
+          />
 
-        <ToggleSwitch label="Toggle Switch" id="switch-toggle" />
-        <RadioButton />
+          <ToggleSwitch label="Toggle Switch" id="switch-toggle" />
+          <RadioButton />
 
-        <CheckBox />
+          <CheckBox />
 
-        <TextInput
-          label="Name:"
-          placeholder="Enter your name"
-          value={inputValue}
-          onChange={handleInputChange}
-        />
+          <TextInput
+            label="Name:"
+            placeholder="Enter your name"
+            value={inputValue}
+            onChange={handleInputChange}
+          />
 
-        <input type="submit" value="Submit" />
-      </form>
+          <input type="submit" value="Submit" />
+        </form>
+      </Card>
 
       <div className="card w-100">
         <h1 id="text-output">{inputValue}</h1>
