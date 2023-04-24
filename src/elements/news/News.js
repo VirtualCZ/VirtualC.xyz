@@ -18,6 +18,10 @@ const News = () => {
         </a>
       </p>
       <NewsItem
+        heading={"24/4/2023"}
+        text={[{ line: "Fixed layout issues for small and mobile devices" }]}
+      />
+      <NewsItem
         heading={"23/4/2023"}
         text={[
           { line: "New Card system" },

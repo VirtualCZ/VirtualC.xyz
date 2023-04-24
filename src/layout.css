@@ -70,10 +70,16 @@ code {
   .App {
     width: 750px;
   }
+  #root {
+    min-width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .App {
     width: 970px;
+  }
+  #root {
+    width: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -82,21 +88,17 @@ code {
   }
 }
 
-@media (max-width: 767px) {
-  @media (pointer: none), (pointer: coarse) {
-    .main-layout {
-      border-radius: 0;
-      height: 100vh;
-    }
-    .App {
-      margin: 0;
-      width: 100%;
-    }
-    .content {
-      min-width: calc(100vw - 45px);
-      max-width: calc(100vw - 45px);
-      padding: 10px;
-    }
+@media (max-width: 992px) {
+  .main-layout {
+    border-radius: 0;
+    height: 100vh;
+  }
+  .App {
+    margin: 0;
+    width: 100%;
+  }
+  .content {
+    padding: 10px;
   }
 }
 
