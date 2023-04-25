@@ -36,3 +36,20 @@
   margin: auto -15px;
   flex-wrap: wrap;
 }
+
+.card.card-skill {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card.card-logo img {
+  max-width: 100%;
+  border-radius: 5px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+
+.card.card-logo {
+  margin-bottom: 15px;
+}

@@ -19,6 +19,11 @@ function Sidebar() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/ReactNative">
+            <FaReact /> <p>React Native</p>
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/Blender">
             <TbBrandBlender /> <p>Blender</p>
           </NavLink>

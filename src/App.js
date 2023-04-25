@@ -8,7 +8,9 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Sidebar from "./elements/sidebar/Sidebar";
 import Blender from "./pages/Blender";
-import ReactPage from "./pages/ReactPage";
+import ReactPage from "./pages/ReactWeb";
+import ReactApp from "./pages/ReactApp";
+import ReactWeb from "./pages/ReactWeb";
 
 Amplify.configure(awsExports);
 
@@ -43,7 +45,8 @@ const App = () => {
               element={<Home checked={checked} toggleChecked={toggleChecked} />}
             />
             <Route path="/Blender" element={<Blender />} />
-            <Route path="/React" element={<ReactPage />} />
+            <Route path="/React" element={<ReactWeb />} />{" "}
+            <Route path="/ReactNative" element={<ReactApp />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

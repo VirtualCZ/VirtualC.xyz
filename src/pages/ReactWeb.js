@@ -2,11 +2,9 @@ import Card from "../elements/card/Card";
 import CardHolder from "../elements/card/CardHolder";
 import Skill from "../elements/skill/Skill";
 
-import "./ReactPage.css";
-
 const ReactWeb = () => {
   return (
-    <div className="ReactWeb">
+    <>
       <h1>React</h1>
       {/* <CardHolder>
         <Skill skillName="1 test" rating={1} />
@@ -37,7 +35,7 @@ const ReactWeb = () => {
         </Card>
       </CardHolder>
       <CardHolder>
-        <Skill skillName="JavaScript" rating={4} />
+        <Skill skillName="JavaScript & JQuery" rating={4} />
         <Card className="card-logo">
           <img src="logos/js_logo.svg" alt="JavaScript logo" />
         </Card>
@@ -69,10 +67,10 @@ const ReactWeb = () => {
         </Card>
       </CardHolder>
       <CardHolder>
-        <Skill skillName="CSS & LESS" rating={5} />
         <Card className="card-logo">
           <img src="logos/css_logo.svg" alt="CSS logo" />
         </Card>
+        <Skill skillName="CSS & LESS" rating={5} />
       </CardHolder>
       <CardHolder>
         <Card>
@@ -91,7 +89,7 @@ const ReactWeb = () => {
           </p>
         </Card>
       </CardHolder>
-    </div>
+    </>
   );
 };
 export default ReactWeb;
