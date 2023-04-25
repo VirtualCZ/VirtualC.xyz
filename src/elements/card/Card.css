@@ -34,7 +34,5 @@
 .card-holder {
   display: flex;
   margin: auto -15px;
-  margin-bottom: -15px;
-  margin-top: 15px;
   flex-wrap: wrap;
 }

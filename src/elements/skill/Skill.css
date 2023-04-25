@@ -1,0 +1,10 @@
+.card-skill_rating {
+  display: flex;
+  margin: 0 -5px;
+}
+.card-skill_rating span {
+  flex: 1;
+  height: 30px;
+  margin: 5px;
+  border-radius: 10px;
+}

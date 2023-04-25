@@ -48,11 +48,6 @@ code {
   overflow-y: scroll;
 }
 
-.content > h1 {
-  margin-bottom: -17px;
-  margin-top: -5px;
-}
-
 .App {
   margin: 30px auto;
 }
