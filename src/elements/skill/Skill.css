@@ -2,9 +2,36 @@
   display: flex;
   margin: 0 -5px;
 }
+
 .card-skill_rating span {
   flex: 1;
   height: 30px;
   margin: 5px;
   border-radius: 10px;
+  border: solid var(--text) 1px;
+}
+
+.card.card-skill {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card.card-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card.card-logo img {
+  max-width: 100%;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .card.card-skill span {
+    height: 20px;
+  }
 }

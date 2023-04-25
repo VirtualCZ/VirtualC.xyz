@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { RiHomeLine, RiSettingsLine, RiErrorWarningLine } from "react-icons/ri";
+import {
+  RiHomeLine,
+  RiSettingsLine,
+  RiErrorWarningLine,
+  RiInformationLine,
+} from "react-icons/ri";
 import { TbBrandBlender } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import "./Sidebar.css";
@@ -26,6 +31,11 @@ function Sidebar() {
         <li>
           <NavLink to="/Blender">
             <TbBrandBlender /> <p>Blender</p>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Contact">
+            <RiInformationLine /> <p>Contact</p>
           </NavLink>
         </li>
         <li>

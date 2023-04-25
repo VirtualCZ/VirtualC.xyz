@@ -11,6 +11,7 @@ import Blender from "./pages/Blender";
 import ReactPage from "./pages/ReactWeb";
 import ReactApp from "./pages/ReactApp";
 import ReactWeb from "./pages/ReactWeb";
+import Contact from "./pages/Contact";
 
 Amplify.configure(awsExports);
 
@@ -45,7 +46,8 @@ const App = () => {
               element={<Home checked={checked} toggleChecked={toggleChecked} />}
             />
             <Route path="/Blender" element={<Blender />} />
-            <Route path="/React" element={<ReactWeb />} />{" "}
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/React" element={<ReactWeb />} />
             <Route path="/ReactNative" element={<ReactApp />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
