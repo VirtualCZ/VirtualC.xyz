@@ -36,6 +36,21 @@
   margin: auto -15px;
   flex-wrap: wrap;
 }
+.card-link-holder {
+  flex: 4 !important;
+}
+
+.card.card-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card.card-logo img {
+  max-width: 100%;
+  border-radius: 5px;
+  border-radius: 5px;
+}
 
 @media (max-width: 767px) {
   .card-holder .card {

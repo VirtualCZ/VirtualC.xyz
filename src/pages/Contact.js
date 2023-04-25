@@ -6,20 +6,56 @@ const Contact = () => {
     <>
       <CardHolder>
         <Card className="card-logo">
-          <img src="logos/blender_logo.svg" alt="React logo" />
-          <p>Facebook</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="Facebook logo"
+          />
+        </Card>
+        <Card className="card-link-holder">
+          <p>
+            <a href="https://www.facebook.com/SomeoneCZ/">Facebook</a>
+          </p>
+        </Card>
+      </CardHolder>
+      <CardHolder>
+        <Card className="card-link-holder">
+          <p>
+            <a href="https://www.instagram.com/tomas_v_chill/">Instagram</a>
+          </p>
         </Card>
         <Card className="card-logo">
-          <img src="logos/blender_logo.svg" alt="React logo" />
-          <p>Instagram</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+            alt="Instagram logo"
+          />
+        </Card>
+      </CardHolder>
+      <CardHolder>
+        <Card className="card-logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+            alt="Gmail logo"
+          />
+        </Card>
+        <Card className="card-link-holder">
+          <p>
+            <a href="mailto:thomas2654cz@gmail.com?subject=From%20virtual.xyz">
+              Mail
+            </a>
+          </p>
+        </Card>
+      </CardHolder>
+      <CardHolder>
+        <Card className="card-link-holder">
+          <p>
+            <a href="https://github.com/VirtualCZ/">GitHub</a>
+          </p>
         </Card>
         <Card className="card-logo">
-          <img src="logos/blender_logo.svg" alt="React logo" />
-          <p>Email</p>
-        </Card>
-        <Card className="card-logo">
-          <img src="logos/blender_logo.svg" alt="React logo" />
-          <p>GitHub</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            alt="GitHub logo"
+          />
         </Card>
       </CardHolder>
     </>
