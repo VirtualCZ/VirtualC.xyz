@@ -1,6 +1,17 @@
 import "./TextInput.css";
 
-const TextInput = ({ label, placeholder, onChange }) => {
+const TextInput = ({
+  label = "unnamed",
+  unit = "no unit",
+  placeholder,
+  onChange = () => {
+    console.log(
+      "Please include an onChange action.",
+      "label: " + label,
+      "unit: " + unit
+    );
+  },
+}) => {
   return (
     <div className="input-container">
       <div className="input-row">

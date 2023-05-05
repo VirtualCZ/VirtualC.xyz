@@ -80,3 +80,7 @@
   border-radius: 50%;
   z-index: 3;
 }
+
+.custom-slider-label {
+  margin-bottom: 10px;
+}

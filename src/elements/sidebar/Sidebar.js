@@ -7,6 +7,7 @@ import {
 } from "react-icons/ri";
 import { TbBrandBlender } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
+import { ImLab } from "react-icons/im";
 import "./Sidebar.css";
 
 function Sidebar() {
@@ -31,6 +32,11 @@ function Sidebar() {
         <li>
           <NavLink to="/Blender">
             <TbBrandBlender /> <p>Blender</p>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/niccalc">
+            <ImLab /> <p>NicCalc</p>
           </NavLink>
         </li>
         <li>
