@@ -84,3 +84,7 @@
 .custom-slider-label {
   margin-bottom: 10px;
 }
+
+.custom-slider .slider-unit {
+  margin-left: 15px;
+}

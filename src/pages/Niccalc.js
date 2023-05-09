@@ -114,7 +114,19 @@ const NicCalc = () => {
 
     // console.log(t_nicotine_PG);
     // console.log(t_nicotine_VG);
-  }, [desired, nicotine.VG, nicotine.PG, nicotine.nic_base_mg_ml, pricePerMl]);
+  }, [
+    desired,
+    nicotine.VG,
+    nicotine.PG,
+    nicotine.nic_base_mg_ml,
+    pricePerMl,
+    PG,
+    VG,
+    aroma,
+    ice,
+    total,
+    nicotine,
+  ]);
 
   return (
     <>
@@ -333,7 +345,7 @@ const NicCalc = () => {
                 ],
               ]}
             />
-            <table>
+            {/* <table>
               <tr>
                 <th></th>
                 <th>
@@ -387,11 +399,11 @@ const NicCalc = () => {
                       : 1)}
                 </td>
               </tr>
-            </table>
+            </table> */}
             <h2>
               Profit:{" "}
-              {Math.round(
-                ((total.PG +
+              {(Math.round(
+                (total.PG +
                   total.VG +
                   total.ice +
                   total.aroma +
@@ -405,9 +417,10 @@ const NicCalc = () => {
                     total.ice +
                     total.aroma +
                     total.nicotine +
-                    pricePerMl.additional)) *
-                  100
-              ) / 100}
+                    pricePerMl.additional)
+              ) *
+                100) /
+                100}
               $
             </h2>
           </section>

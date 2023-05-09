@@ -9,7 +9,9 @@ p,
 button,
 li,
 label,
-a {
+a,
+td,
+th {
   font-size: 14px;
   font-weight: normal;
 }
@@ -42,6 +44,10 @@ p strong {
 h1 {
   font-size: 26px;
   font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 5px;
 }
 
 .text-input {

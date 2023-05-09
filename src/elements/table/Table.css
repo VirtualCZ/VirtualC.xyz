@@ -1,0 +1,25 @@
+table {
+  border-radius: 4px;
+  overflow: hidden;
+  border-collapse: collapse;
+  background-color: var(--text-input-bg);
+  margin-bottom: 5px;
+}
+
+th {
+  border-bottom: 2px solid var(--element-border);
+}
+
+td,
+th {
+  padding: 5px 10px;
+}
+
+td:hover,
+th:hover {
+  background-color: var(--text-disabled);
+}
+
+tr:hover {
+  background-color: var(--text-input-bg-hover);
+}

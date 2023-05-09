@@ -1,3 +1,4 @@
+import "./Table.css";
 const Table = ({
   th = ["heading"],
   tdtd = [["Work", "weij"], ["Eat"], ["Commute"], ["Play Game"], ["Sleep"]],
