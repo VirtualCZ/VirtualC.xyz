@@ -64,16 +64,16 @@ const Home = ({ checked, toggleChecked }) => {
 
       <CardHolder>
         <Card>
-          <p>jfdidfiosjfod</p>
+          <p>Test</p>
         </Card>
         <Card>
-          <p>jfdidfiosjfod</p>
+          <p>of</p>
         </Card>
         <Card>
-          <p>jfdidfiosjfod</p>
+          <p>card (overflow)(overflow)(overflow)(overflow)(overflow)</p>
         </Card>
         <Card>
-          <p>jfdidfiosjfod</p>
+          <p>row</p>
         </Card>
       </CardHolder>
 
