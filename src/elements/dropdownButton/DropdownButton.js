@@ -12,6 +12,7 @@ const DropdownButton = ({
   const dropdownRef = useRef();
 
   const handleOptionClick = (option) => {
+    option.onClick();
     if (selectable) {
       setSelectedOption(option);
     }

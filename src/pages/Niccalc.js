@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
-import NumInput from "../elements/numInput/NumInput";
-import SliderInput from "../elements/sliderInput/sliderInput";
-import CardHolder from "../elements/card/CardHolder";
-import Card from "../elements/card/Card";
-import Slider from "../elements/slider/Slider";
-import TextInput from "../elements/textInput/TextInput";
-import Table from "../elements/table/Table";
+import { useEffect, useState } from 'react';
+import NumInput from '../elements/numInput/NumInput';
+import SliderInput from '../elements/sliderInput/sliderInput';
+import CardHolder from '../elements/card/CardHolder';
+import Card from '../elements/card/Card';
+import Slider from '../elements/slider/Slider';
+import TextInput from '../elements/textInput/TextInput';
+import Table from '../elements/table/Table';
+import { useTranslation } from 'react-i18next';
 
 const NicCalc = () => {
+  const { t } = useTranslation();
+  document.title = 'NicCalc - VirtualC';
   const [desired, setDesired] = useState({
     ml: 0,
     VG: 50,
@@ -130,14 +133,14 @@ const NicCalc = () => {
 
   return (
     <>
-      <h1>NicCalc - E-liquid calculator</h1>
+      <h1>NicCalc - {t('niccalc.heading')}</h1>
       <CardHolder>
         <Card>
-          <section className="mixing">
-            <section className="liquid">
-              <h2>E-Liquid base</h2>
+          <section className='mixing'>
+            <section className='liquid'>
+              <h2>{t('niccalc.base.text')}</h2>
               <TextInput
-                label="Desired e-liquid amount"
+                label={t('niccalc.base.amount')}
                 placeholder={30}
                 onChange={(e) => {
                   setDesired({
@@ -145,13 +148,13 @@ const NicCalc = () => {
                     ml: parseFloat(e.target.value),
                   });
                 }}
-                unit="ml"
+                unit='ml'
               />
 
               <Slider
                 value={desired.VG}
                 step={10}
-                label="Desired VG/PG ratio"
+                label={t('niccalc.base.ratio')}
                 onChange={(e) => {
                   setDesired({
                     ...desired,
@@ -163,10 +166,10 @@ const NicCalc = () => {
               />
             </section>
 
-            <section className="aroma">
-              <h2>Aroma</h2>
+            <section className='aroma'>
+              <h2>{t('niccalc.aroma.text')}</h2>
               <TextInput
-                label="Desired aroma strength"
+                label={t('niccalc.aroma.strength')}
                 placeholder={12}
                 onChange={(e) => {
                   setDesired({
@@ -174,14 +177,14 @@ const NicCalc = () => {
                     aroma: parseFloat(e.target.value),
                   });
                 }}
-                unit="%"
+                unit='%'
               />
             </section>
 
-            <section className="ice">
-              <h2>Ice</h2>
+            <section className='ice'>
+              <h2>{t('niccalc.ice.text')}</h2>
               <TextInput
-                label="Desired ice strength"
+                label={t('niccalc.ice.strength')}
                 placeholder={2}
                 onChange={(e) => {
                   setDesired({
@@ -189,14 +192,14 @@ const NicCalc = () => {
                     ice: parseFloat(e.target.value),
                   });
                 }}
-                unit="%"
+                unit='%'
               />
             </section>
 
-            <section className="nicotine">
-              <h2>Nicotine</h2>
+            <section className='nicotine'>
+              <h2>{t('niccalc.nicotine.text')}</h2>
               <TextInput
-                label="Desired nicotine strength"
+                label={t('niccalc.nicotine.desired')}
                 placeholder={8}
                 onChange={(e) => {
                   setDesired({
@@ -204,10 +207,10 @@ const NicCalc = () => {
                     nicotine: parseFloat(e.target.value),
                   });
                 }}
-                unit="mg/ml"
+                unit='mg/ml'
               />
               <TextInput
-                label="Nicotine base strength"
+                label={t('niccalc.nicotine.base')}
                 placeholder={20}
                 onChange={(e) => {
                   setNicotine({
@@ -215,10 +218,10 @@ const NicCalc = () => {
                     nic_base_mg_ml: parseFloat(e.target.value),
                   });
                 }}
-                unit="mg/ml"
+                unit='mg/ml'
               />
               <Slider
-                label="Nicotine base VG/PG ratio"
+                label={t('niccalc.nicotine.ratio')}
                 onChange={(e) => {
                   setNicotine({
                     ...nicotine,
@@ -226,20 +229,20 @@ const NicCalc = () => {
                     PG: 100 - parseFloat(e.target.value),
                   });
                 }}
-                step="10"
-                min="10"
-                max="90"
-                unit={nicotine.VG + "/" + nicotine.PG}
+                step='10'
+                min='10'
+                max='90'
+                unit={nicotine.VG + '/' + nicotine.PG}
                 value={nicotine.VG}
               />
             </section>
           </section>
         </Card>
         <Card>
-          <section className="pricing">
-            <h2>Set prices per ml</h2>
+          <section className='pricing'>
+            <h2>{t('niccalc.pricing')}</h2>
             <TextInput
-              label="PG"
+              label='PG'
               placeholder={0.19}
               onChange={(e) => {
                 setPricePerMl({
@@ -247,10 +250,10 @@ const NicCalc = () => {
                   PG: parseFloat(e.target.value),
                 });
               }}
-              unit="$/ml"
+              unit='$/ml'
             />
             <TextInput
-              label="VG"
+              label='VG'
               placeholder={0.08}
               onChange={(e) => {
                 setPricePerMl({
@@ -258,10 +261,10 @@ const NicCalc = () => {
                   VG: parseFloat(e.target.value),
                 });
               }}
-              unit="$/ml"
+              unit='$/ml'
             />
             <TextInput
-              label="Aroma"
+              label={t('niccalc.aroma.text')}
               placeholder={10}
               onChange={(e) => {
                 setPricePerMl({
@@ -269,10 +272,10 @@ const NicCalc = () => {
                   aroma: parseFloat(e.target.value),
                 });
               }}
-              unit="$/ml"
+              unit='$/ml'
             />
             <TextInput
-              label="Ice"
+              label={t('niccalc.ice.text')}
               placeholder={10}
               onChange={(e) => {
                 setPricePerMl({
@@ -280,10 +283,10 @@ const NicCalc = () => {
                   ice: parseFloat(e.target.value),
                 });
               }}
-              unit="$/ml"
+              unit='$/ml'
             />
             <TextInput
-              label="Nicotine"
+              label={t('niccalc.nicotine.text')}
               placeholder={3}
               onChange={(e) => {
                 setPricePerMl({
@@ -291,10 +294,10 @@ const NicCalc = () => {
                   nicotine: parseFloat(e.target.value),
                 });
               }}
-              unit="$/ml"
+              unit='$/ml'
             />
             <TextInput
-              label="Additional costs"
+              label={t('niccalc.add_costs')}
               placeholder={10}
               onChange={(e) => {
                 setPricePerMl({
@@ -302,10 +305,10 @@ const NicCalc = () => {
                   additional: parseFloat(e.target.value),
                 });
               }}
-              unit="$"
+              unit='$'
             />
             <TextInput
-              label="Profit margin"
+              label={t('niccalc.margin')}
               placeholder={10}
               onChange={(e) => {
                 setPricePerMl({
@@ -313,21 +316,29 @@ const NicCalc = () => {
                   profit_perc: parseFloat(e.target.value),
                 });
               }}
-              unit="%"
+              unit='%'
             />
           </section>
         </Card>
       </CardHolder>
       <CardHolder>
         <Card>
-          <section className="calculations">
-            <h2>Final results</h2>
+          <section className='calculations'>
+            <h2>{t('niccalc.results.text')}</h2>
             <Table
-              th={["", "PG", "VG", "Ice", "Aroma", "Nicotine", "Total"]}
+              th={[
+                '',
+                'PG',
+                'VG',
+                t('niccalc.ice.text'),
+                t('niccalc.aroma.text'),
+                t('niccalc.nicotine.text'),
+                t('niccalc.results.total'),
+              ]}
               tdtd={[
-                ["ml:", PG, VG, ice, aroma, nicotine.ml, desired.ml],
+                ['ml:', PG, VG, ice, aroma, nicotine.ml, desired.ml],
                 [
-                  "Price:",
+                  `${t('niccalc.results.price')}:`,
                   total.PG,
                   total.VG,
                   total.ice,
@@ -401,7 +412,7 @@ const NicCalc = () => {
               </tr>
             </table> */}
             <h2>
-              Profit:{" "}
+              {t('niccalc.results.profit')}:{' '}
               {(Math.round(
                 (total.PG +
                   total.VG +
@@ -425,7 +436,7 @@ const NicCalc = () => {
             </h2>
           </section>
 
-          <section className="errors">
+          <section className='errors'>
             {/* <Error
               error={[
                 nicotine.nic_base_mg_ml < desired.nicotine

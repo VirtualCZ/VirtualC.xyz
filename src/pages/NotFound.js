@@ -1,20 +1,12 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const NotFound = () => {
-  const navigate = useNavigate();
-  document.title = "404 Not found";
-  useEffect(() => {
-    setTimeout(() => {
-      //   navigate("/");
-      navigate(-1); //    jako kdybych dal zpet, můžu i -2, ...
-    }, 2500);
-  }, [navigate]);
-
+  const { t } = useTranslation();
+  document.title = '404 - VirtualC';
   return (
     <div>
-      <p>404 error</p>
-      <p>Route not found</p>
+      <p>{t('404.error')}</p>
+      <p>{t('404.text')}</p>
     </div>
   );
 };

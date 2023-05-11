@@ -1,31 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import CheckBox from "../elements/checkbox/CheckBox";
-import DropdownButton from "../elements/dropdownButton/DropdownButton";
-import RadioButton from "../elements/radioButton/RadioButton";
-import Rating from "../elements/rating/Rating";
-import Slider from "../elements/slider/Slider";
-import TextInput from "../elements/textInput/TextInput";
-import ToggleSwitch from "../elements/toggleSwitch/ToggleSwitch";
-import News from "../elements/news/News";
-import { API } from "aws-amplify";
-import Construction from "../elements/Construction";
-import Card from "../elements/card/Card";
-import CardHolder from "../elements/card/CardHolder";
+import CheckBox from '../elements/checkbox/CheckBox';
+import DropdownButton from '../elements/dropdownButton/DropdownButton';
+import RadioButton from '../elements/radioButton/RadioButton';
+import Rating from '../elements/rating/Rating';
+import Slider from '../elements/slider/Slider';
+import TextInput from '../elements/textInput/TextInput';
+import ToggleSwitch from '../elements/toggleSwitch/ToggleSwitch';
+import News from '../elements/news/News';
+import { API } from 'aws-amplify';
+import Construction from '../elements/Construction';
+import Card from '../elements/card/Card';
+import CardHolder from '../elements/card/CardHolder';
+import { useTranslation } from 'react-i18next';
 
 const Home = ({ checked, toggleChecked }) => {
-  document.title = "VirtualC - Home";
-  const [inputValue, setInputValue] = useState("");
+  const { t } = useTranslation();
+  document.title = `${t('navigation.home')} - VirtualC`;
+  const [inputValue, setInputValue] = useState('');
   const [sliderValue, setSliderValue] = useState(50);
   const [ratingValue, setRatingValue] = useState(0);
 
-  const myAPI = "api949e256f";
-  const path = "/customers";
+  const myAPI = 'api949e256f';
+  const path = '/customers';
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputValue);
-    console.log("Star rating: ", ratingValue);
+    console.log('Star rating: ', ratingValue);
     // Do whatever you want with the input and rating values here
   };
 
@@ -37,13 +39,13 @@ const Home = ({ checked, toggleChecked }) => {
   //   setRatingValue(event.target.value);
   // };
 
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
   const [customers, setCustomers] = useState([]);
 
   //Function to fetch from our backend and update customers array
   function getCustomer(e) {
     let customerId = e.input;
-    API.get(myAPI, path + "/" + customerId)
+    API.get(myAPI, path + '/' + customerId)
       .then((response) => {
         console.log(response);
         let newCustomers = [...customers];
@@ -58,7 +60,7 @@ const Home = ({ checked, toggleChecked }) => {
   return (
     <>
       {/* <Construction /> */}
-      <h1>Home</h1>
+      <h1>{t('navigation.home')}</h1>
 
       <CardHolder>
         <Card>
@@ -88,138 +90,138 @@ const Home = ({ checked, toggleChecked }) => {
             <Rating value={ratingValue} setValue={setRatingValue} />
 
             <DropdownButton
-              name="Normal"
+              name='Normal'
               options={[
                 {
-                  option: "Option 1",
+                  option: 'Option 1',
                   onClick: () => {
-                    console.log("skskssk");
+                    console.log('skskssk');
                   },
                 },
                 {
-                  option: "Option 2",
-                  href: "https://www.google.com/",
+                  option: 'Option 2',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("pspsps");
+                    console.log('pspsps');
                   },
                 },
                 {
-                  option: "Option 3",
-                  href: "https://www.google.com/",
+                  option: 'Option 3',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("grgrgr");
+                    console.log('grgrgr');
                   },
                 },
               ]}
             />
             <DropdownButton
-              name="Centered"
+              name='Centered'
               centered={true}
               options={[
                 {
-                  option: "Option 1 center",
+                  option: 'Option 1 center',
                   onClick: () => {
-                    console.log("skskssk");
+                    console.log('skskssk');
                   },
                 },
                 {
-                  option: "Option 2",
-                  href: "https://www.google.com/",
+                  option: 'Option 2',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("pspsps");
+                    console.log('pspsps');
                   },
                 },
                 {
-                  option: "Option 3",
-                  href: "https://www.google.com/",
+                  option: 'Option 3',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("grgrgr");
+                    console.log('grgrgr');
                   },
                 },
               ]}
             />
             <DropdownButton
-              name="Selectable"
+              name='Selectable'
               selectable={true}
               options={[
                 {
-                  option: "Option 1",
+                  option: 'Option 1',
                   onClick: () => {
-                    console.log("skskssk");
+                    console.log('skskssk');
                   },
                 },
                 {
-                  option: "Option 2",
-                  href: "https://www.google.com/",
+                  option: 'Option 2',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("pspsps");
+                    console.log('pspsps');
                   },
                 },
                 {
-                  option: "Option 3",
-                  href: "https://www.google.com/",
+                  option: 'Option 3',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("grgrgr");
+                    console.log('grgrgr');
                   },
                 },
               ]}
             />
 
             <DropdownButton
-              name="Selectable centered"
+              name='Selectable centered'
               selectable={true}
               centered={true}
               options={[
                 {
-                  option: "Option 1 center",
+                  option: 'Option 1 center',
                   onClick: () => {
-                    console.log("skskssk");
+                    console.log('skskssk');
                   },
                 },
                 {
-                  option: "Option 2",
-                  href: "https://www.google.com/",
+                  option: 'Option 2',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("pspsps");
+                    console.log('pspsps');
                   },
                 },
                 {
-                  option: "Option 3",
-                  href: "https://www.google.com/",
+                  option: 'Option 3',
+                  href: 'https://www.google.com/',
                   onClick: () => {
-                    console.log("grgrgr");
+                    console.log('grgrgr');
                   },
                 },
               ]}
             />
 
             <ToggleSwitch
-              label="Toggle Theme"
-              id="theme-toggle"
+              label='Toggle Theme'
+              id='theme-toggle'
               checked={checked}
               onChange={toggleChecked}
             />
 
-            <ToggleSwitch label="Toggle Switch" id="switch-toggle" />
+            <ToggleSwitch label='Toggle Switch' id='switch-toggle' />
             <RadioButton />
 
             <CheckBox />
 
             <TextInput
-              label="Name:"
-              placeholder="Enter your name"
+              label='Name:'
+              placeholder='Enter your name'
               value={inputValue}
               onChange={handleInputChange}
             />
 
-            <input type="submit" value="Submit" />
+            <input type='submit' value='Submit' />
           </form>
         </Card>
       </CardHolder>
 
       <CardHolder>
         <Card>
-          <h1 id="text-output">{inputValue}</h1>
+          <h1 id='text-output'>{inputValue}</h1>
         </Card>
       </CardHolder>
 
@@ -231,13 +233,13 @@ const Home = ({ checked, toggleChecked }) => {
 
       <CardHolder>
         <Card>
-          <h2 className="xl">1920 (xl)</h2>
-          <h2 className="md">1440 (md)</h2>
-          <h2 className="sm">960 (sm)</h2>
+          <h2 className='xl'>1920 (xl)</h2>
+          <h2 className='md'>1440 (md)</h2>
+          <h2 className='sm'>960 (sm)</h2>
 
           <p>
-            Normal <a href="/">Strong</a> p text and{" "}
-            <a className="disabled" href="/">
+            Normal <a href='/'>Strong</a> p text and{' '}
+            <a className='disabled' href='/'>
               disabled
             </a>
             hyperlink
@@ -249,13 +251,13 @@ const Home = ({ checked, toggleChecked }) => {
           <p>
             Normal <strong>Strong</strong> p text
           </p>
-          <p className="caption">Caption text</p>
+          <p className='caption'>Caption text</p>
 
           <h2>API </h2>
           <div>
             <input
-              placeholder="customer id"
-              type="text"
+              placeholder='customer id'
+              type='text'
               value={input}
               onChange={(e) => setInput(e.target.value)}
             />
@@ -266,7 +268,7 @@ const Home = ({ checked, toggleChecked }) => {
           </button>
 
           <h2
-            style={{ visibility: customers.length > 0 ? "visible" : "hidden" }}
+            style={{ visibility: customers.length > 0 ? 'visible' : 'hidden' }}
           >
             Response
           </h2>
@@ -274,7 +276,7 @@ const Home = ({ checked, toggleChecked }) => {
             return (
               <div key={thisCustomer.customerId}>
                 <span>
-                  <b>CustomerId:</b> {thisCustomer.customerId} -{" "}
+                  <b>CustomerId:</b> {thisCustomer.customerId} -{' '}
                   <b>CustomerName</b>: {thisCustomer.customerName}
                 </span>
               </div>
