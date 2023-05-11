@@ -19,7 +19,7 @@
 }
 
 .sidebar-container .active:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -76,4 +76,12 @@
     height: 19px;
     margin-right: 0;
   }
+}
+
+.sidebar-bottom .dropdown-menu {
+  transform: translateY(-102%);
+  top: 0;
+}
+.sidebar-bottom .dropdown-menu li {
+  margin: 4px;
 }

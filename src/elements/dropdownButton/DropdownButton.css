@@ -19,7 +19,7 @@
 }
 
 .dropdown-toggle::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: 0.4em;
   height: 0.4em;
@@ -36,7 +36,7 @@
   display: none;
   position: absolute;
   z-index: 1;
-  top: 100%;
+  top: 102%;
   left: 0;
   min-width: 100px;
   margin: 4px 0 0;
