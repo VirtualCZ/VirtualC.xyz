@@ -4,6 +4,13 @@
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--main-layout-bg);
+  transition: transform 0.3s ease;
+  z-index: 100;
 }
 
 .sidebar-container ul {
@@ -64,24 +71,91 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 992px) {
-  .sidebar-container {
-    max-width: 45px;
-    padding: 5px;
-  }
-  .sidebar-container p {
-    display: none;
-  }
-  .sidebar-container svg {
-    height: 19px;
-    margin-right: 0;
-  }
+.burger-menu {
+  display: none;
 }
 
 .sidebar-bottom .dropdown-menu {
-  transform: translateY(-102%);
   top: 0;
+  -webkit-transform: translateY(-102%);
+  transform: translateY(-102%);
 }
-.sidebar-bottom .dropdown-menu li {
-  margin: 4px;
+.close-menu {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .close-menu {
+    display: block;
+  }
+
+  .sidebar-container {
+    display: none;
+  }
+
+  .sidebar-container.open {
+    position: absolute;
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .sidebar-container.closed {
+    position: absolute;
+    display: flex;
+    transform: translateX(-100%);
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    cursor: pointer;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    width: max-content;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--sidebar-bg);
+    z-index: 101;
+  }
+
+  .burger-menu p {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .burger-menu .burger-icon::before,
+  .burger-menu .burger-icon::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .burger-menu .burger-icon::before {
+    top: 7px;
+  }
+
+  .burger-menu .burger-icon::after {
+    top: 15px;
+  }
+
+  .burger-menu.open .burger-icon::before {
+    transform: rotate(45deg);
+    top: 15px;
+  }
+
+  .burger-menu.open .burger-icon::after {
+    transform: rotate(-45deg);
+    top: 15px;
+  }
+
+  .burger-menu.open .burger-icon span {
+    opacity: 0;
+  }
 }

@@ -1,5 +1,7 @@
 {
     "navigation": {
+        "open": "Menü öffnen",
+        "close": "Menü schließen",
         "home": "Homepage",
         "contact": "Kontakte",
         "settings": "Einstellungen"
