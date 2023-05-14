@@ -2,6 +2,7 @@
   width: 250px;
   padding: 15px;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -85,6 +86,13 @@
 }
 
 @media (max-width: 992px) {
+  .sidebar-darken {
+    position: fixed;
+    background-color: #000000cc;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+  }
   .close-menu {
     display: block;
   }
@@ -94,13 +102,13 @@
   }
 
   .sidebar-container.open {
-    position: absolute;
+    position: fixed;
     display: flex;
     transform: translateX(0);
   }
 
   .sidebar-container.closed {
-    position: absolute;
+    position: fixed;
     display: flex;
     transform: translateX(-100%);
   }
@@ -125,37 +133,5 @@
     margin-left: 10px;
     font-size: 14px;
     font-weight: bold;
-  }
-
-  .burger-menu .burger-icon::before,
-  .burger-menu .burger-icon::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-  }
-
-  .burger-menu .burger-icon::before {
-    top: 7px;
-  }
-
-  .burger-menu .burger-icon::after {
-    top: 15px;
-  }
-
-  .burger-menu.open .burger-icon::before {
-    transform: rotate(45deg);
-    top: 15px;
-  }
-
-  .burger-menu.open .burger-icon::after {
-    transform: rotate(-45deg);
-    top: 15px;
-  }
-
-  .burger-menu.open .burger-icon span {
-    opacity: 0;
   }
 }

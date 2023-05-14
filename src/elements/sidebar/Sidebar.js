@@ -46,6 +46,11 @@ function Sidebar() {
         </a>
       )}
 
+      <div
+        onClick={toggleMenu}
+        className={`${isMenuOpen ? 'sidebar-darken' : ''}`}
+      ></div>
+
       <nav className={`sidebar-container ${isMenuOpen ? 'open' : 'closed'}`}>
         <ul>
           {isMenuOpen && (
@@ -58,37 +63,37 @@ function Sidebar() {
           )}
 
           <li>
-            <NavLink exact to='/'>
+            <NavLink exact to='/' onClick={toggleMenu}>
               <RiHomeLine /> <p>{t('navigation.home')}</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/React'>
+            <NavLink to='/React' onClick={toggleMenu}>
               <FaReact /> <p>React</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/ReactNative'>
+            <NavLink to='/ReactNative' onClick={toggleMenu}>
               <FaReact /> <p>React Native</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/Blender'>
+            <NavLink to='/Blender' onClick={toggleMenu}>
               <TbBrandBlender /> <p>Blender</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/niccalc'>
+            <NavLink to='/niccalc' onClick={toggleMenu}>
               <ImLab /> <p>NicCalc</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/Contact'>
+            <NavLink to='/Contact' onClick={toggleMenu}>
               <RiInformationLine /> <p>{t('navigation.contact')}</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to='/404'>
+            <NavLink to='/404' onClick={toggleMenu}>
               <RiErrorWarningLine /> <p>404</p>
             </NavLink>
           </li>
@@ -121,7 +126,7 @@ function Sidebar() {
             />
           </li>
           <li>
-            <NavLink to='/settings'>
+            <NavLink to='/settings' onClick={toggleMenu}>
               <RiSettingsLine /> <p>{t('navigation.settings')}</p>
             </NavLink>
           </li>
