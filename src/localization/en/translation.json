@@ -1,0 +1,76 @@
+{
+    "navigation": {
+        "open": "Open menu",
+        "close": "Close menu",
+        "home": "Homepage",
+        "contact": "Contacts",
+        "settings": "Settings"
+    },
+    "skill": {
+        "novice": "Novice",
+        "developing": "Developing",
+        "proficient": "Proficient",
+        "skilled": "Skilled",
+        "advanced": "Advanced"
+    },
+    "react": {
+        "1": "As an experienced web developer, I am proficient in using the JavaScript library React.js to build dynamic and interactive user interfaces for web applications. With my medium to advanced level of expertise in React, I am able to effectively code webpages using this powerful and popular front-end framework.",
+        "2": "React.js is a declarative, component-based library that allows for efficient rendering of UI elements and easy management of state and props. I have extensive experience in building single-page applications (SPAs) with React, utilizing its core concepts such as virtual DOM, JSX syntax, and React hooks.",
+        "3": "In addition to building SPAs, I am also proficient in integrating React.js into larger web projects, using tools like React Router for client-side routing. I regularly utilize libraries such as React-icons to add icons to my applications.",
+        "4": "I am able to work with React in conjunction with other front-end technologies such as CSS and LESS. I am also comfortable using popular UI libraries such as Bootstrap and Tailwind, which I can leverage to create custom UI components that are intuitive, responsive, and visually appealing. For example, the container used on this page is inspired by the Bootstrap container.",
+        "5": "One of the most exciting aspects of working with React.js is the ability to build reusable and scalable components. I have a keen eye for design and am able to create custom UI components that fit seamlessly into any web application.",
+        "6": "I am also familiar with the concept of theming in React, and have implemented it in projects. For example, this page is inspired by the design of Windows 11 and can be easily customized with different themes that can be set from settings.",
+        "7": "Overall, my React.js skills are a valuable asset to any web development team, and I am confident in my ability to build high-quality and efficient web applications using this powerful front-end framework."
+    },
+    "react_native": {
+        "1": "As an experienced mobile app developer, I am proficient in using React Native to build dynamic and interactive user interfaces for iOS and Android applications. With my medium to advanced level of expertise in React Native, I am able to effectively code mobile apps using this powerful and popular front-end framework.",
+        "2": "React Native is a declarative, component-based library that allows for efficient rendering of UI elements and easy management of state and props. I have extensive experience in building complex mobile applications with React Native, utilizing its core concepts such as virtual DOM, JSX syntax, and React hooks.",
+        "3": "In addition to building mobile apps, I am also proficient in integrating React Native into larger projects, using tools like NativeBase for UI design and components. NativeBase is an accessible, utility-first component library that allows for easy implementation of themes and custom styling.",
+        "4": "I am able to work with React Native in conjunction with other front-end technologies such as JavaScript and StyleSheets. I have a keen eye for design and am able to create custom UI components that fit seamlessly into any mobile application.",
+        "5": "One of the most exciting aspects of working with React Native is the ability to build reusable and scalable components. With NativeBase, I can leverage its pre-built UI components to create intuitive, responsive, and visually appealing mobile applications.",
+        "6": "Overall, my React Native skills and experience with NativeBase are a valuable asset to any mobile development team, and I am confident in my ability to build high-quality and efficient mobile applications using this powerful front-end framework."
+    },
+    "blender": {
+        "1": "As an experienced 3D modeler, I am proficient in using Blender to create dynamic and high-quality 3D models for a variety of purposes. With my medium-level expertise in Blender, I am able to effectively create 3D models for animations, 3D printing, and other basic uses.",
+        "2": "One of the key strengths of Blender is its ability to create realistic materials for 3D models. While I have the ability to create basic materials myself, I often utilize BlenderKit, a powerful online database of high-quality materials that can be easily integrated into my projects.",
+        "3": "In addition to modeling, I am also able to use Blender to create animations that bring models to life. I am familiar with cloth simulation, hooks, and other animation tools that allow me to create realistic movements and interactions within the 3D environment.",
+        "4": "Blender also offers powerful simulation capabilities, such as cloth simulation and particle effects. I have experience in utilizing these features to create stunning visual effects in my projects.",
+        "5": "In addition to my technical skills, I have a keen eye for design and am able to create 3D models that are visually appealing and aesthetically pleasing. I am also comfortable working with clients to understand their specific needs and incorporate those into my designs.",
+        "6": "Overall, my skills in Blender are a valuable asset to any 3D modeling team, and I am confident in my ability to create high-quality, visually stunning 3D models using this powerful software."
+    },
+    "404": {
+        "error": "404 error",
+        "text": "Page not found"
+    },
+    "niccalc": {
+        "heading": "The calculator for mixing e-liquids",
+        "base": {
+            "text": "E-Liquid base",
+            "amount": "Desired e-liquid amount",
+            "ratio": "Desired VG/PG ratio"
+        },
+        "aroma": {
+            "text": "Aroma",
+            "strength": "Desired aroma strength"
+        },
+        "ice": {
+            "text": "Ice",
+            "strength": "Desired ice strength"
+        },
+        "nicotine": {
+            "text": "Nicotine",
+            "desired": "Desired nicotine strength",
+            "base": "Nicotine base strength",
+            "ratio": "Nicotine base VG/PG ratio"
+        },
+        "pricing": "Set prices per ml",
+        "add_costs": "Additional costs",
+        "margin": "Profit margin",
+        "results": {
+            "text": "Final results",
+            "price": "Price",
+            "profit": "Profit",
+            "total": "Total:"
+        }
+    }
+}

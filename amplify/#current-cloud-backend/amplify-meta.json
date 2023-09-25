@@ -1,0 +1,77 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-virtualcxyz-dev-183029-authRole",
+            "UnauthRoleArn": "arn:aws:iam::391905652149:role/amplify-virtualcxyz-dev-183029-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::391905652149:role/amplify-virtualcxyz-dev-183029-authRole",
+            "Region": "eu-north-1",
+            "DeploymentBucketName": "amplify-virtualcxyz-dev-183029-deployment",
+            "UnauthRoleName": "amplify-virtualcxyz-dev-183029-unauthRole",
+            "StackName": "amplify-virtualcxyz-dev-183029",
+            "StackId": "arn:aws:cloudformation:eu-north-1:391905652149:stack/amplify-virtualcxyz-dev-183029/ae128720-dae1-11ed-8373-0a0540ecfdfc",
+            "AmplifyAppId": "d1891a6fa5wm1n"
+        }
+    },
+    "function": {
+        "virtualcxyz5e03ab19": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "lastBuildTimeStamp": "2023-04-14T16:46:36.701Z",
+            "lastBuildType": "PROD",
+            "lastPackageTimeStamp": "2023-04-14T16:46:36.751Z",
+            "distZipFilename": "virtualcxyz5e03ab19-4c464138574949613269-build.zip",
+            "s3Bucket": {
+                "deploymentBucketName": "amplify-virtualcxyz-dev-183029-deployment",
+                "s3Key": "amplify-builds/virtualcxyz5e03ab19-4c464138574949613269-build.zip"
+            },
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-virtualcxyz-dev-183029-deployment/amplify-cfn-templates/function/virtualcxyz5e03ab19-cloudformation-template.json",
+                "logicalId": "functionvirtualcxyz5e03ab19"
+            },
+            "lastPushTimeStamp": "2023-04-14T16:48:42.287Z",
+            "output": {
+                "LambdaExecutionRoleArn": "arn:aws:iam::391905652149:role/virtualcxyzLambdaRole3a154e2c-dev",
+                "Region": "eu-north-1",
+                "Arn": "arn:aws:lambda:eu-north-1:391905652149:function:virtualcxyz5e03ab19-dev",
+                "Name": "virtualcxyz5e03ab19-dev",
+                "LambdaExecutionRole": "virtualcxyzLambdaRole3a154e2c-dev"
+            },
+            "lastPushDirHash": "KFJDpmXWwVwhAKkJhl2JYWuQwig="
+        }
+    },
+    "api": {
+        "api949e256f": {
+            "service": "API Gateway",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "virtualcxyz5e03ab19",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ],
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-virtualcxyz-dev-183029-deployment/amplify-cfn-templates/api/api949e256f-cloudformation-template.json",
+                "logicalId": "apiapi949e256f"
+            },
+            "lastPushTimeStamp": "2023-04-14T16:48:42.287Z",
+            "output": {
+                "ApiName": "api949e256f",
+                "RootUrl": "https://ekdi7ymsw4.execute-api.eu-north-1.amazonaws.com/dev",
+                "ApiId": "ekdi7ymsw4"
+            },
+            "lastPushDirHash": "3mhNnk/6UyQ8F0OGUQZa9G76qi4="
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd",
+            "lastPushTimeStamp": "2023-04-14T17:16:40.214Z"
+        }
+    }
+}

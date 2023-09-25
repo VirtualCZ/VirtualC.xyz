@@ -1,0 +1,49 @@
+{
+    "api": {
+        "api949e256f": {
+            "dependsOn": [
+                {
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ],
+                    "category": "function",
+                    "resourceName": "virtualcxyz5e03ab19"
+                }
+            ],
+            "providerPlugin": "awscloudformation",
+            "service": "API Gateway"
+        }
+    },
+    "function": {
+        "virtualcxyz5e03ab19": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda"
+        }
+    },
+    "parameters": {
+        "AMPLIFY_function_virtualcxyz5e03ab19_deploymentBucketName": {
+            "usedBy": [
+                {
+                    "category": "function",
+                    "resourceName": "virtualcxyz5e03ab19"
+                }
+            ]
+        },
+        "AMPLIFY_function_virtualcxyz5e03ab19_s3Key": {
+            "usedBy": [
+                {
+                    "category": "function",
+                    "resourceName": "virtualcxyz5e03ab19"
+                }
+            ]
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd"
+        }
+    }
+}

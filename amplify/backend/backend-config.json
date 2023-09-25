@@ -1,0 +1,66 @@
+{
+  "api": {
+    "api949e256f": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "virtualcxyz5e03ab19"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "virtualcxyz5e03ab19": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "lastPushTimeStamp": "2023-04-14T17:16:40.214Z",
+      "service": "amplifyhosting",
+      "type": "cicd"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_virtualcxyz5e03ab19_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "virtualcxyz5e03ab19"
+        }
+      ]
+    },
+    "AMPLIFY_function_virtualcxyz5e03ab19_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "virtualcxyz5e03ab19"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    }
+  }
+}
