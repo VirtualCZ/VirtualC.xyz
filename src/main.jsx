@@ -8,7 +8,8 @@ import './main.css'
 
 import './localization/i18n';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.sass';
 
 import { BrowserRouter } from 'react-router-dom';
 

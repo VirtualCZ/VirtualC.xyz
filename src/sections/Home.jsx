@@ -50,22 +50,27 @@ const Home = ({ checked, toggleChecked }) => {
           <p style={{fontWeight: 900, fontStyle: 'normal'}}>900 black</p>
           <p style={{fontWeight: 900, fontStyle: 'italic'}}>900 black italic</p> */}
 
-      <Stack gap={3} style={{ flex: 'unset' }}>
+      <Stack gap={3}>
         {/* <h1>{t('navigation.home')}</h1> */}
         <Row className='g-lg-3'>
           <Col lg={7} className='mb-3 mb-lg-0'>
-            <Card body className='bg-secondary h-100'>
+            <Card body className='bg-secondary'>
               <p>Hey there, I'm</p>
               <h1>Tomáš Gabriel,</h1>
               <h2>and I'm a web and app developer!</h2>
             </Card>
           </Col>
           <Col lg={5}>
-            <Card body className='bg-primary h-100'>
-              If you're in need of top-notch website and app development
-              services, tailored to your specific needs, visit my Contact Me
-              page and let's bring your ideas to life.
+            <Card body className='bg-primary'>
+            If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
             </Card>
+            <Row>
+              <Col>c</Col>
+              <Col>x</Col>
+              <Col>q</Col>
+              <Col>d</Col>
+              <Col>s</Col>
+            </Row>
           </Col>
         </Row>
         <Row>

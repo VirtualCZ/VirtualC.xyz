@@ -1,0 +1,118 @@
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Thin.ttf)
+    font-weight: 200
+    font-style: normal
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Thin-Italic.ttf)
+    font-weight: 200
+    font-style: italic
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Light.ttf)
+    font-weight: 300
+    font-style: normal
+
+@font-face
+
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Light-Italic.ttf)
+    font-weight: 300
+    font-style: italic
+
+@font-face
+    font-family: "Gelion"
+    src: url(./assets/gelion-cufonfonts/Gelion-Regular.ttf)
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: "Gelion"
+    src: url(./assets/gelion-cufonfonts/Gelion-Regular-Italic.ttf)
+    font-weight: 400
+    font-style: italic
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Medium.ttf)
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Medium-Italic.ttf)
+    font-weight: 500
+    font-style: italic
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-SemiBold.ttf)
+    font-weight: 600
+    font-style: normal
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-SemiBold-Italic.ttf)
+    font-weight: 600
+    font-style: italic
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Bold.ttf)
+    font-weight: 700
+    font-style: normal
+
+@font-face
+    font-family: 'Gelion'
+    src: url(./assets/gelion-cufonfonts/Gelion-Bold-Italic.ttf)
+    font-weight: 700
+    font-style: italic
+
+@font-face
+    font-family: "Gelion"
+    src: url(./assets/gelion-cufonfonts/Gelion-Black.ttf)
+    font-weight: 900
+    font-style: normal
+
+@font-face
+    font-family: "Gelion"
+    src: url(./assets/gelion-cufonfonts/Gelion-Black-Italic.ttf)
+    font-weight: 900
+    font-style: italic
+
+html
+    font-size: 20px
+
+$font-family-sans-serif: Gelion !default
+$font-family-base:       $font-family-sans-serif !default
+
+$primary: #00D8FF
+$secondary: #f6d912
+$info: #4300b5
+$dark: #171717
+$font-size-base: 1rem
+$h1-font-size: $font-size-base * 2.3
+$h2-font-size: $font-size-base * 1.4
+$h3-font-size: $font-size-base * 1.4
+$h4-font-size: $font-size-base * 1.3
+$h5-font-size: $font-size-base * 1.25
+$h6-font-size: $font-size-base
+
+$font-weight-base: 400
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 700 !important
+
+$body-bg: $dark
+
+.bg-primary
+    p, h1, h2, h3, h4, h5, h6, .card-body
+        color: white
+.bg-secondary
+    p, h1, h2, h3, h4, h5, h6, .card-body
+        color: $dark
+
+@import 'bootstrap/scss/bootstrap.scss'
