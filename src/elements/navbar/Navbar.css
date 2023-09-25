@@ -1,0 +1,5 @@
+nav{
+    height: 100px;
+    padding: 0 32px !important;
+    background: linear-gradient(to left, rgba(152, 21, 255, 0.1), rgba(35, 201, 238, 0.1));
+}

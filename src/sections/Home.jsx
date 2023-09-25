@@ -35,6 +35,21 @@ const Home = ({ checked, toggleChecked }) => {
       style={{ height: '100vh', paddingTop: '109px' }}
       className='d-flex flex-column'
     >
+          {/* <p style={{fontWeight: 200, fontStyle: 'normal'}}>200 thin</p>
+          <p style={{fontWeight: 200, fontStyle: 'italic'}}>200 thin italic</p>
+          <p style={{fontWeight: 300, fontStyle: 'normal'}}>300 light</p>
+          <p style={{fontWeight: 300, fontStyle: 'italic'}}>300 light italic</p>
+          <p style={{fontWeight: 400, fontStyle: 'normal'}}>400 regular</p>
+          <p style={{fontWeight: 400, fontStyle: 'italic'}}>400 regular italic</p>
+          <p style={{fontWeight: 500, fontStyle: 'normal'}}>500 medium</p>
+          <p style={{fontWeight: 500, fontStyle: 'italic'}}>500 medium italic</p>
+          <p style={{fontWeight: 600, fontStyle: 'normal'}}>600 semibold</p>
+          <p style={{fontWeight: 600, fontStyle: 'italic'}}>600 semibold italic</p>
+          <p style={{fontWeight: 700, fontStyle: 'normal'}}>700 bold</p>
+          <p style={{fontWeight: 700, fontStyle: 'italic'}}>700 bold italic</p>
+          <p style={{fontWeight: 900, fontStyle: 'normal'}}>900 black</p>
+          <p style={{fontWeight: 900, fontStyle: 'italic'}}>900 black italic</p> */}
+
       <Stack gap={3} style={{ flex: 'unset' }}>
         {/* <h1>{t('navigation.home')}</h1> */}
         <Row className='g-lg-3'>
