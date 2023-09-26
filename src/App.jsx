@@ -1,6 +1,6 @@
 import './App.css'
 
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports';
 import { Route, Routes } from 'react-router-dom';
@@ -15,6 +15,7 @@ Amplify.configure(awsExports);
 function App() {
   return (
     <>
+      <span className='circlular-blur' ref={circularBlurRef}></span>
       <Container>
         <Navbar />
         <Routes>
