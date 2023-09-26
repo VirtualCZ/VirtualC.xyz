@@ -1,7 +1,8 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import './styles.sass';
+
+// import './styles/styles.sass';
 
 import React, { useState, useEffect } from 'react';
 import { Amplify } from 'aws-amplify';

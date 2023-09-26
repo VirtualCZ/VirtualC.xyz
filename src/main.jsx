@@ -6,9 +6,12 @@ import './main.css'
 // import awsExports from "./aws-exports";
 // Amplify.configure(awsExports);
 
+// import './styles/styles.sass';
+import './styles/styles.sass';
+
+
 import './localization/i18n';
 
-import './styles.sass';
 
 import { BrowserRouter } from 'react-router-dom';
 

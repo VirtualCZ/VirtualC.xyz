@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
-import  Button  from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 
 const Home = ({ checked, toggleChecked }) => {
   const responsive = {
@@ -36,7 +36,7 @@ const Home = ({ checked, toggleChecked }) => {
       style={{ height: '100vh', paddingTop: '109px' }}
       className='d-flex flex-column'
     >
-          {/* <p style={{fontWeight: 200, fontStyle: 'normal'}}>200 thin</p>
+      {/* <p style={{fontWeight: 200, fontStyle: 'normal'}}>200 thin</p>
           <p style={{fontWeight: 200, fontStyle: 'italic'}}>200 thin italic</p>
           <p style={{fontWeight: 300, fontStyle: 'normal'}}>300 light</p>
           <p style={{fontWeight: 300, fontStyle: 'italic'}}>300 light italic</p>
@@ -53,9 +53,9 @@ const Home = ({ checked, toggleChecked }) => {
 
       <Stack gap={3}>
         {/* <h1>{t('navigation.home')}</h1> */}
-        <Row className='g-lg-3' bg="primary">
+        <Row className='g-lg-3'>
           <Col lg={7} className='mb-3 mb-lg-0'>
-            <Card body>
+            <Card body className='bg-primary'>
               <p>Hey there, I'm</p>
               <h1>Tomáš Gabriel,</h1>
               <h2>and I'm a web and app developer!</h2>
@@ -64,7 +64,12 @@ const Home = ({ checked, toggleChecked }) => {
           </Col>
           <Col lg={5}>
             <Card body className='bg-primary'>
-            If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
+              <Card.Text>
+                If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
+              </Card.Text>
+              <Card.Link>
+                <Button href="#projects" variant='info'>Check Out My Projects</Button>
+              </Card.Link>
             </Card>
             <Row>
               <Col>c</Col>
