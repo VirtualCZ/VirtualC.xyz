@@ -61,8 +61,8 @@ const Home = () => {
         <Row className='g-lg-3'>
           <Col lg={7} className='mb-3 mb-lg-0'>
             <Card body className='bg-dark'>
-              <p>Hey there, I'm</p>
-              <h1>Tomáš Gabriel,</h1>
+              <p>HEY THERE 👋 I’M</p>
+              <p className='my-name'>Tomáš Gabriel</p>
               <h2>and I'm a web and app developer!</h2>
               <Button variant='secondary'>Hire Me 👋🏼</Button>
             </Card>
