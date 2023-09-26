@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
+import  Button  from 'react-bootstrap/Button';
 
 const Home = ({ checked, toggleChecked }) => {
   const responsive = {
@@ -52,12 +53,13 @@ const Home = ({ checked, toggleChecked }) => {
 
       <Stack gap={3}>
         {/* <h1>{t('navigation.home')}</h1> */}
-        <Row className='g-lg-3'>
+        <Row className='g-lg-3' bg="primary">
           <Col lg={7} className='mb-3 mb-lg-0'>
-            <Card body className='bg-secondary'>
+            <Card body>
               <p>Hey there, I'm</p>
               <h1>Tomáš Gabriel,</h1>
               <h2>and I'm a web and app developer!</h2>
+              <Button variant='secondary'>Hire Me 👋🏼</Button>
             </Card>
           </Col>
           <Col lg={5}>
