@@ -6,7 +6,7 @@ import './main.css'
 // import awsExports from "./aws-exports";
 // Amplify.configure(awsExports);
 
-import './localization/i18n';
+import './localization/i18n.js';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.sass';
