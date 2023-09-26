@@ -55,7 +55,7 @@ const Home = ({ checked, toggleChecked }) => {
         {/* <h1>{t('navigation.home')}</h1> */}
         <Row className='g-lg-3'>
           <Col lg={7} className='mb-3 mb-lg-0'>
-            <Card body className='bg-primary'>
+            <Card body className='bg-dark'>
               <p>Hey there, I'm</p>
               <h1>Tomáš Gabriel,</h1>
               <h2>and I'm a web and app developer!</h2>
@@ -63,7 +63,7 @@ const Home = ({ checked, toggleChecked }) => {
             </Card>
           </Col>
           <Col lg={5}>
-            <Card body className='bg-primary'>
+            <Card body >
               <Card.Text>
                 If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
               </Card.Text>
@@ -82,7 +82,7 @@ const Home = ({ checked, toggleChecked }) => {
         </Row>
         <Row>
           <Col lg={12}>
-            <Card body className='bg-primary'>
+            <Card body >
               Technologies I use:
               <Carousel
                 responsive={responsive}
