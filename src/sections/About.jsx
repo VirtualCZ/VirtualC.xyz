@@ -19,12 +19,12 @@ const About = ({ checked, toggleChecked }) => {
       className='d-flex flex-column'
     >
       <Stack gap={3}>
-        <Card body className='bg-secondary' style={{ maxWidth: 'fit-content' }}>
+        <Card body style={{ maxWidth: 'fit-content' }}>
           <h2>About me</h2>
         </Card>
         <Row>
           <Col lg={12}>
-            <Card body className='bg-primary'>
+            <Card body >
               <p>
                 I'm Tomáš Gabriel. I am from Czechia, and I studied IT at a high
                 school located in Uherské Hradiště called OAUH.
@@ -37,7 +37,7 @@ const About = ({ checked, toggleChecked }) => {
         </Row>
         <Row>
           <Col>
-            <Card body className='bg-primary'>
+            <Card body >
               I completed high school with a focus on IT and gained practical
               experience at Urbitech, where I also worked on applications and
               websites in my free time. I learned a lot about how companies
@@ -48,7 +48,7 @@ const About = ({ checked, toggleChecked }) => {
         </Row>
         <Row>
           <Col>
-            <Card body className='bg-primary'>
+            <Card body >
               <p>
                 In terms of programming languages, I am proficient in
                 JavaScript, including pure JavaScript, JQuery, and

@@ -10,8 +10,16 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 
-const Home = ({ checked, toggleChecked }) => {
+import reactLogo from '../assets/logos/react_logo.svg';
+import cssLogo from '../assets/logos/css_logo.svg';
+import igLogo from '../assets/logos/ig_logo.svg';
+import ghLogo from '../assets/logos/gh_logo.svg';
+import htmlLogo from '../assets/logos/html_logo.svg';
+import ImageCard from '../elements/navbar/ImageCard/ImageCard';
+
+const Home = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -32,10 +40,7 @@ const Home = ({ checked, toggleChecked }) => {
   const { t } = useTranslation();
 
   return (
-    <section
-      style={{ height: '100vh', paddingTop: '109px' }}
-      className='d-flex flex-column'
-    >
+    <section>
       {/* <p style={{fontWeight: 200, fontStyle: 'normal'}}>200 thin</p>
           <p style={{fontWeight: 200, fontStyle: 'italic'}}>200 thin italic</p>
           <p style={{fontWeight: 300, fontStyle: 'normal'}}>300 light</p>
@@ -72,11 +77,21 @@ const Home = ({ checked, toggleChecked }) => {
               </Card.Link>
             </Card>
             <Row>
-              <Col>c</Col>
-              <Col>x</Col>
-              <Col>q</Col>
-              <Col>d</Col>
-              <Col>s</Col>
+              <Col>
+                <ImageCard src={reactLogo} />
+              </Col>
+              <Col>
+                <ImageCard src={cssLogo} />
+              </Col>
+              <Col>
+                <ImageCard src={ghLogo} />
+              </Col>
+              <Col>
+                <ImageCard src={htmlLogo} />
+              </Col>
+              <Col>
+                <ImageCard src={igLogo} />
+              </Col>
             </Row>
           </Col>
         </Row>
@@ -90,11 +105,9 @@ const Home = ({ checked, toggleChecked }) => {
                 infinite={true}
                 itemClass='coolClass'
               >
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
+                <ImageCard src={igLogo} />
+                <ImageCard src={htmlLogo} />
+                <ImageCard src={ghLogo} />
                 <img
                   draggable={false}
                   style={{ width: '100%', height: '100%' }}

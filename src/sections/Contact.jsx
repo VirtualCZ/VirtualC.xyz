@@ -19,12 +19,12 @@ const Contact = ({ checked, toggleChecked }) => {
       className='d-flex flex-column'
     >
       <Stack gap={3}>
-        <Card body className='bg-secondary' style={{ maxWidth: 'fit-content' }}>
+        <Card body style={{ maxWidth: 'fit-content' }}>
           <h2>Contact me</h2>
         </Card>
         <Row>
           <Col lg={12}>
-            <Card body className='bg-primary'>
+            <Card body >
               <p>
                 I'm Tomáš Gabriel. I am from Czechia, and I studied IT at a high
                 school located in Uherské Hradiště called OAUH.
