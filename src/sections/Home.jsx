@@ -19,7 +19,13 @@ import ghLogo from '../assets/logos/gh_logo.svg';
 import htmlLogo from '../assets/logos/html_logo.svg';
 import ImageCard from '../elements/navbar/ImageCard/ImageCard';
 
-const Home = ({homeSection}) => {
+import BlueDribbble from '../assets/logos/bl_dribbble.svg';
+import BlueFacebook from '../assets/logos/bl_facebook.svg';
+import BlueInstagram from '../assets/logos/bl_instagram.svg';
+import BlueLinkedIn from '../assets/logos/bl_linkedin.svg';
+import BlueTwitter from '../assets/logos/bl_twitter.svg';
+
+const Home = ({ homeSection }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -68,31 +74,37 @@ const Home = ({homeSection}) => {
             </Card>
           </Col>
           <Col lg={5}>
-            <Card body >
-              <Card.Text>
-                If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
-              </Card.Text>
-              <Card.Link>
-                <Button href="#projects" variant='info'>Check Out My Projects</Button>
-              </Card.Link>
-            </Card>
-            <Row>
-              <Col>
-                <ImageCard src={reactLogo} />
-              </Col>
-              <Col>
-                <ImageCard src={cssLogo} />
-              </Col>
-              <Col>
-                <ImageCard src={ghLogo} />
-              </Col>
-              <Col>
-                <ImageCard src={htmlLogo} />
-              </Col>
-              <Col>
-                <ImageCard src={igLogo} />
-              </Col>
-            </Row>
+            <Stack gap={3}>
+              <Row>
+                <Col>
+                  <Card body >
+                    <Card.Text>
+                      If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
+                    </Card.Text>
+                    <Card.Link>
+                      <Button href="#projects" variant='info'>Check Out My Projects</Button>
+                    </Card.Link>
+                  </Card>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ImageCard src={BlueFacebook} />
+                </Col>
+                <Col>
+                  <ImageCard src={BlueInstagram} />
+                </Col>
+                <Col>
+                  <ImageCard src={BlueTwitter} />
+                </Col>
+                <Col>
+                  <ImageCard src={BlueLinkedIn} />
+                </Col>
+                <Col>
+                  <ImageCard src={BlueDribbble} />
+                </Col>
+              </Row>
+            </Stack>
           </Col>
         </Row>
         <Row>
@@ -163,17 +175,6 @@ const Home = ({homeSection}) => {
           </Col>
         </Row>
       </Stack>
-
-      <Row className='flex-grow-1'>
-        <Col
-          lg={12}
-          className='flex-1 h-100 d-flex align-items-center justify-content-center'
-        >
-          <a href='#projects'>
-            <p className='mb-0'>Check out my projects</p>
-          </a>
-        </Col>
-      </Row>
     </section>
   );
 };

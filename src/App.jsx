@@ -27,9 +27,6 @@ function App() {
       circularBlurRef.current.style.height = `${homeRect.height}px`;
       circularBlurRef.current.style.top = `${homeRect.top}px`;
       circularBlurRef.current.style.left = `${homeRect.left}px`;
-      console.log(homeRect.height)
-      console.log(homeSection)
-      console.log(circularBlurRef)
     }
   };
 
@@ -58,6 +55,8 @@ function App() {
 
   return (
     <>
+      <div className='noise'></div>
+      <div className='circlular-blur' ref={circularBlurRef}></div>
       <Container>
         <Navbar />
         <Routes>
@@ -70,8 +69,6 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Container>
-      <div className='noise'></div>
-      <div className='circlular-blur' ref={circularBlurRef}></div>
     </>
   );
 };
