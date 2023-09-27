@@ -3,13 +3,17 @@ import About from '../sections/About';
 import Contact from '../sections/Contact';
 import Home from '../sections/Home';
 import Projects from '../sections/Projects';
+import { useRef } from 'react';
 
-const HomePage = () => {
+const HomePage = props => {
+  let { homeSection } = props;
+
   const { t } = useTranslation();
   document.title = `${t('navigation.home')} - VirtualC`;
+
   return (
     <>
-      <Home />
+      <Home homeSection={homeSection} />
       <About />
       <Projects />
       <Contact />

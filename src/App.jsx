@@ -13,6 +13,49 @@ import HomePage from './pages/HomePage';
 Amplify.configure(awsExports);
 
 function App() {
+
+  let homeSection = useRef(null);
+
+  // Create a ref for the circular-blur span
+  const circularBlurRef = useRef(null);
+
+  // Callback function to set styles for the circular-blur span
+  const setCircularBlurStyles = (ref) => {
+    if (ref) {
+      const homeRect = ref.getBoundingClientRect();
+      circularBlurRef.current.style.width = `${homeRect.width}px`;
+      circularBlurRef.current.style.height = `${homeRect.height}px`;
+      circularBlurRef.current.style.top = `${homeRect.top}px`;
+      circularBlurRef.current.style.left = `${homeRect.left}px`;
+      console.log(homeRect.height)
+      console.log(homeSection)
+      console.log(circularBlurRef)
+    }
+  };
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      // Access the ref of Home component and set styles for the span
+      setCircularBlurStyles(homeSection.current);
+    };
+
+    window.onload = () => {
+      // Access the ref of Home component and set styles for the span
+      handleResize()
+    };
+    // Function to handle window resize
+
+    // Initial setup on component mount
+    setCircularBlurStyles(homeSection.current);
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <span className='circlular-blur' ref={circularBlurRef}></span>
@@ -22,7 +65,7 @@ function App() {
           <Route
             path='/'
             element={
-              <HomePage />
+              <HomePage homeSection={homeSection} />
             }
           />
           <Route path='*' element={<NotFound />} />

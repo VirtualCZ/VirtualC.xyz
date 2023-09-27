@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 import { API } from 'aws-amplify';
 import { useTranslation } from 'react-i18next';
@@ -19,7 +19,7 @@ import ghLogo from '../assets/logos/gh_logo.svg';
 import htmlLogo from '../assets/logos/html_logo.svg';
 import ImageCard from '../elements/navbar/ImageCard/ImageCard';
 
-const Home = () => {
+const Home = ({homeSection}) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -40,7 +40,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <section ref={homeSection}>
       {/* <p style={{fontWeight: 200, fontStyle: 'normal'}}>200 thin</p>
           <p style={{fontWeight: 200, fontStyle: 'italic'}}>200 thin italic</p>
           <p style={{fontWeight: 300, fontStyle: 'normal'}}>300 light</p>
