@@ -58,7 +58,6 @@ function App() {
 
   return (
     <>
-      <span className='circlular-blur' ref={circularBlurRef}></span>
       <Container>
         <Navbar />
         <Routes>
@@ -71,6 +70,8 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Container>
+      <div className='noise'></div>
+      <div className='circlular-blur' ref={circularBlurRef}></div>
     </>
   );
 };
