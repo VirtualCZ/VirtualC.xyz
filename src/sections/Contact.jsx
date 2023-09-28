@@ -7,6 +7,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Contact = ({ checked, toggleChecked }) => {
   const { t } = useTranslation();
@@ -24,14 +26,28 @@ const Contact = ({ checked, toggleChecked }) => {
         </Card>
         <Row>
           <Col lg={12}>
-            <Card body >
-              <p>
-                I'm Tomáš Gabriel. I am from Czechia, and I studied IT at a high
-                school located in Uherské Hradiště called OAUH.
-              </p>
-              <p>
-                Here are some of my accounts, which you might find interesting:
-              </p>
+            <Card body>
+              <Card.Text>
+                <Form>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" />
+                  </Form.Group>
+
+                  <Form.Group className="mb-3" controlId="formBasicText">
+                    <Form.Label>Enter Your Subject</Form.Label>
+                    <Form.Control type="text" placeholder="Subject" />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                    <Form.Control as="textarea" placeholder='Write Message...' />
+                  </Form.Group>
+                  <div className='d-flex justify-content-center'>
+                    <Button variant="info" type="submit">
+                      Submit
+                    </Button>
+                  </div>
+                </Form>
+              </Card.Text>
             </Card>
           </Col>
         </Row>

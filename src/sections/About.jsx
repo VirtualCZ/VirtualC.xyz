@@ -20,7 +20,7 @@ const About = ({ checked, toggleChecked }) => {
     >
       <Stack gap={3}>
         <Card body style={{ maxWidth: 'fit-content' }}>
-          <h2>About me</h2>
+          <h6>About me</h6>
         </Card>
         <Row>
           <Col lg={12}>

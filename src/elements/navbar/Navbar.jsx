@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import  Button  from 'react-bootstrap/Button';
 
-function NavbarFF() {
+function CustomNavbar() {
   const { t, i18n } = useTranslation();
 
   return (
@@ -30,4 +30,4 @@ function NavbarFF() {
   );
 }
 
-export default NavbarFF;
+export default CustomNavbar;

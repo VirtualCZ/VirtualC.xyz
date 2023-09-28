@@ -78,7 +78,7 @@ const Home = ({ homeSection }) => {
               <Row>
                 <Col>
                   <Card body >
-                    <Card.Text>
+                    <Card.Text className='fs-3 w-75'>
                       If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
                     </Card.Text>
                     <Card.Link>
@@ -108,9 +108,13 @@ const Home = ({ homeSection }) => {
           </Col>
         </Row>
         <Row>
+          <Col>
+            <h1>Technologies I use:</h1>
+          </Col>
+        </Row>
+        <Row>
           <Col lg={12}>
             <Card body >
-              Technologies I use:
               <Carousel
                 responsive={responsive}
                 deviceType={'desktop'}
