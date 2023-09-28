@@ -15,19 +15,14 @@ const Contact = ({ checked, toggleChecked }) => {
   document.title = `${t('navigation.components')} - VirtualC`;
 
   return (
-    <section
-      id='contact'
-      style={{ paddingTop: '109px' }}
-      className='d-flex flex-column'
-    >
-      <Stack gap={3}>
-        <Card body style={{ maxWidth: 'fit-content' }}>
-          <h2>Contact me</h2>
-        </Card>
-        <Row>
-          <Col lg={12}>
-            <Card body>
-              <Card.Text>
+    <section id='contact'>
+      <Row>
+        <Col>
+          <Card body>
+            <Card.Text>
+              <Stack gap={3}>
+                <h1 className='text-center'>CONTACT ME</h1>
+                <p className='text-center'>If You Are Interested In A Web Page Contact Me Using The Form Below</p>
                 <Form>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email Address</Form.Label>
@@ -43,15 +38,15 @@ const Contact = ({ checked, toggleChecked }) => {
                   </Form.Group>
                   <div className='d-flex justify-content-center'>
                     <Button variant="info" type="submit">
-                      Submit
+                      Send Message
                     </Button>
                   </div>
                 </Form>
-              </Card.Text>
-            </Card>
-          </Col>
-        </Row>
-      </Stack>
+              </Stack>
+            </Card.Text>
+          </Card>
+        </Col>
+      </Row>
     </section>
   );
 };
