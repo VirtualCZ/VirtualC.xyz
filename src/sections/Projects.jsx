@@ -12,7 +12,7 @@ import ProjectDescription from '../elements/ProjectDescription';
 const Projects = () => {
   const { t } = useTranslation();
   document.title = `${t('navigation.components')} - VirtualC`;
-  let webcount = 0
+  var webcount = 0
   const webProjectsArr = [
     {
       name: "NicCalc",
@@ -46,7 +46,7 @@ const Projects = () => {
         </Card>
 
         {webProjectsArr.map((w) => {
-          webcount + 1
+          webcount++
           if (webcount % 2) {
             return (
               <Row key={"row" + webcount + w.name}>
