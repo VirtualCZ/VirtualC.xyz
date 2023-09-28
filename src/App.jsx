@@ -6,7 +6,7 @@ import awsExports from './aws-exports';
 import { Route, Routes } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
-import Navbar from './elements/navbar/Navbar';
+import Navbar from './elements/Navbar';
 import NotFound from './pages/NotFound';
 import HomePage from './pages/HomePage';
 

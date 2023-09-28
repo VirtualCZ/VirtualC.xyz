@@ -17,7 +17,7 @@ import cssLogo from '../assets/logos/css_logo.svg';
 import igLogo from '../assets/logos/ig_logo.svg';
 import ghLogo from '../assets/logos/gh_logo.svg';
 import htmlLogo from '../assets/logos/html_logo.svg';
-import ImageCard from '../elements/navbar/ImageCard/ImageCard';
+import ImageCard from '../elements/ImageCard';
 
 import BlueDribbble from '../assets/logos/bl_dribbble.svg';
 import BlueFacebook from '../assets/logos/bl_facebook.svg';
@@ -81,9 +81,7 @@ const Home = ({ homeSection }) => {
                     <Card.Text className='fs-3 w-75'>
                       If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
                     </Card.Text>
-                    <Card.Link>
                       <Button href="#projects" variant='info'>Check Out My Projects</Button>
-                    </Card.Link>
                   </Card>
                 </Col>
               </Row>

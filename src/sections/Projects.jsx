@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
-import { ProjectDescription, ProjectImage } from '../elements/navbar/Project';
+import ProjectDescription from '../elements/ProjectDescription';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -17,19 +17,19 @@ const Projects = () => {
     {
       name: "NicCalc",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "img", text: "text" }, { image: "img", text: "text" }, { image: "img", text: "text" }],
+      icons: [{ image: "img", text: "text" }, { image: "img", text: "text2" }, { image: "img", text: "text3" }],
       image: "swag",
     },
     {
-      name: "NicCalc",
+      name: "NicCalc2",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "img", text: "text" }, { image: "img", text: "text" }, { image: "img", text: "text" }],
+      icons: [{ image: "img", text: "text" }, { image: "img", text: "text2" }, { image: "img", text: "text3" }],
       image: "swag",
     },
     {
-      name: "NicCalc",
+      name: "NicCalc3",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "img", text: "text" }, { image: "img", text: "text" }, { image: "img", text: "text" }],
+      icons: [{ image: "img", text: "text" }, { image: "img", text: "text2" }, { image: "img", text: "text3" }],
       image: "swag",
     },
   ]
@@ -46,20 +46,32 @@ const Projects = () => {
         </Card>
 
         {webProjectsArr.map((w) => {
-          webcount++
+          webcount + 1
           if (webcount % 2) {
             return (
-              <Row>
-                <ProjectDescription w={w} />
-                <ProjectImage w={w} />
+              <Row key={"row" + webcount + w.name}>
+                <ProjectDescription w={w} key={webcount + w.name} />
+                <Col lg={5}>
+                  <Card body >
+                    <p>
+                      {w.image}
+                    </p>
+                  </Card>
+                </Col>
               </Row>
             )
           }
           else {
             return (
-              <Row>
-                <ProjectImage w={w} />
-                <ProjectDescription w={w} />
+              <Row key={"row" + webcount + w.name}>
+                <Col lg={5}>
+                  <Card body >
+                    <p>
+                      {w.image}
+                    </p>
+                  </Card>
+                </Col>
+                <ProjectDescription w={w} key={webcount + w.name} />
               </Row>
             )
           }

@@ -19,31 +19,29 @@ const Contact = ({ checked, toggleChecked }) => {
       <Row>
         <Col>
           <Card body>
-            <Card.Text>
-              <Stack gap={3}>
-                <h1 className='text-center'>CONTACT ME</h1>
-                <p className='text-center'>If You Are Interested In A Web Page Contact Me Using The Form Below</p>
-                <Form>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email Address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                  </Form.Group>
+            <Stack gap={3}>
+              <h1 className='text-center'>CONTACT ME</h1>
+              <p className='text-center'>If You Are Interested In A Web Page Contact Me Using The Form Below</p>
+              <Form>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>Email Address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
 
-                  <Form.Group className="mb-3" controlId="formBasicText">
-                    <Form.Label>Enter Your Subject</Form.Label>
-                    <Form.Control type="text" placeholder="Subject" />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Control as="textarea" placeholder='Write Message...' />
-                  </Form.Group>
-                  <div className='d-flex justify-content-center'>
-                    <Button variant="info" type="submit">
-                      Send Message
-                    </Button>
-                  </div>
-                </Form>
-              </Stack>
-            </Card.Text>
+                <Form.Group className="mb-3" controlId="formBasicText">
+                  <Form.Label>Enter Your Subject</Form.Label>
+                  <Form.Control type="text" placeholder="Subject" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                  <Form.Control as="textarea" placeholder='Write Message...' />
+                </Form.Group>
+                <div className='d-flex justify-content-center'>
+                  <Button variant="info" type="submit">
+                    Send Message
+                  </Button>
+                </div>
+              </Form>
+            </Stack>
           </Card>
         </Col>
       </Row>
