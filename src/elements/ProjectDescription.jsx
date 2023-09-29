@@ -1,4 +1,5 @@
 import { Card, Col, Row } from "react-bootstrap"
+import IconCard from "./IconCard"
 
 const ProjectDescription = ({ w }) => {
     return (
@@ -14,8 +15,7 @@ const ProjectDescription = ({ w }) => {
                     {w.icons.map((icon) => {
                         return (
                             <Col key={w.name + icon.text}>
-                                <p>{icon.img}</p>
-                                <p>{icon.text}</p>
+                                <IconCard src={icon.image} text={icon.text}/>
                             </Col>
                         )
                     })}

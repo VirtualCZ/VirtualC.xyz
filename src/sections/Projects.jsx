@@ -10,6 +10,7 @@ import Stack from 'react-bootstrap/Stack';
 import ProjectDescription from '../elements/ProjectDescription';
 
 import NicCalc from "../assets/project-imgs/niccalc.jpg"
+import ReactLogo from "../assets/logos/react_logo.svg"
 import ImageCard from '../elements/ImageCard';
 
 const Projects = () => {
@@ -32,7 +33,7 @@ const Projects = () => {
     {
       name: "NicCalc3",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "swag", text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
+      icons: [{ image: ReactLogo, text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
       image: NicCalc,
     },
   ]
