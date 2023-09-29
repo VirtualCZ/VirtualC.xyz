@@ -3,7 +3,7 @@ import Image from "react-bootstrap/Image"
 
 const ImageCard = ({ src, alt = "" }) => {
   return (
-    <Card body>
+    <Card className="image-card" body>
       <Image draggable="false" fluid src={src} alt={alt} />
     </Card>
   )

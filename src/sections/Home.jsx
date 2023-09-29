@@ -24,6 +24,7 @@ import BlueFacebook from '../assets/logos/bl_facebook.svg';
 import BlueInstagram from '../assets/logos/bl_instagram.svg';
 import BlueLinkedIn from '../assets/logos/bl_linkedin.svg';
 import BlueTwitter from '../assets/logos/bl_twitter.svg';
+import ImageCardAR1 from '../elements/ImageCardAR1';
 
 const Home = ({ homeSection }) => {
   const responsive = {
@@ -87,19 +88,19 @@ const Home = ({ homeSection }) => {
               </Row>
               <Row>
                 <Col>
-                  <ImageCard src={BlueFacebook} />
+                  <ImageCardAR1 src={BlueFacebook} />
                 </Col>
                 <Col>
-                  <ImageCard src={BlueInstagram} />
+                  <ImageCardAR1 src={BlueInstagram} />
                 </Col>
                 <Col>
-                  <ImageCard src={BlueTwitter} />
+                  <ImageCardAR1 src={BlueTwitter} />
                 </Col>
                 <Col>
-                  <ImageCard src={BlueLinkedIn} />
+                  <ImageCardAR1 src={BlueLinkedIn} />
                 </Col>
                 <Col>
-                  <ImageCard src={BlueDribbble} />
+                  <ImageCardAR1 src={BlueDribbble} />
                 </Col>
               </Row>
             </Stack>
@@ -119,59 +120,18 @@ const Home = ({ homeSection }) => {
                 infinite={true}
                 itemClass='coolClass'
               >
-                <ImageCard src={igLogo} />
-                <ImageCard src={htmlLogo} />
-                <ImageCard src={ghLogo} />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
-                <img
-                  draggable={false}
-                  style={{ width: '100%', height: '100%' }}
-                  src={'gg'}
-                />
+                <ImageCardAR1 src={igLogo} />
+                <ImageCardAR1 src={htmlLogo} />
+                <ImageCardAR1 src={ghLogo} />
+                <ImageCardAR1 src={igLogo} />
+                <ImageCardAR1 src={htmlLogo} />
+                <ImageCardAR1 src={ghLogo} />
+                <ImageCardAR1 src={igLogo} />
+                <ImageCardAR1 src={htmlLogo} />
+                <ImageCardAR1 src={ghLogo} />
+                <ImageCardAR1 src={igLogo} />
+                <ImageCardAR1 src={htmlLogo} />
+                <ImageCardAR1 src={ghLogo} />
               </Carousel>
             </Card>
           </Col>

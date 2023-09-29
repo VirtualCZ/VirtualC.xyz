@@ -9,6 +9,9 @@ import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import ProjectDescription from '../elements/ProjectDescription';
 
+import NicCalc from "../assets/project-imgs/niccalc.jpg"
+import ImageCard from '../elements/ImageCard';
+
 const Projects = () => {
   const { t } = useTranslation();
   document.title = `${t('navigation.components')} - VirtualC`;
@@ -17,20 +20,20 @@ const Projects = () => {
     {
       name: "NicCalc",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "img", text: "text" }, { image: "img", text: "text2" }, { image: "img", text: "text3" }],
-      image: "swag",
+      icons: [{ image: "swag", text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
+      image: NicCalc,
     },
     {
       name: "NicCalc2",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "img", text: "text" }, { image: "img", text: "text2" }, { image: "img", text: "text3" }],
-      image: "swag",
+      icons: [{ image: "swag", text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
+      image: NicCalc,
     },
     {
       name: "NicCalc3",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "img", text: "text" }, { image: "img", text: "text2" }, { image: "img", text: "text3" }],
-      image: "swag",
+      icons: [{ image: "swag", text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
+      image: NicCalc,
     },
   ]
 
@@ -52,11 +55,7 @@ const Projects = () => {
               <Row key={"row" + webcount + w.name}>
                 <ProjectDescription w={w} key={webcount + w.name} />
                 <Col lg={5}>
-                  <Card body >
-                    <p>
-                      {w.image}
-                    </p>
-                  </Card>
+                  <ImageCard src={w.image} />
                 </Col>
               </Row>
             )
@@ -65,11 +64,7 @@ const Projects = () => {
             return (
               <Row key={"row" + webcount + w.name}>
                 <Col lg={5}>
-                  <Card body >
-                    <p>
-                      {w.image}
-                    </p>
-                  </Card>
+                  <ImageCard src={w.image} />
                 </Col>
                 <ProjectDescription w={w} key={webcount + w.name} />
               </Row>

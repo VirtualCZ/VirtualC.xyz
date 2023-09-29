@@ -19,9 +19,6 @@ const About = ({ checked, toggleChecked }) => {
       className='d-flex flex-column'
     >
       <Stack gap={3}>
-        <Card body style={{ maxWidth: 'fit-content' }}>
-          <h6>About me</h6>
-        </Card>
         <Row>
           <Col lg={12}>
             <Card body >
