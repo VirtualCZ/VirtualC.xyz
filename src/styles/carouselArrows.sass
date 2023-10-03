@@ -1,0 +1,39 @@
+.react-multi-carousel-list
+    position: unset
+
+.react-multiple-carousel__arrow
+    background: linear-gradient(106deg, rgba(255, 255, 255, 0.10) 0%, rgba(196.76, 196.76, 196.76, 0.04) 100%)
+    bottom: -83px
+    border-radius: 0
+    padding: 0
+    &:hover
+        background: transparent
+    border-radius: 100%
+    &::before
+        color: $primary
+        min-width: 46px
+        min-height: 46px
+        line-height: 46px
+        font-size: 10px
+    &::after
+        content: ""
+        position: absolute
+        inset: 0
+        border-radius: 100%
+        padding: 1px /* control the border thickness */
+        pointer-events: none
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+        -webkit-mask-composite: xor
+
+.react-multiple-carousel__arrow--left
+    left: unset
+    right: 72px
+    &::after
+        background: linear-gradient(to left, #0F181800 25%, #00D8FF 100%)
+        mask-composite: exclude
+
+.react-multiple-carousel__arrow--right
+    right: 0px
+    &::after
+        background: linear-gradient(to right, #0F181800 25%, #00D8FF 100%)
+        mask-composite: exclude
