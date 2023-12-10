@@ -13,6 +13,7 @@ import ReactApp from './pages/ReactApp';
 import ReactWeb from './pages/ReactWeb';
 import Contact from './pages/Contact';
 import NicCalc from './pages/Niccalc';
+import Components from './pages/Components';
 
 Amplify.configure(awsExports);
 
@@ -50,6 +51,7 @@ const App = () => {
             <Route path='/Contact' element={<Contact />} />
             <Route path='/React' element={<ReactWeb />} />
             <Route path='/ReactNative' element={<ReactApp />} />
+            <Route path='/Components' element={<Components />} />
             <Route path='/Niccalc' element={<NicCalc />} />
             <Route path='*' element={<NotFound />} />
           </Routes>

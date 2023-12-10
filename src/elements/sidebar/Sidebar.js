@@ -9,6 +9,7 @@ import {
 import { TbBrandBlender } from 'react-icons/tb';
 import { FaReact } from 'react-icons/fa';
 import { ImLab } from 'react-icons/im';
+import { IoLogoWebComponent } from 'react-icons/io5';
 import './Sidebar.css';
 
 import DropdownButton from '../dropdownButton/DropdownButton';
@@ -80,6 +81,12 @@ function Sidebar() {
           <li>
             <NavLink to='/Blender' onClick={toggleMenu}>
               <TbBrandBlender /> <p>Blender</p>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/Components' onClick={toggleMenu}>
+              <IoLogoWebComponent />
+              <p>{t('navigation.components')}</p>
             </NavLink>
           </li>
           <li>
