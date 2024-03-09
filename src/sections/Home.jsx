@@ -25,7 +25,7 @@ import BlueInstagram from '../assets/logos/bl_instagram.svg';
 import BlueLinkedIn from '../assets/logos/bl_linkedin.svg';
 import BlueTwitter from '../assets/logos/bl_twitter.svg';
 import ImageCardAR1 from '../elements/ImageCardAR1';
-
+;     
 const Home = ({ homeSection }) => {
   const responsive = {
     desktop: {
@@ -113,12 +113,13 @@ const Home = ({ homeSection }) => {
         </Row>
         <Row>
           <Col lg={12}>
-            <Card body >
+            <Card>
+            <Card.Body className='px-0'>
               <Carousel
                 responsive={responsive}
                 deviceType={'desktop'}
                 infinite={true}
-                itemClass='coolClass'
+                itemClass='carouselItem'
               >
                 <ImageCardAR1 src={igLogo} />
                 <ImageCardAR1 src={htmlLogo} />
@@ -133,6 +134,7 @@ const Home = ({ homeSection }) => {
                 <ImageCardAR1 src={htmlLogo} />
                 <ImageCardAR1 src={ghLogo} />
               </Carousel>
+            </Card.Body>
             </Card>
           </Col>
         </Row>
