@@ -65,7 +65,7 @@ const Home = ({ homeSection }) => {
 
       <Stack gap={3}>
         {/* <h1>{t('navigation.home')}</h1> */}
-        <Row className='g-lg-3'>
+        <Row>
           <Col lg={7} className='mb-3 mb-lg-0'>
             <Card>
               <Card.Body className="d-flex flex-column">
