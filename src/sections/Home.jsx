@@ -67,11 +67,15 @@ const Home = ({ homeSection }) => {
         {/* <h1>{t('navigation.home')}</h1> */}
         <Row className='g-lg-3'>
           <Col lg={7} className='mb-3 mb-lg-0'>
-            <Card body>
-              <p>HEY THERE 👋 I’M</p>
+            <Card>
+              <Card.Body className="d-flex flex-column">
+              <p className='hi'>Hey there 👋 I’m</p>
               <p className='my-name'>Tomáš Gabriel</p>
-              <h2>and I'm a web and app developer!</h2>
-              <Button variant='secondary'>Hire Me 👋🏼</Button>
+              <h2 className='i-am'>and I'm a web and app developer!</h2>
+              <div className='mt-auto'>
+                <Button variant='secondary' className="self-end">Hire Me 👋🏼</Button>
+              </div>
+              </Card.Body>
             </Card>
           </Col>
           <Col lg={5}>
@@ -79,7 +83,7 @@ const Home = ({ homeSection }) => {
               <Row>
                 <Col>
                   <Card body >
-                    <Card.Text className='fs-3 w-75'>
+                    <Card.Text className='fs-3' style={{width: "90%"}}>
                       If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
                     </Card.Text>
                       <Button href="#projects" variant='info'>Check Out My Projects</Button>
@@ -108,7 +112,7 @@ const Home = ({ homeSection }) => {
         </Row>
         <Row>
           <Col>
-            <h1>Technologies I use:</h1>
+            <h1>TECHNOLOGIES I USE:</h1>
           </Col>
         </Row>
         <Row>
