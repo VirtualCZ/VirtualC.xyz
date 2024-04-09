@@ -71,7 +71,7 @@ const Home = ({ homeSection }) => {
               <Card.Body className="d-flex flex-column">
               <p className='hi'>Hey there 👋 I’m</p>
               <p className='my-name'>Tomáš Gabriel</p>
-              <h2 className='i-am'>and I'm a web and app developer!</h2>
+              <p className='i-am'>and I'm a web and app developer!</p>
               <div className='mt-auto'>
                 <Button variant='secondary' className="self-end">Hire Me 👋🏼</Button>
               </div>

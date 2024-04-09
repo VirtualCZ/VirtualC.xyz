@@ -7,10 +7,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
+import AccentTextCard from '../elements/AccentTextCard';
+import ImageCard from '../elements/ImageCard';
+import IconCard from '../elements/IconCard';
 
-const About = ({ checked, toggleChecked }) => {
-  const { t } = useTranslation();
-  document.title = `${t('navigation.components')} - VirtualC`;
+import MyPhoto from '../assets/myphoto.jpg';
+import ghLogo from '../assets/logos/gh_logo.svg';
+import igLogo from '../assets/logos/ig_logo.svg';
+
+const About = () => {
+  // const { t } = useTranslation();
+  // document.title = `${t('navigation.components')} - VirtualC`;
 
   return (
     <section
@@ -19,6 +26,29 @@ const About = ({ checked, toggleChecked }) => {
       className='d-flex flex-column'
     >
       <Stack gap={3}>
+        <Row>
+          <Col lg={7}>
+            <Card body>
+              <AccentTextCard>About me</AccentTextCard>
+              <h2>NICE TO MEET YOU, I’M TOMÁŠ</h2>
+              <p>I’m A Web Developer Based In Czechia. I’m Mainly A Front End Web And App Developer</p>
+              <Stack gap={3}>
+                <Row>
+                  <Col lg={6}>
+                    <IconCard gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
+                  </Col>
+                  <Col lg={6}>
+                    <IconCard gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
+                  </Col>
+                </Row>
+                <IconCard gradientCol="danger" src={ghLogo}>My GitHub Account</IconCard>
+              </Stack>
+            </Card>
+          </Col>
+          <Col lg={5}>
+            <ImageCard src={MyPhoto} />
+          </Col>
+        </Row>
         <Row>
           <Col lg={12}>
             <Card body >

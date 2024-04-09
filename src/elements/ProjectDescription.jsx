@@ -15,7 +15,7 @@ const ProjectDescription = ({ w }) => {
                     {w.icons.map((icon) => {
                         return (
                             <Col key={w.name + icon.text}>
-                                <IconCard src={icon.image} text={icon.text}/>
+                                <IconCard src={icon.image}>{icon.text}</IconCard>
                             </Col>
                         )
                     })}
