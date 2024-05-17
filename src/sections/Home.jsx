@@ -83,7 +83,7 @@ const Home = ({ homeSection }) => {
               <Row>
                 <Col>
                   <Card body >
-                    <Card.Text className='fs-3' style={{width: "90%"}}>
+                    <Card.Text className='fs-3' style={{width: "95%"}}>
                       If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
                     </Card.Text>
                       <Button href="#projects" variant='info'>Check Out My Projects</Button>

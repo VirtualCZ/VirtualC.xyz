@@ -45,9 +45,7 @@ const Projects = () => {
       className='d-flex flex-column'
     >
       <Stack gap={3}>
-        <Card body style={{ maxWidth: 'fit-content' }}>
-          <h2>Web projects</h2>
-        </Card>
+          <h1>Web projects</h1>
 
         {webProjectsArr.map((w) => {
           webcount++

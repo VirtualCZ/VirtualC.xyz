@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap"
 
-const AccentTextCard = ({ color, children }) => {
-    return(
-        null
-        // <Card body style={{maxHeight: "auto"}} className={`rounded-pill gradient-${null}`}>
-        //     <p>{children}</p>
-        // </Card>
+const AccentTextCard = ({ color="primary", children }) => {
+    return (
+        <Card className={`accent-text-card rounded-pill border gradient-accent border-${color}`}>
+            <Card.Body className="justify-content-center d-flex align-middle">
+                <p className={`text-${color} text-uppercase`}>{children}</p>
+            </Card.Body>
+        </Card>
     )
-}                
+}
 
 export default AccentTextCard

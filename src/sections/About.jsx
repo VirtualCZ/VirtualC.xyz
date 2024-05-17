@@ -22,26 +22,28 @@ const About = () => {
   return (
     <section
       id='about'
-      style={{ paddingTop: '109px' }}
-      className='d-flex flex-column'
+      style={{ paddingTop: '95px' }}
+      className='d-flex flex-column mt-5'
     >
-      <Stack gap={3}>
+      <Stack gap={4}>
         <Row>
           <Col lg={7}>
             <Card body>
-              <AccentTextCard>About me</AccentTextCard>
-              <h2>NICE TO MEET YOU, I’M TOMÁŠ</h2>
-              <p>I’m A Web Developer Based In Czechia. I’m Mainly A Front End Web And App Developer</p>
               <Stack gap={3}>
-                <Row>
-                  <Col lg={6}>
-                    <IconCard gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
-                  </Col>
-                  <Col lg={6}>
-                    <IconCard gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
-                  </Col>
-                </Row>
-                <IconCard gradientCol="danger" src={ghLogo}>My GitHub Account</IconCard>
+                <AccentTextCard>About me</AccentTextCard>
+                <p className='ntmy'>NICE TO MEET YOU, I’M TOMÁŠ</p>
+                <p>I’m A Web Developer Based In Czechia. I’m Mainly A Front End Web And App Developer</p>
+                <Stack gap={3}>
+                  <Row>
+                    <Col lg={6}>
+                      <IconCard gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
+                    </Col>
+                    <Col lg={6}>
+                      <IconCard gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
+                    </Col>
+                  </Row>
+                  <IconCard gradientCol="danger" src={ghLogo}>My GitHub Account</IconCard>
+                </Stack>
               </Stack>
             </Card>
           </Col>
@@ -51,61 +53,111 @@ const About = () => {
         </Row>
         <Row>
           <Col lg={12}>
-            <Card body >
-              <p>
-                I'm Tomáš Gabriel. I am from Czechia, and I studied IT at a high
-                school located in Uherské Hradiště called OAUH.
-              </p>
-              <p>
-                Here are some of my accounts, which you might find interesting:
-              </p>
-            </Card>
+            <h2 className='mt-4'>I Have Acquired Following Certificates:</h2>
           </Col>
         </Row>
         <Row>
-          <Col>
-            <Card body >
-              I completed high school with a focus on IT and gained practical
-              experience at Urbitech, where I also worked on applications and
-              websites in my free time. I learned a lot about how companies
-              operate and gained experience working with React in a corporate
-              environment.
+          <Col lg={6}>
+            <Card className='rounded-pill' body>
+              <p className='text-center mb-0'>CISCO IT ESSENTIALS</p>
+            </Card>
+          </Col>
+          <Col lg={6}>
+            <Card className='rounded-pill' body>
+              <p className='text-center mb-0'>NDG LINUX ESSENTIALS</p>
             </Card>
           </Col>
         </Row>
+        <Card body>
+          <Stack gap={3}>
+            <AccentTextCard color='danger'>
+              Design
+            </AccentTextCard>
+            <div>
+              <p>I Have A Preference For Minimalistic Web Pages But Am Always Open To Exploring New Concept And Styles. The Tools I Commonly Use For Design Include ( List The Design Tools You Use)</p>
+              <p className='fw-bolder fs-3 text-primary text-uppercase'>Design tools</p>
+              <Row>
+                <Col lg={4}>
+                  <IconCard src="">Figma</IconCard>
+                </Col>
+                <Col lg={4}>
+                  <IconCard src="">Color Hunt</IconCard>
+                </Col>
+                <Col lg={4}>
+                  <IconCard src="">PowerToys</IconCard>
+                </Col>
+              </Row>
+            </div>
+          </Stack>
+        </Card>
         <Row>
-          <Col>
-            <Card body >
-              <p>
-                In terms of programming languages, I am proficient in
-                JavaScript, including pure JavaScript, JQuery, and
-                ReactJS/Native, as well as Native Base. I am also skilled in
-                HTML, CSS, LESS, Tailwind, and Bootstrap. Additionally, I have
-                experience with SQL, specifically MySQL.
-              </p>
-              <p>
-                While I am less confident in my abilities with Java and PHP,
-                specifically Nette and CodeIgniter frameworks, I am still
-                capable of writing code in these languages.
-              </p>
-              <p>
-                For design purposes, I utilize Adobe Photoshop, XD, and
-                Illustrator. I have a basic understanding of Premiere Pro for
-                video editing. I also utilize paint.net for certain design
-                tasks. As for my preferred Integrated Development Environment
-                (IDE), I use Visual Studio Code.
-              </p>
-              <p>
-                Of course I work on my skills so I'm always learning new things
-                and improving in my existent skills.
-              </p>
-              <p>
-                For now I do both front and backend development and utilize
-                Amazon Web Services for my projects.
-              </p>
+          <Col lg={7}>
+            <Card body>
+              <Stack gap={3}>
+                <AccentTextCard color='secondary'>
+                  Web Development
+                </AccentTextCard>
+                <p>
+                  I Primarily Use React JS And HTML For Front End Development With Tailwind And Bootstrap For Styling. My Database Of Choice Is MySQL And I’m Learning Amazon’s Solutions.
+                </p>
+                <p>
+                  While I’m Less Confident In PHP ( Nette And CodeIgniter ) I Can Still Work Them I Host My Web Projects On Amazon Web Services (AWS)
+                </p>
+              </Stack>
+            </Card>
+          </Col>
+          <Col lg={5}>
+            <Card body>
+              <Stack gap={3}>
+                <Row>
+                  <Col lg={6}>
+                    <IconCard />
+                  </Col>
+                  <Col lg={6}>
+                    <IconCard />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={6}>
+                    <IconCard />
+                  </Col>
+                  <Col lg={6}>
+                    <IconCard />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={6}>
+                    <IconCard />
+                  </Col>
+                  <Col lg={6}>
+                    <IconCard />
+                  </Col>
+                </Row>
+              </Stack>
             </Card>
           </Col>
         </Row>
+        <Card body>
+          <Stack gap={3}>
+            <AccentTextCard color='success'>
+              Mobile app development
+            </AccentTextCard>
+            <div>
+              <p>I Have A Preference For Minimalistic Web Pages But Am Always Open To Exploring New Concept And Styles. The Tools I Commonly Use For Design Include ( List The Design Tools You Use)</p>
+              <Row>
+                <Col lg={4}>
+                  <IconCard src="">React Native</IconCard>
+                </Col>
+                <Col lg={4}>
+                  <IconCard src="">Native Base</IconCard>
+                </Col>
+                <Col lg={4}>
+                  <IconCard src="">React StyleSheet</IconCard>
+                </Col>
+              </Row>
+            </div>
+          </Stack>
+        </Card>
       </Stack>
     </section>
   );
