@@ -5,10 +5,12 @@ const ProjectDescription = ({ w }) => {
     return (
         <Col lg={7}>
             <Card body >
-                <p>
+                <h2>
                     {w.name}
-                </p>
-                <p>
+                </h2>
+                <p 
+                // className="lh-lg"
+                >
                     {w.text}
                 </p>
                 <Row>

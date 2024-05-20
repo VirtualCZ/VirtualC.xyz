@@ -69,7 +69,7 @@ const Home = ({ homeSection }) => {
           <Col lg={7} className='mb-3 mb-lg-0'>
             <Card>
               <Card.Body className="d-flex flex-column">
-              <p className='hi'>Hey there 👋 I’m</p>
+              <p className='hi'>Hey there 👋 I'm</p>
               <p className='my-name'>Tomáš Gabriel</p>
               <p className='i-am'>and I'm a web and app developer!</p>
               <div className='mt-auto'>

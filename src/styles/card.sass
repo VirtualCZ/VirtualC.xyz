@@ -26,13 +26,25 @@
     width: fit-content
     height: fit-content !important
     p
-        padding-left: 1.4rem
-        padding-right: 1.4rem
+        padding-left: 1rem
+        padding-right: 1rem
         margin-bottom: 0
         font-weight: 600
+        line-height: 1.2rem
     .card-body
         padding-top: 1rem
         padding-bottom: 1rem
+
+.fh-web-showcase
+    height: 100%
+    &>.row
+        flex: 1
+        & .icon-card
+            min-height: 100%
+            & .card-body
+                align-items: center
+                & img
+                    color: red
 
 .image-card
     img

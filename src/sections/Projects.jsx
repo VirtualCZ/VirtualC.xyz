@@ -21,19 +21,19 @@ const Projects = () => {
     {
       name: "NicCalc",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "swag", text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
+      icons: [{ image: "swag", text: "GitHub" }, { image: "swag", text: "Adobe XD" }, { image: "swag" }],
       image: NicCalc,
     },
     {
       name: "NicCalc2",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: "swag", text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
+      icons: [{ image: "swag", text: "GitHub" }, { image: "swag", text: "Adobe XD" }, { image: "swag" }],
       image: NicCalc,
     },
     {
       name: "NicCalc3",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: ReactLogo, text: "text" }, { image: "swag", text: "text2" }, { image: "swag", text: "text3" }],
+      icons: [{ image: "swag", text: "GitHub" }, { image: "swag", text: "Adobe XD" }, { image: "swag" }],
       image: NicCalc,
     },
   ]
@@ -41,11 +41,11 @@ const Projects = () => {
   return (
     <section
       id='projects'
-      style={{ paddingTop: '109px' }}
+      // style={{ paddingTop: '109px' }}
       className='d-flex flex-column'
     >
       <Stack gap={3}>
-          <h1>Web projects</h1>
+        <h1>WEB PROJECTS</h1>
 
         {webProjectsArr.map((w) => {
           webcount++

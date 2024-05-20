@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from './elements/Navbar';
 import NotFound from './pages/NotFound';
 import HomePage from './pages/HomePage';
+import Footer from './sections/Footer';
 
 Amplify.configure(awsExports);
 
@@ -68,6 +69,7 @@ function App() {
           />
           <Route path='*' element={<NotFound />} />
         </Routes>
+        <Footer/>
       </Container>
     </>
   );

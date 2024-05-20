@@ -29,10 +29,10 @@ const About = () => {
         <Row>
           <Col lg={7}>
             <Card body>
-              <Stack gap={3}>
+              <Stack gap={2}>
                 <AccentTextCard>About me</AccentTextCard>
-                <p className='ntmy'>NICE TO MEET YOU, I’M TOMÁŠ</p>
-                <p>I’m A Web Developer Based In Czechia. I’m Mainly A Front End Web And App Developer</p>
+                <p className='ntmy'>NICE TO MEET YOU, I'M TOMÁŠ</p>
+                <p>I'm A Web Developer Based In Czechia. I'm Mainly A Front End Web And App Developer</p>
                 <Stack gap={3}>
                   <Row>
                     <Col lg={6}>
@@ -59,12 +59,12 @@ const About = () => {
         <Row>
           <Col lg={6}>
             <Card className='rounded-pill' body>
-              <p className='text-center mb-0'>CISCO IT ESSENTIALS</p>
+              <p className='text-center mb-0 fw-bolder fs-3'>CISCO IT ESSENTIALS</p>
             </Card>
           </Col>
           <Col lg={6}>
             <Card className='rounded-pill' body>
-              <p className='text-center mb-0'>NDG LINUX ESSENTIALS</p>
+              <p className='text-center mb-0 fw-bolder fs-3'>NDG LINUX ESSENTIALS</p>
             </Card>
           </Col>
         </Row>
@@ -97,18 +97,18 @@ const About = () => {
                 <AccentTextCard color='secondary'>
                   Web Development
                 </AccentTextCard>
-                <p>
-                  I Primarily Use React JS And HTML For Front End Development With Tailwind And Bootstrap For Styling. My Database Of Choice Is MySQL And I’m Learning Amazon’s Solutions.
+                <p className="mb-0">
+                  I Primarily Use React JS And HTML For Front End Development With Tailwind And Bootstrap For Styling. My Database Of Choice Is MySQL And I'm Learning Amazon's Solutions.
                 </p>
                 <p>
-                  While I’m Less Confident In PHP ( Nette And CodeIgniter ) I Can Still Work Them I Host My Web Projects On Amazon Web Services (AWS)
+                  While I'm Less Confident In PHP ( Nette And CodeIgniter ) I Can Still Work Them I Host My Web Projects On Amazon Web Services (AWS)
                 </p>
               </Stack>
             </Card>
           </Col>
           <Col lg={5}>
             <Card body>
-              <Stack gap={3}>
+              <Stack className='fh-web-showcase' gap={3}>
                 <Row>
                   <Col lg={6}>
                     <IconCard />
@@ -143,7 +143,9 @@ const About = () => {
               Mobile app development
             </AccentTextCard>
             <div>
-              <p>I Have A Preference For Minimalistic Web Pages But Am Always Open To Exploring New Concept And Styles. The Tools I Commonly Use For Design Include ( List The Design Tools You Use)</p>
+              <p>
+                I Utilize React Native, A Framework Similar To React Native. React Native Enables Me To Create Android And IOS Apps Using A Single Code Base.
+              </p>
               <Row>
                 <Col lg={4}>
                   <IconCard src="">React Native</IconCard>
