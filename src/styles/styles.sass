@@ -51,9 +51,57 @@ body
 
 @import 'bootstrap/scss/bootstrap.scss'
 
-@include media-breakpoint-down(xl) 
-    .gradient-secondary
-        margin-top: 1rem
+@include media-breakpoint-down(xxl) 
+    .card
+        // background-color: cyan !important
+    
+    #home
+        .image-card
+            .card-body
+                padding: 0.9rem
+        
     #contact
         .card
             padding: inherit
+
+    .check-out-text
+        font-size: 1.2rem
+
+@include media-breakpoint-down(xl) 
+    // .card
+        // background-color: blue !important
+
+// @include media-breakpoint-down(lg)
+//     .card
+//         background-color: red !important
+
+// @include media-breakpoint-down(md)
+//     .card
+//         background-color: green !important
+
+@include media-breakpoint-down(sm)
+    .card
+        // background-color: yellow !important
+    .hi
+        margin-bottom: 0rem
+
+    .my-name
+        @include gradient-text
+        font-size: 3rem
+        line-height: 100px
+
+    .i-am
+        font-weight: 400
+        text-transform: uppercase
+        font-size: 1rem
+
+    .check-out-text
+        font-size: 1rem
+    
+    .btn
+        width: 100%
+
+    #home
+        .image-card
+            .card-body
+                padding: 1rem

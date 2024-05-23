@@ -29,15 +29,15 @@ const About = () => {
       className='d-flex flex-column mt-5'
     >
       <Stack gap={4}>
-        <Row>
+        <Row className='row-gap-3'>
           <Col lg={7}>
-            <Card body>
-              <Stack gap={2}>
+            <Card>
+              <Card.Body className='gap-2 d-flex flex-column' >
                 <AccentTextCard>About me</AccentTextCard>
                 <p className='ntmy'>NICE TO MEET YOU, I'M TOMÁŠ</p>
                 <p>I'm A Web Developer Based In Czechia. I'm Mainly A Front End Web And App Developer</p>
                 <Stack gap={3}>
-                  <Row>
+                  <Row className='row-gap-3'>
                     <Col xl={6}>
                       <IconCard gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
                     </Col>
@@ -47,19 +47,15 @@ const About = () => {
                   </Row>
                   <IconCard gradientCol="danger" src={linkedinLogo}>My Linked In Account</IconCard>
                 </Stack>
-              </Stack>
+              </Card.Body>
             </Card>
           </Col>
           <Col lg={5}>
             <ImageCard src={MyPhoto} />
           </Col>
         </Row>
-        <Row>
-          <Col lg={12}>
-            <h2 className='mt-4'>I Have Acquired Following Certificates:</h2>
-          </Col>
-        </Row>
-        <Row>
+        <h2 className='mt-4'>I Have Acquired Following Certificates:</h2>
+        <Row className='row-gap-3'>
           <Col lg={6}>
             <Card className='rounded-pill' body>
               <p className='text-center mb-0 fw-bolder fs-3'>CISCO IT ESSENTIALS</p>
@@ -79,21 +75,21 @@ const About = () => {
             <div>
               <p>I Have A Preference For Minimalistic Web Pages But Am Always Open To Exploring New Concept And Styles. The Tools I Commonly Use For Design Include ( List The Design Tools You Use)</p>
               <p className='fw-bolder fs-3 text-primary text-uppercase'>Design tools</p>
-              <Row>
-                <Col lg={4}>
+              <Row className='row-gap-3'>
+                <Col sm={12} lg={4}>
                   <IconCard src="">Figma</IconCard>
                 </Col>
-                <Col lg={4}>
+                <Col sm={12} lg={4}>
                   <IconCard src="">Color Hunt</IconCard>
                 </Col>
-                <Col lg={4}>
+                <Col sm={12} lg={4}>
                   <IconCard src="">PowerToys</IconCard>
                 </Col>
               </Row>
             </div>
           </Stack>
         </Card>
-        <Row>
+        <Row className='row-gap-3'>
           <Col lg={7}>
             <Card body>
               <Stack gap={3}>
@@ -112,7 +108,7 @@ const About = () => {
           <Col lg={5}>
             <Card body>
               <Stack className='fh-web-showcase' gap={3}>
-                <Row>
+                <Row className='row-gap-3'>
                   <Col lg={6}>
                     <IconCard />
                   </Col>
@@ -120,7 +116,7 @@ const About = () => {
                     <IconCard />
                   </Col>
                 </Row>
-                <Row>
+                <Row className='row-gap-3'>
                   <Col lg={6}>
                     <IconCard />
                   </Col>
@@ -128,7 +124,7 @@ const About = () => {
                     <IconCard />
                   </Col>
                 </Row>
-                <Row>
+                <Row className='row-gap-3'>
                   <Col lg={6}>
                     <IconCard />
                   </Col>
@@ -149,12 +145,12 @@ const About = () => {
               <p>
                 I Utilize React Native, A Framework Similar To React Native. React Native Enables Me To Create Android And IOS Apps Using A Single Code Base.
               </p>
-              <Row>
+              <Row className='row-gap-3'>
                 <Col lg={4}>
                   <IconCard src={whReactLogo}>React Native</IconCard>
                 </Col>
                 <Col lg={4}>
-                <IconCard src={whReactLogo}>Native Base</IconCard>
+                  <IconCard src={whReactLogo}>Native Base</IconCard>
                 </Col>
                 <Col lg={4}>
                   <IconCard src={whReactLogo}>React StyleSheet</IconCard>

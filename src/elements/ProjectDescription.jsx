@@ -1,22 +1,20 @@
 import { Card, Col, Row } from "react-bootstrap"
 import IconCard from "./IconCard"
 
-const ProjectDescription = ({ w }) => {
+const ProjectDescription = ({ w, className = "UwU" }) => {
     return (
-        <Col lg={7}>
-            <Card body >
+        <Col lg={12} xl={7}>
+            <Card className={className} body>
                 <h2>
                     {w.name}
                 </h2>
-                <p 
-                // className="lh-lg"
-                >
+                <p>
                     {w.text}
                 </p>
-                <Row>
+                <Row className='row-gap-3'>
                     {w.icons.map((icon) => {
                         return (
-                            <Col key={w.name + icon.text}>
+                            <Col md={4} key={w.name + icon.text}>
                                 <IconCard src={icon.image}>{icon.text}</IconCard>
                             </Col>
                         )

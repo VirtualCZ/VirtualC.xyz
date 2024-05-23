@@ -26,26 +26,41 @@ import BlueTwitter from '../assets/logos/bl_twitter.svg';
 
 const Home = ({ homeSection }) => {
   const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+    xxl: {
+      breakpoint: { max: 3000, min: 1399 },
       items: 8,
       paritialVisibilityGutter: 60,
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 6,
+    xl: {
+      breakpoint: { max: 1399, min: 1199 },
+      items: 7,
       paritialVisibilityGutter: 50,
     },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 3,
+    lg: {
+      breakpoint: { max: 1199, min: 991 },
+      items: 6,
+      paritialVisibilityGutter: 20,
+    },
+    md: {
+      breakpoint: { max: 991, min: 767 },
+      items: 5,
+      paritialVisibilityGutter: 30,
+    },
+    sm: {
+      breakpoint: { max: 767, min: 575 },
+      items: 4,
+      paritialVisibilityGutter: 30,
+    },
+    xs: {
+      breakpoint: { max: 575, min: 0 },
+      items: 4,
       paritialVisibilityGutter: 30,
     },
   };
   const { t } = useTranslation();
 
   return (
-    <section ref={homeSection}>
+    <section id="home" ref={homeSection}>
       {/* <p style={{fontWeight: 200, fontStyle: 'normal'}}>200 thin</p>
           <p style={{fontWeight: 200, fontStyle: 'italic'}}>200 thin italic</p>
           <p style={{fontWeight: 300, fontStyle: 'normal'}}>300 light</p>
@@ -63,81 +78,61 @@ const Home = ({ homeSection }) => {
 
       <Stack gap={3}>
         {/* <h1>{t('navigation.home')}</h1> */}
-        <Row>
-          <Col lg={7} className='mb-3 mb-lg-0'>
+        <Row className=''>
+          <Col lg={12} xl={7} className='mb-3 mb-xl-0'>
             <Card>
               <Card.Body className="d-flex flex-column">
-              <p className='hi'>Hey there 👋 I'm</p>
-              <p className='my-name'>Tomáš Gabriel</p>
-              <p className='i-am'>and I'm a web and app developer!</p>
-              <div className='mt-auto'>
-                <Button variant='secondary' className="self-end">Hire Me 👋🏼</Button>
-              </div>
+                <p className='hi'>Hey there 👋 I'm</p>
+                <p className='my-name'>Tomáš Gabriel</p>
+                <p className='i-am'>and I'm a web and app developer!</p>
+                <div className='mt-auto'>
+                  <Button variant='secondary' className="self-end">Hire Me 👋🏼</Button>
+                </div>
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={5}>
-            <Stack gap={3}>
-              <Row>
-                <Col>
-                  <Card body >
-                    <Card.Text className='fs-3' style={{width: "95%"}}>
-                      If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
-                    </Card.Text>
-                      <Button href="#projects" variant='info'>Check Out My Projects</Button>
-                  </Card>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <ImageCardAR1 src={BlueFacebook} />
-                </Col>
-                <Col>
-                  <ImageCardAR1 src={BlueInstagram} />
-                </Col>
-                <Col>
-                  <ImageCardAR1 src={BlueTwitter} />
-                </Col>
-                <Col>
-                  <ImageCardAR1 src={BlueLinkedIn} />
-                </Col>
-                <Col>
-                  <ImageCardAR1 src={BlueDribbble} />
-                </Col>
-              </Row>
+          <Col className='row-gap-3 d-flex flex-column' lg={12} xl={5}>
+            <Card body >
+              <Card.Text className='check-out-text' style={{ width: "95%" }}>
+                If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
+              </Card.Text>
+              <Button href="#projects" variant='info'>Check Out My Projects</Button>
+            </Card>
+            <Stack direction='horizontal' gap={2}>
+                <ImageCardAR1 src={BlueFacebook} />
+
+                <ImageCardAR1 src={BlueInstagram} />
+
+                <ImageCardAR1 src={BlueTwitter} />
+
+                <ImageCardAR1 src={BlueLinkedIn} />
+
+                <ImageCardAR1 src={BlueDribbble} />
             </Stack>
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <h1>TECHNOLOGIES I USE:</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg={12}>
-            <Card>
-            <Card.Body className='px-0'>
-              <Carousel
-                responsive={responsive}
-                deviceType={'desktop'}
-                infinite={true}
-                itemClass='carouselItem'
-              >
-                <ImageCardAR1 src={reactLogo} />
-                <ImageCardAR1 src={cssLogo} />
-                <ImageCardAR1 src={igLogo} />
-                <ImageCardAR1 src={ghLogo} />
-                <ImageCardAR1 src={htmlLogo} />
-                <ImageCardAR1 src={reactLogo} />
-                <ImageCardAR1 src={cssLogo} />
-                <ImageCardAR1 src={igLogo} />
-                <ImageCardAR1 src={ghLogo} />
-                <ImageCardAR1 src={htmlLogo} />
-              </Carousel>
-            </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+        <h1>TECHNOLOGIES I USE:</h1>
+        <Card>
+          <Card.Body className='px-0'>
+            <Carousel
+              responsive={responsive}
+              deviceType={'desktop'}
+              infinite={true}
+              itemClass='carouselItem'
+            >
+              <ImageCardAR1 src={reactLogo} />
+              <ImageCardAR1 src={cssLogo} />
+              <ImageCardAR1 src={igLogo} />
+              <ImageCardAR1 src={ghLogo} />
+              <ImageCardAR1 src={htmlLogo} />
+              <ImageCardAR1 src={reactLogo} />
+              <ImageCardAR1 src={cssLogo} />
+              <ImageCardAR1 src={igLogo} />
+              <ImageCardAR1 src={ghLogo} />
+              <ImageCardAR1 src={htmlLogo} />
+            </Carousel>
+          </Card.Body>
+        </Card>
       </Stack>
     </section>
   );
