@@ -50,3 +50,10 @@ body
 @import ./carousel.sass
 
 @import 'bootstrap/scss/bootstrap.scss'
+
+@include media-breakpoint-down(xl) 
+    .gradient-secondary
+        margin-top: 1rem
+    #contact
+        .card
+            padding: inherit

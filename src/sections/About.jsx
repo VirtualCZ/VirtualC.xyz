@@ -12,8 +12,11 @@ import ImageCard from '../elements/ImageCard';
 import IconCard from '../elements/IconCard';
 
 import MyPhoto from '../assets/myphoto.jpg';
-import ghLogo from '../assets/logos/gh_logo.svg';
-import igLogo from '../assets/logos/ig_logo.svg';
+import ghLogo from '../assets/logos/wh_gh_logo.svg';
+import igLogo from '../assets/logos/wh_ig_logo.svg';
+import linkedinLogo from '../assets/logos/wh_linkedin_logo.svg';
+
+import whReactLogo from '../assets/logos/wh_react_logo.svg';
 
 const About = () => {
   // const { t } = useTranslation();
@@ -35,14 +38,14 @@ const About = () => {
                 <p>I'm A Web Developer Based In Czechia. I'm Mainly A Front End Web And App Developer</p>
                 <Stack gap={3}>
                   <Row>
-                    <Col lg={6}>
+                    <Col xl={6}>
                       <IconCard gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
                     </Col>
-                    <Col lg={6}>
+                    <Col xl={6}>
                       <IconCard gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
                     </Col>
                   </Row>
-                  <IconCard gradientCol="danger" src={ghLogo}>My GitHub Account</IconCard>
+                  <IconCard gradientCol="danger" src={linkedinLogo}>My Linked In Account</IconCard>
                 </Stack>
               </Stack>
             </Card>
@@ -148,13 +151,13 @@ const About = () => {
               </p>
               <Row>
                 <Col lg={4}>
-                  <IconCard src="">React Native</IconCard>
+                  <IconCard src={whReactLogo}>React Native</IconCard>
                 </Col>
                 <Col lg={4}>
-                  <IconCard src="">Native Base</IconCard>
+                <IconCard src={whReactLogo}>Native Base</IconCard>
                 </Col>
                 <Col lg={4}>
-                  <IconCard src="">React StyleSheet</IconCard>
+                  <IconCard src={whReactLogo}>React StyleSheet</IconCard>
                 </Col>
               </Row>
             </div>

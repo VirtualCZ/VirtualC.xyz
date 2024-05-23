@@ -13,7 +13,7 @@ function CustomNavbar() {
       <Navbar
         className='rounded-pill container navbar-fixed-top text-uppercase'
         variant='dark'
-        expand='md'
+        expand='lg'
       >
         <Navbar.Brand href='#'>VirtualC</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />

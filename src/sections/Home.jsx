@@ -10,22 +10,20 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
+import ImageCardAR1 from '../elements/ImageCardAR1';
 
 import reactLogo from '../assets/logos/react_logo.svg';
 import cssLogo from '../assets/logos/css_logo.svg';
 import igLogo from '../assets/logos/ig_logo.svg';
 import ghLogo from '../assets/logos/gh_logo.svg';
 import htmlLogo from '../assets/logos/html_logo.svg';
-import ImageCard from '../elements/ImageCard';
 
 import BlueDribbble from '../assets/logos/bl_dribbble.svg';
 import BlueFacebook from '../assets/logos/bl_facebook.svg';
 import BlueInstagram from '../assets/logos/bl_instagram.svg';
 import BlueLinkedIn from '../assets/logos/bl_linkedin.svg';
 import BlueTwitter from '../assets/logos/bl_twitter.svg';
-import ImageCardAR1 from '../elements/ImageCardAR1';
-;     
+
 const Home = ({ homeSection }) => {
   const responsive = {
     desktop: {
@@ -125,18 +123,16 @@ const Home = ({ homeSection }) => {
                 infinite={true}
                 itemClass='carouselItem'
               >
+                <ImageCardAR1 src={reactLogo} />
+                <ImageCardAR1 src={cssLogo} />
                 <ImageCardAR1 src={igLogo} />
-                <ImageCardAR1 src={htmlLogo} />
                 <ImageCardAR1 src={ghLogo} />
+                <ImageCardAR1 src={htmlLogo} />
+                <ImageCardAR1 src={reactLogo} />
+                <ImageCardAR1 src={cssLogo} />
                 <ImageCardAR1 src={igLogo} />
-                <ImageCardAR1 src={htmlLogo} />
                 <ImageCardAR1 src={ghLogo} />
-                <ImageCardAR1 src={igLogo} />
                 <ImageCardAR1 src={htmlLogo} />
-                <ImageCardAR1 src={ghLogo} />
-                <ImageCardAR1 src={igLogo} />
-                <ImageCardAR1 src={htmlLogo} />
-                <ImageCardAR1 src={ghLogo} />
               </Carousel>
             </Card.Body>
             </Card>
