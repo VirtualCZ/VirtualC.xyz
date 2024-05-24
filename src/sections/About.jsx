@@ -18,6 +18,10 @@ import linkedinLogo from '../assets/logos/wh_linkedin_logo.svg';
 
 import whReactLogo from '../assets/logos/wh_react_logo.svg';
 
+import xdLogo from '../assets/logos/xd_logo.svg';
+import colorHuntLogo from '../assets/logos/colorhunt_logo.svg';
+import figmaLogo from '../assets/logos/figma_logo.svg';
+
 import wideAWSLogo from '../assets/logos/wide_aws_logo.svg';
 import wideMySQLLogo from '../assets/logos/wide_mysql_logo.svg';
 import wideJSLogo from '../assets/logos/wide_js_logo.svg';
@@ -84,13 +88,13 @@ const About = () => {
               <p className='fw-bolder fs-3 text-primary text-uppercase'>Design tools</p>
               <Row className='row-gap-3'>
                 <Col sm={12} lg={4}>
-                  <IconCard src="">Figma</IconCard>
+                  <IconCard src={figmaLogo}>Figma</IconCard>
                 </Col>
                 <Col sm={12} lg={4}>
-                  <IconCard src="">Color Hunt</IconCard>
+                  <IconCard src={colorHuntLogo}>Color Hunt</IconCard>
                 </Col>
                 <Col sm={12} lg={4}>
-                  <IconCard src="">PowerToys</IconCard>
+                  <IconCard src={xdLogo}>PowerToys</IconCard>
                 </Col>
               </Row>
             </div>
@@ -154,13 +158,13 @@ const About = () => {
               </p>
               <Row className='row-gap-3'>
                 <Col lg={4}>
-                  <IconCard src={whReactLogo}>React Native</IconCard>
+                  <IconCard src={reactLogo}>React Native</IconCard>
                 </Col>
                 <Col lg={4}>
-                  <IconCard src={whReactLogo}>Native Base</IconCard>
+                  <IconCard src={reactLogo}>Native Base</IconCard>
                 </Col>
                 <Col lg={4}>
-                  <IconCard src={whReactLogo}>React StyleSheet</IconCard>
+                  <IconCard src={reactLogo}>React StyleSheet</IconCard>
                 </Col>
               </Row>
             </div>
