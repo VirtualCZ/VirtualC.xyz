@@ -18,6 +18,13 @@ import linkedinLogo from '../assets/logos/wh_linkedin_logo.svg';
 
 import whReactLogo from '../assets/logos/wh_react_logo.svg';
 
+import wideAWSLogo from '../assets/logos/wide_aws_logo.svg';
+import wideMySQLLogo from '../assets/logos/wide_mysql_logo.svg';
+import wideJSLogo from '../assets/logos/wide_js_logo.svg';
+import reactLogo from '../assets/logos/react_logo.svg';
+import wideTailwindogo from '../assets/logos/wide_tailwind_logo.svg';
+import wideBootstrapLogo from '../assets/logos/wide_bootstrap_logo.svg';
+
 const About = () => {
   // const { t } = useTranslation();
   // document.title = `${t('navigation.components')} - VirtualC`;
@@ -109,27 +116,27 @@ const About = () => {
             <Card body>
               <Stack className='fh-web-showcase' gap={3}>
                 <Row className='row-gap-3'>
-                  <Col lg={6}>
-                    <IconCard />
+                  <Col xs={6}>
+                    <IconCard src={wideAWSLogo} />
                   </Col>
-                  <Col lg={6}>
-                    <IconCard />
-                  </Col>
-                </Row>
-                <Row className='row-gap-3'>
-                  <Col lg={6}>
-                    <IconCard />
-                  </Col>
-                  <Col lg={6}>
-                    <IconCard />
+                  <Col xs={6}>
+                    <IconCard src={wideMySQLLogo} />
                   </Col>
                 </Row>
                 <Row className='row-gap-3'>
-                  <Col lg={6}>
-                    <IconCard />
+                  <Col xs={6}>
+                    <IconCard src={wideJSLogo} />
                   </Col>
-                  <Col lg={6}>
-                    <IconCard />
+                  <Col xs={6}>
+                    <IconCard src={reactLogo} />
+                  </Col>
+                </Row>
+                <Row className='row-gap-3'>
+                  <Col xs={6}>
+                    <IconCard src={wideTailwindogo} />
+                  </Col>
+                  <Col xs={6}>
+                    <IconCard src={wideBootstrapLogo} />
                   </Col>
                 </Row>
               </Stack>
