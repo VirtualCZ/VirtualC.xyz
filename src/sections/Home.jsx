@@ -49,12 +49,12 @@ const Home = ({ homeSection }) => {
     sm: {
       breakpoint: { max: 767, min: 575 },
       items: 4,
-      paritialVisibilityGutter: 30,
+      paritialVisibilityGutter: 10,
     },
     xs: {
       breakpoint: { max: 575, min: 0 },
       items: 4,
-      paritialVisibilityGutter: 30,
+      paritialVisibilityGutter: 10,
     },
   };
   const { t } = useTranslation();

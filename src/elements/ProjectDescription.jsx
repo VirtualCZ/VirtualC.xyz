@@ -3,7 +3,7 @@ import IconCard from "./IconCard"
 
 const ProjectDescription = ({ w, className = "UwU" }) => {
     return (
-        <Col lg={12} xl={7}>
+        <Col md={12} lg={7}>
             <Card className={className} body>
                 <h2>
                     {w.name}
@@ -14,7 +14,7 @@ const ProjectDescription = ({ w, className = "UwU" }) => {
                 <Row className='row-gap-3'>
                     {w.icons.map((icon) => {
                         return (
-                            <Col md={4} key={w.name + icon.text}>
+                            <Col lg={12} xl={4} key={w.name + icon.text}>
                                 <IconCard src={icon.image}>{icon.text}</IconCard>
                             </Col>
                         )

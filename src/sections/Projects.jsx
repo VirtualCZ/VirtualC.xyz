@@ -53,22 +53,44 @@ const Projects = () => {
           webcount++
           if (webcount % 2) {
             return (
-              <Row key={"row" + webcount + w.name}>
-                <ProjectDescription className='rounded-bottom-0' w={w} key={webcount + w.name} />
-                <Col lg={12} xl={5}>
-                  <ImageCard className='rounded-top-0' src={w.image} />
-                </Col>
-              </Row>
+              <>
+
+                <Row className='d-none d-lg-flex' key={"row" + webcount + w.name}>
+                  <ProjectDescription w={w} key={webcount + w.name} />
+                  <Col md={12} lg={5}>
+                    <ImageCard imgClass="h-100" src={w.image} />
+                  </Col>
+                </Row>
+
+                <Row className='d-flex d-lg-none' key={"row" + webcount + w.name}>
+                  <ProjectDescription className='rounded-bottom-0' w={w} key={webcount + w.name} />
+                  <Col md={12} lg={5}>
+                    <ImageCard className='rounded-top-0' src={w.image} />
+                  </Col>
+                </Row>
+
+              </>
             )
           }
           else {
             return (
-              <Row key={"row" + webcount + w.name}>
-                <Col lg={12} xl={5}>
-                  <ImageCard className='rounded-bottom-0' src={w.image} />
-                </Col>
-                <ProjectDescription className='rounded-top-0' w={w} key={webcount + w.name} />
-              </Row>
+              <>
+
+                <Row className='d-none d-lg-flex' key={"row" + webcount + w.name}>
+                  <Col md={12} lg={5}>
+                    <ImageCard imgClass="h-100" src={w.image} />
+                  </Col>
+                  <ProjectDescription w={w} key={webcount + w.name} />
+                </Row>
+
+                <Row className='d-flex d-lg-none' key={"row" + webcount + w.name}>
+                  <Col md={12} lg={5}>
+                    <ImageCard className='rounded-bottom-0' src={w.image} />
+                  </Col>
+                  <ProjectDescription className='rounded-top-0' w={w} key={webcount + w.name} />
+                </Row>
+
+              </>
             )
           }
         })

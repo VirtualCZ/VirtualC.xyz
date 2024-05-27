@@ -41,6 +41,14 @@ $border-radius: 1.4rem
 body
     position: relative
 
+//     Extra small 	None 	<576px
+// Small 	sm 	≥576px
+// Medium 	md 	≥768px
+// Large 	lg 	≥992px
+// Extra large 	xl 	≥1200px
+// Extra extra large 	xxl 	≥1400px
+
+
 @import ./fonts.sass
 @import ./navbar.sass
 @import ./card.sass
@@ -88,7 +96,7 @@ body
     .my-name
         @include gradient-text
         font-size: 3rem
-        line-height: 100px
+        line-height: 1.2
 
     .i-am
         font-weight: 400
@@ -105,3 +113,15 @@ body
         .image-card
             .card-body
                 padding: 1rem
+
+@include media-breakpoint-down(xs)
+    html
+        font-size: 18px
+        //sets REM
+    #home
+        .image-card
+            .card-body
+                padding: 0.6rem
+
+    .carouselItem
+        padding: 0rem 0.4rem
