@@ -64,6 +64,9 @@ body
         .image-card
             .card-body
                 padding: 1rem
+    #contact
+        .card
+            padding: inherit
 
 @include media-breakpoint-down(xl) 
     #contact
@@ -81,11 +84,6 @@ body
         font-size: 1.2rem
     html
         font-size: 18px
-        //sets REM
-    // #home
-    //     .image-card
-    //         .card-body
-    //             padding: 0.6rem
     .hi
         margin-bottom: 0.3rem
     .my-name
@@ -103,20 +101,8 @@ body
     .carouselItem
         padding: 0rem 0.4rem
 
-@include media-breakpoint-down(xxl) 
-    #contact
-        .card
-            padding: inherit
-
-
-// @include media-breakpoint-down(xl) 
-//     // .card
-//         // background-color: blue !important
-// // @include media-breakpoint-down(lg)
-// //     .card
-// //         background-color: red !important
-// // @include media-breakpoint-down(md)
-// //     .card
-// //         background-color: green !important
-
-// @include media-breakpoint-down(sm)
+@media screen and (max-width: 540px)
+    #home
+        .image-card
+            .card-body
+                padding: 0.6rem
