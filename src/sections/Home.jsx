@@ -98,15 +98,11 @@ const Home = ({ homeSection }) => {
               </Card.Text>
               <Button href="#projects" variant='info'>Check Out My Projects</Button>
             </Card>
-            <Stack direction='horizontal' gap={2}>
+            <Stack direction='horizontal' gap={3}>
                 <ImageCardAR1 src={BlueFacebook} />
-
                 <ImageCardAR1 src={BlueInstagram} />
-
                 <ImageCardAR1 src={BlueTwitter} />
-
                 <ImageCardAR1 src={BlueLinkedIn} />
-
                 <ImageCardAR1 src={BlueDribbble} />
             </Stack>
           </Col>

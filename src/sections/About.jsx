@@ -62,7 +62,8 @@ const About = () => {
             </Card>
           </Col>
           <Col lg={5}>
-            <ImageCard src={MyPhoto} />
+            <ImageCard imgClass='h-100' className='d-none d-lg-flex' src={MyPhoto} />
+            <ImageCard className='d-flex d-lg-none' src={MyPhoto} />
           </Col>
         </Row>
         <h2 className='mt-4'>I Have Acquired Following Certificates:</h2>
