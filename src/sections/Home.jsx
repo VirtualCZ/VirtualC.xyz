@@ -23,6 +23,7 @@ import BlueFacebook from '../assets/logos/bl_facebook.svg';
 import BlueInstagram from '../assets/logos/bl_instagram.svg';
 import BlueLinkedIn from '../assets/logos/bl_linkedin.svg';
 import BlueTwitter from '../assets/logos/bl_twitter.svg';
+import ImageCard from '../elements/ImageCard';
 
 const Home = ({ homeSection }) => {
   const responsive = {
@@ -98,7 +99,14 @@ const Home = ({ homeSection }) => {
               </Card.Text>
               <Button href="#projects" variant='info'>Check Out My Projects</Button>
             </Card>
-            <Stack direction='horizontal' gap={3}>
+            <Stack direction='horizontal' className='d-none d-md-flex d-xl-none' gap={3}>
+                <ImageCard className='flex-fill align-items-center' src={BlueFacebook} />
+                <ImageCard className='flex-fill align-items-center' src={BlueInstagram} />
+                <ImageCard className='flex-fill align-items-center' src={BlueTwitter} />
+                <ImageCard className='flex-fill align-items-center' src={BlueLinkedIn} />
+                <ImageCard className='flex-fill align-items-center' src={BlueDribbble} />
+            </Stack>
+            <Stack direction='horizontal' className='d-flex d-md-none d-xl-flex' gap={3}>
                 <ImageCardAR1 src={BlueFacebook} />
                 <ImageCardAR1 src={BlueInstagram} />
                 <ImageCardAR1 src={BlueTwitter} />
