@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card"
 import Image from "react-bootstrap/Image"
 
-const IconCard = ({ src, alt = "", gradientCol = "", children = "" }) => {
+const IconCard = ({ link, src, alt = "", gradientCol = "", children = "" }) => {
     return (
         <Card className={`icon-card rounded-pill gradient-${gradientCol}`}>
             <Card.Body className="justify-content-center d-flex align-middle h-100">
@@ -9,7 +9,13 @@ const IconCard = ({ src, alt = "", gradientCol = "", children = "" }) => {
                 {children ?
                     <p className="d-inline fs-6">{children}</p>
                     :
-                    null}
+                    null
+                }
+                {link ?
+                    <a href={link} class="stretched-link"></a>
+                    :
+                    null
+                }
             </Card.Body>
         </Card>
     )

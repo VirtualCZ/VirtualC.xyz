@@ -87,7 +87,7 @@ const Home = ({ homeSection }) => {
                 <p className='my-name'>Tomáš Gabriel</p>
                 <p className='i-am'>and I'm a web and app developer!</p>
                 <div className='mt-auto'>
-                  <Button variant='secondary' className="self-end">Hire Me 👋🏼</Button>
+                  <Button href="#contact" variant='secondary'className="self-end">Hire Me 👋🏼</Button>
                 </div>
               </Card.Body>
             </Card>
@@ -100,18 +100,18 @@ const Home = ({ homeSection }) => {
               <Button href="#projects" variant='info'>Check Out My Projects</Button>
             </Card>
             <Stack direction='horizontal' className='d-none d-md-flex d-xl-none' gap={3}>
-                <ImageCard className='flex-fill align-items-center' src={BlueFacebook} />
-                <ImageCard className='flex-fill align-items-center' src={BlueInstagram} />
-                <ImageCard className='flex-fill align-items-center' src={BlueTwitter} />
-                <ImageCard className='flex-fill align-items-center' src={BlueLinkedIn} />
-                <ImageCard className='flex-fill align-items-center' src={BlueDribbble} />
+              <ImageCard className='flex-fill align-items-center' src={BlueFacebook} />
+              <ImageCard className='flex-fill align-items-center' src={BlueInstagram} />
+              <ImageCard className='flex-fill align-items-center' src={BlueTwitter} />
+              <ImageCard className='flex-fill align-items-center' src={BlueLinkedIn} />
+              <ImageCard className='flex-fill align-items-center' src={BlueDribbble} />
             </Stack>
             <Stack direction='horizontal' className='d-flex d-md-none d-xl-flex' gap={3}>
-                <ImageCardAR1 src={BlueFacebook} />
-                <ImageCardAR1 src={BlueInstagram} />
-                <ImageCardAR1 src={BlueTwitter} />
-                <ImageCardAR1 src={BlueLinkedIn} />
-                <ImageCardAR1 src={BlueDribbble} />
+              <ImageCardAR1 src={BlueFacebook} />
+              <ImageCardAR1 src={BlueInstagram} />
+              <ImageCardAR1 src={BlueTwitter} />
+              <ImageCardAR1 src={BlueLinkedIn} />
+              <ImageCardAR1 src={BlueDribbble} />
             </Stack>
           </Col>
         </Row>

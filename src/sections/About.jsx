@@ -50,10 +50,10 @@ const About = () => {
                 <Stack gap={3}>
                   <Row className='row-gap-3'>
                     <Col xl={6}>
-                      <IconCard gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
+                      <IconCard link="https://github.com/VirtualCZ" gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
                     </Col>
                     <Col xl={6}>
-                      <IconCard gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
+                      <IconCard link="https://www.instagram.com/tomas_v_chill/" gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
                     </Col>
                   </Row>
                   <IconCard gradientCol="danger" src={linkedinLogo}>My Linked In Account</IconCard>
