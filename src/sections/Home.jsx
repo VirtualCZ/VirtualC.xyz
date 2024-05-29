@@ -100,16 +100,16 @@ const Home = ({ homeSection }) => {
               <Button href="#projects" variant='info'>Check Out My Projects</Button>
             </Card>
             <Stack direction='horizontal' className='d-none d-md-flex d-xl-none' gap={3}>
-              <ImageCard className='flex-fill align-items-center' src={BlueFacebook} />
-              <ImageCard className='flex-fill align-items-center' src={BlueInstagram} />
-              <ImageCard className='flex-fill align-items-center' src={BlueTwitter} />
+              <ImageCard link="https://www.facebook.com/SomeoneCZ/" className='flex-fill align-items-center' src={BlueFacebook} />
+              <ImageCard link="https://www.instagram.com/tomas_v_chill/" className='flex-fill align-items-center' src={BlueInstagram} />
+              <ImageCard link="https://x.com/_Tomas_Gabriel_" className='flex-fill align-items-center' src={BlueTwitter} />
               <ImageCard className='flex-fill align-items-center' src={BlueLinkedIn} />
               <ImageCard className='flex-fill align-items-center' src={BlueDribbble} />
             </Stack>
             <Stack direction='horizontal' className='d-flex d-md-none d-xl-flex' gap={3}>
-              <ImageCardAR1 src={BlueFacebook} />
-              <ImageCardAR1 src={BlueInstagram} />
-              <ImageCardAR1 src={BlueTwitter} />
+              <ImageCardAR1 link="https://www.facebook.com/SomeoneCZ/" src={BlueFacebook} />
+              <ImageCardAR1 link="https://www.instagram.com/tomas_v_chill/" src={BlueInstagram} />
+              <ImageCardAR1 link="https://x.com/_Tomas_Gabriel_" src={BlueTwitter} />
               <ImageCardAR1 src={BlueLinkedIn} />
               <ImageCardAR1 src={BlueDribbble} />
             </Stack>
@@ -124,16 +124,16 @@ const Home = ({ homeSection }) => {
               infinite={true}
               itemClass='carouselItem'
             >
-              <ImageCardAR1 src={reactLogo} />
-              <ImageCardAR1 src={cssLogo} />
+              <ImageCardAR1 link="https://react.dev/" src={reactLogo} />
+              <ImageCardAR1 link="https://www.w3.org/Style/CSS/Overview.en.html" src={cssLogo} />
               <ImageCardAR1 src={igLogo} />
-              <ImageCardAR1 src={ghLogo} />
-              <ImageCardAR1 src={htmlLogo} />
-              <ImageCardAR1 src={reactLogo} />
-              <ImageCardAR1 src={cssLogo} />
+              <ImageCardAR1 link="https://github.com/" src={ghLogo} />
+              <ImageCardAR1 link="https://developer.mozilla.org/en-US/docs/Web/HTML" src={htmlLogo} />
+              <ImageCardAR1 link="https://react.dev/" src={reactLogo} />
+              <ImageCardAR1 link="https://www.w3.org/Style/CSS/Overview.en.html" src={cssLogo} />
               <ImageCardAR1 src={igLogo} />
-              <ImageCardAR1 src={ghLogo} />
-              <ImageCardAR1 src={htmlLogo} />
+              <ImageCardAR1 link="https://developer.mozilla.org/en-US/docs/Web/HTML" src={htmlLogo} />
+              <ImageCardAR1 link="https://www.w3.org/Style/CSS/Overview.en.html" src={cssLogo} />
             </Carousel>
           </Card.Body>
         </Card>

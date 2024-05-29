@@ -21,21 +21,21 @@ const Projects = () => {
   var webcount = 0
   const webProjectsArr = [
     {
+      name: "dev.VirtualC.xyz",
+      text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
+      icons: [{ image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz/tree/remake" }, { image: xdLogo, text: "Adobe XD" }, { image: globeLogo, text: "Visit", link: "https://www.virtualc.xyz" }],
+      image: NicCalc,
+    },
+    {
+      name: "Old VirtualC.xyz",
+      text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
+      icons: [{ image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz" }, { image: xdLogo, text: "Adobe XD" }, { image: globeLogo, text: "Visit", link: "https://dev.virtualc.xyz" }],
+      image: NicCalc,
+    },
+    {
       name: "NicCalc",
       text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: ghLogo, text: "GitHub" }, { image: xdLogo, text: "Adobe XD" }, { image: globeLogo, text: "Visit" }],
-      image: NicCalc,
-    },
-    {
-      name: "NicCalc2",
-      text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: ghLogo, text: "GitHub" }, { image: xdLogo, text: "Adobe XD" }, { image: globeLogo, text: "Visit" }],
-      image: NicCalc,
-    },
-    {
-      name: "NicCalc3",
-      text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [{ image: ghLogo, text: "GitHub" }, { image: xdLogo, text: "Adobe XD" }, { image: globeLogo, text: "Visit" }],
+      icons: [{ image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz/tree/niccalc" }, { image: xdLogo, text: "Adobe XD" }, { image: globeLogo, text: "Visit", link: "https://virtualc.xyz/niccalc" }],
       image: NicCalc,
     },
   ]
