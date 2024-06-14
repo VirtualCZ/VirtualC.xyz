@@ -1,7 +1,7 @@
 import { Card, Col, Row } from "react-bootstrap"
 import IconCard from "./IconCard"
 
-const ProjectDescription = ({ w, className = "UwU" }) => {
+const ProjectDescription = ({ w, className = "" }) => {
     return (
         <Col md={12} lg={7}>
             <Card className={className} body>
@@ -15,7 +15,7 @@ const ProjectDescription = ({ w, className = "UwU" }) => {
                     {w.icons.map((icon) => {
                         return (
                             <Col lg={12} xl={4} key={w.name + icon.text}>
-                                <IconCard src={icon.image}>{icon.text}</IconCard>
+                                <IconCard link={icon.link} src={icon.image}>{icon.text}</IconCard>
                             </Col>
                         )
                     })}
