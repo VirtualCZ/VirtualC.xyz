@@ -16,7 +16,6 @@ const Contact = () => {
 
   const regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "g")
 
-  const [validated, setValidated] = useState(false)
   const [formData, setFormData] = useState(
     {
       email: "",
@@ -46,6 +45,11 @@ const Contact = () => {
     const form = e.currentTarget;
     if (form.checkValidity() === false) {
       e.stopPropagation();
+      setTouched({
+        email: true,
+        subject: true,
+        text: true,
+      })
     }
     if (form.checkValidity() === true) {
       setFormData({
@@ -58,6 +62,7 @@ const Contact = () => {
         subject: false,
         text: false,
       })
+      alert("sent")
     }
   }
 
@@ -71,9 +76,9 @@ const Contact = () => {
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email Address</Form.Label>
               <Form.Control
-                type="email" 
+                type="email"
                 name="email"
-                placeholder="Enter Email Address" 
+                placeholder="Enter Email Address"
                 value={formData.email}
                 onChange={chngFn}
                 required
@@ -93,7 +98,7 @@ const Contact = () => {
               <Form.Control
                 type="text"
                 name="subject"
-                placeholder="Enter Your Subject"                
+                placeholder="Enter Your Subject"
                 value={formData.subject}
                 onChange={chngFn}
                 required
@@ -109,8 +114,8 @@ const Contact = () => {
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-              <Form.Control 
-                as="textarea" 
+              <Form.Control
+                as="textarea"
                 name="text"
                 placeholder='Write Message...'
                 value={formData.text}
@@ -119,7 +124,7 @@ const Contact = () => {
                 minLength={4}
                 onBlur={()=>setTouched({...touched, text:true})}
                 isInvalid={
-                  touched.text && 
+                  touched.text &&
                   formData.text.length < 4
                 }
               />
