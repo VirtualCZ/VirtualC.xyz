@@ -12,11 +12,15 @@ import Stack from 'react-bootstrap/Stack';
 import Button from 'react-bootstrap/Button';
 import ImageCardAR1 from '../elements/ImageCardAR1';
 
-import reactLogo from '../assets/logos/react_logo.svg';
+import antdesignLogo from '../assets/logos/antdesign_logo.svg';
+import colorHuntLogo from '../assets/logos/colorhunt_logo.svg';
 import cssLogo from '../assets/logos/css_logo.svg';
-import igLogo from '../assets/logos/ig_logo.svg';
+import dotNetLogo from '../assets/logos/dotnet_logo.svg';
+import figmaLogo from '../assets/logos/figma_logo.svg';
 import ghLogo from '../assets/logos/gh_logo.svg';
 import htmlLogo from '../assets/logos/html_logo.svg';
+import jsLogo from '../assets/logos/js_logo.svg';
+import reactLogo from '../assets/logos/react_logo.svg';
 
 import BlueDribbble from '../assets/logos/bl_dribbble.svg';
 import BlueFacebook from '../assets/logos/bl_facebook.svg';
@@ -126,14 +130,12 @@ const Home = ({ homeSection }) => {
             >
               <ImageCardAR1 link="https://react.dev/" src={reactLogo} />
               <ImageCardAR1 link="https://www.w3.org/Style/CSS/Overview.en.html" src={cssLogo} />
-              <ImageCardAR1 src={igLogo} />
               <ImageCardAR1 link="https://github.com/" src={ghLogo} />
               <ImageCardAR1 link="https://developer.mozilla.org/en-US/docs/Web/HTML" src={htmlLogo} />
-              <ImageCardAR1 link="https://react.dev/" src={reactLogo} />
-              <ImageCardAR1 link="https://www.w3.org/Style/CSS/Overview.en.html" src={cssLogo} />
-              <ImageCardAR1 src={igLogo} />
-              <ImageCardAR1 link="https://developer.mozilla.org/en-US/docs/Web/HTML" src={htmlLogo} />
-              <ImageCardAR1 link="https://www.w3.org/Style/CSS/Overview.en.html" src={cssLogo} />
+              <ImageCardAR1 link="https://github.com/" src={antdesignLogo} />
+              <ImageCardAR1 link="https://github.com/" src={colorHuntLogo} />
+              <ImageCardAR1 link="https://github.com/" src={dotNetLogo} />
+              <ImageCardAR1 link="https://github.com/" src={figmaLogo} />
             </Carousel>
           </Card.Body>
         </Card>

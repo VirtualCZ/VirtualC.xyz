@@ -1,8 +1,3 @@
-import { useEffect, useState } from 'react';
-
-import { API } from 'aws-amplify';
-import { useTranslation } from 'react-i18next';
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -16,9 +11,8 @@ import ghLogo from '../assets/logos/wh_gh_logo.svg';
 import igLogo from '../assets/logos/wh_ig_logo.svg';
 import linkedinLogo from '../assets/logos/wh_linkedin_logo.svg';
 
-import whReactLogo from '../assets/logos/wh_react_logo.svg';
-
-import xdLogo from '../assets/logos/xd_logo.svg';
+import dotnetLogo from '../assets/logos/dotnet_logo.svg';
+import antDesignLogo from '../assets/logos/antdesign_logo.svg';
 import colorHuntLogo from '../assets/logos/colorhunt_logo.svg';
 import figmaLogo from '../assets/logos/figma_logo.svg';
 
@@ -85,17 +79,19 @@ const About = () => {
               Design
             </AccentTextCard>
             <div>
-              <p>I Have A Preference For Minimalistic Web Pages But Am Always Open To Exploring New Concept And Styles. The Tools I Commonly Use For Design Include ( List The Design Tools You Use)</p>
+              <p>
+                I have a preference for minimalistic web pages but am always open to exploring new concepts and styles. The tools I commonly use for design include Figma, AntDesign, and Color Hunt.
+              </p>
               <p className='fw-bolder fs-3 text-primary text-uppercase'>Design tools</p>
               <Row className='row-gap-3'>
                 <Col sm={12} lg={4}>
-                  <IconCard src={figmaLogo}>Figma</IconCard>
+                  <IconCard link="https://www.figma.com/" src={figmaLogo}>Figma</IconCard>
                 </Col>
                 <Col sm={12} lg={4}>
-                  <IconCard src={colorHuntLogo}>Color Hunt</IconCard>
+                  <IconCard link="https://ant.design/" src={antDesignLogo}>Ant Design</IconCard>
                 </Col>
                 <Col sm={12} lg={4}>
-                  <IconCard src={xdLogo}>PowerToys</IconCard>
+                  <IconCard link="https://colorhunt.co/" src={colorHuntLogo}>Color Hunt</IconCard>
                 </Col>
               </Row>
             </div>
@@ -109,10 +105,9 @@ const About = () => {
                   Web Development
                 </AccentTextCard>
                 <p className="mb-0">
-                  I Primarily Use React JS And HTML For Front End Development With Tailwind And Bootstrap For Styling. My Database Of Choice Is MySQL And I'm Learning Amazon's Solutions.
-                </p>
+                  I primarily use React JS and HTML for front-end development, with Tailwind and Bootstrap for styling. My database of choice is MySQL, and I'm currently learning Amazon's solutions. I host my web projects on Amazon Web Services (AWS).                </p>
                 <p>
-                  While I'm Less Confident In PHP ( Nette And CodeIgniter ) I Can Still Work Them I Host My Web Projects On Amazon Web Services (AWS)
+                  Additionally, I explore new technologies like Gluestack and am always eager to try out the latest tools and frameworks.
                 </p>
               </Stack>
             </Card>
@@ -122,26 +117,26 @@ const About = () => {
               <Stack className='fh-web-showcase' gap={3}>
                 <Row className='row-gap-3'>
                   <Col xs={6}>
-                    <IconCard src={wideAWSLogo} />
+                    <IconCard link="https://aws.amazon.com/" src={wideAWSLogo} />
                   </Col>
                   <Col xs={6}>
-                    <IconCard src={wideMySQLLogo} />
-                  </Col>
-                </Row>
-                <Row className='row-gap-3'>
-                  <Col xs={6}>
-                    <IconCard src={wideJSLogo} />
-                  </Col>
-                  <Col xs={6}>
-                    <IconCard src={reactLogo} />
+                    <IconCard link="https://www.mysql.com/" src={wideMySQLLogo} />
                   </Col>
                 </Row>
                 <Row className='row-gap-3'>
                   <Col xs={6}>
-                    <IconCard src={wideTailwindogo} />
+                    <IconCard link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" src={wideJSLogo} />
                   </Col>
                   <Col xs={6}>
-                    <IconCard src={wideBootstrapLogo} />
+                    <IconCard link="https://react.dev/" src={reactLogo} />
+                  </Col>
+                </Row>
+                <Row className='row-gap-3'>
+                  <Col xs={6}>
+                    <IconCard link="https://tailwindcss.com/" src={wideTailwindogo} />
+                  </Col>
+                  <Col xs={6}>
+                    <IconCard link="https://getbootstrap.com/" src={wideBootstrapLogo} />
                   </Col>
                 </Row>
               </Stack>
@@ -155,17 +150,17 @@ const About = () => {
             </AccentTextCard>
             <div>
               <p>
-                I Utilize React Native, A Framework Similar To React Native. React Native Enables Me To Create Android And IOS Apps Using A Single Code Base.
+                I utilize React Native, a framework similar to React, which allows me to create Android and iOS apps using a single code base. Additionally, I can use MAUI with Blazor to develop cross-platform applications efficiently.
               </p>
               <Row className='row-gap-3'>
                 <Col lg={4}>
-                  <IconCard src={reactLogo}>React Native</IconCard>
+                  <IconCard link="https://reactnative.dev/" src={reactLogo}>React Native</IconCard>
                 </Col>
                 <Col lg={4}>
-                  <IconCard src={reactLogo}>Native Base</IconCard>
+                  <IconCard link="https://gluestack.io/" src={reactLogo}>gluestack</IconCard>
                 </Col>
                 <Col lg={4}>
-                  <IconCard src={reactLogo}>React StyleSheet</IconCard>
+                  <IconCard link="https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-8.0" src={dotnetLogo}>MAUI with Blazor</IconCard>
                 </Col>
               </Row>
             </div>
