@@ -23,11 +23,11 @@ function App() {
   // Callback function to set styles for the circular-blur span
   const setCircularBlurStyles = (ref) => {
     if (ref) {
-      const homeRect = ref.getBoundingClientRect();
-      circularBlurRef.current.style.width = `${homeRect.width}px`;
-      circularBlurRef.current.style.height = `${homeRect.height}px`;
-      circularBlurRef.current.style.top = `${homeRect.top}px`;
-      circularBlurRef.current.style.left = `${homeRect.left}px`;
+      const Rect = ref.getBoundingClientRect();
+      circularBlurRef.current.style.width = `${Rect.width}px`;
+      circularBlurRef.current.style.height = `${Rect.height}px`;
+      circularBlurRef.current.style.top = `calc(${Rect.top}px - 2rem)`;
+      circularBlurRef.current.style.left = `${Rect.left}px`;
     }
   };
 
