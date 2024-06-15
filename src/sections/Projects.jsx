@@ -57,7 +57,7 @@ const Projects = ({ projectsSection }) => {
             return (
               <>
 
-                <Row className='d-none d-lg-flex' key={"row" + webcount + w.name}>
+                <Row className='d-none d-lg-flex' key={"row-lg" + webcount + w.name}>
                   <ProjectDescription w={w} key={webcount + w.name} />
                   <Col md={12} lg={5}>
                     <ImageCard imgClass="h-100" src={w.image} />
@@ -78,7 +78,7 @@ const Projects = ({ projectsSection }) => {
             return (
               <>
 
-                <Row className='d-none d-lg-flex' key={"row" + webcount + w.name}>
+                <Row className='d-none d-lg-flex' key={"row-lg" + webcount + w.name}>
                   <Col md={12} lg={5}>
                     <ImageCard imgClass="h-100" src={w.image} />
                   </Col>
