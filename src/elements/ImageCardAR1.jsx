@@ -10,7 +10,7 @@ const ImageCardAR1 = ({ link, src, alt = "" }) => {
         <Image style={{}} className="position-absolute top-50 start-50 translate-middle w-100 h-100 rounded-0" draggable="false" fluid src={src} alt={alt} />
       </div>
       {link ?
-        <a href={link} class="stretched-link"></a>
+        <a href={link} className="stretched-link"></a>
         :
         null
       }

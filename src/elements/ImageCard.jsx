@@ -6,7 +6,7 @@ const ImageCard = ({ link, imgClass = "", className = "", src, alt = "" }) => {
     <Card className={"image-card " + className} body>
       <Image className={"object-fit-cover " + imgClass} draggable="false" fluid src={src} alt={alt} />
       {link ?
-        <a href={link} class="stretched-link"></a>
+        <a href={link} className="stretched-link"></a>
         :
         null
       }
