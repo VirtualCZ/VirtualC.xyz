@@ -14,8 +14,10 @@ import Footer from './sections/Footer';
 Amplify.configure(awsExports);
 
 function App() {
-
   let homeSection = useRef(null);
+  let aboutSection = useRef(null);
+  let projectsSection = useRef(null);
+  let contactSection = useRef(null);
 
   // Create a ref for the circular-blur span
   const circularBlurRef = useRef(null);
@@ -64,7 +66,12 @@ function App() {
           <Route
             path='/'
             element={
-              <HomePage homeSection={homeSection} />
+              <HomePage
+                homeSection={homeSection}
+                aboutSection={aboutSection}
+                projectsSection={projectsSection}
+                contactSection={contactSection}
+              />
             }
           />
           <Route path='*' element={<NotFound />} />
