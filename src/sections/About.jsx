@@ -23,15 +23,15 @@ import reactLogo from '../assets/logos/react_logo.svg';
 import wideTailwindogo from '../assets/logos/wide_tailwind_logo.svg';
 import wideBootstrapLogo from '../assets/logos/wide_bootstrap_logo.svg';
 
-const About = () => {
+const About = ({ aboutSection }) => {
   // const { t } = useTranslation();
-  // document.title = `${t('navigation.components')} - VirtualC`;
 
   return (
     <section
       id='about'
       style={{ paddingTop: '95px' }}
       className='d-flex flex-column mt-5'
+      ref={aboutSection}
     >
       <Stack gap={4}>
         <Row className='row-gap-3'>

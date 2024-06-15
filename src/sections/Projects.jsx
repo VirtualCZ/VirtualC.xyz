@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react';
-
-import { API } from 'aws-amplify';
 import { useTranslation } from 'react-i18next';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import ProjectDescription from '../elements/ProjectDescription';
 
@@ -15,9 +11,8 @@ import xdLogo from '../assets/logos/wh_xd_logo.svg';
 import globeLogo from '../assets/logos/wh_globe_logo.svg';
 import ImageCard from '../elements/ImageCard';
 
-const Projects = () => {
+const Projects = ({ projectsSection }) => {
   const { t } = useTranslation();
-  document.title = `${t('navigation.components')} - VirtualC`;
   var webcount = 0
   const webProjectsArr = [
     {
@@ -51,6 +46,7 @@ const Projects = () => {
       id='projects'
       // style={{ paddingTop: '109px' }}
       className='d-flex flex-column'
+      ref={projectsSection}
     >
       <Stack gap={3}>
         <h1>WEB PROJECTS</h1>

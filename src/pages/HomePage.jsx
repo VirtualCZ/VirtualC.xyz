@@ -6,17 +6,17 @@ import Projects from '../sections/Projects';
 import { useRef } from 'react';
 
 const HomePage = props => {
-  let { homeSection } = props;
+  let { homeSection, aboutSection, projectsSection, contactSection } = props;
 
   const { t } = useTranslation();
-  document.title = `${t('navigation.home')} - VirtualC`;
+  document.title = "VirtualC";
 
   return (
     <>
       <Home homeSection={homeSection} />
-      <About />
-      <Projects />
-      <Contact />
+      <About aboutSection={aboutSection} />
+      <Projects projectsSection={projectsSection} />
+      <Contact contactSection={contactSection} />
     </>
   );
 };
