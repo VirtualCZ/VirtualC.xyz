@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react';
-
-import { API } from 'aws-amplify';
 import { useTranslation } from 'react-i18next';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import ProjectDescription from '../elements/ProjectDescription';
 
@@ -16,9 +12,8 @@ import xdLogo from '../assets/logos/wh_xd_logo.svg';
 import globeLogo from '../assets/logos/wh_globe_logo.svg';
 import ImageCard from '../elements/ImageCard';
 
-const Projects = () => {
+const Projects = ({ projectsSection }) => {
   const { t } = useTranslation();
-  document.title = `${t('navigation.components')} - VirtualC`;
   var webcount = 0
   const webProjectsArr = [
     {
@@ -68,6 +63,7 @@ const Projects = () => {
       id='projects'
       // style={{ paddingTop: '109px' }}
       className='d-flex flex-column'
+      ref={projectsSection}
     >
       <Stack gap={3}>
         <h1>WEB PROJECTS</h1>
@@ -78,7 +74,7 @@ const Projects = () => {
             return (
               <>
 
-                <Row className='d-none d-lg-flex' key={"row" + webcount + w.name}>
+                <Row className='d-none d-lg-flex' key={"row-lg" + webcount + w.name}>
                   <ProjectDescription w={w} key={webcount + w.name} />
                   <Col md={12} lg={5}>
                     <ImageCard imgClass="h-100" src={w.image} />
@@ -99,7 +95,7 @@ const Projects = () => {
             return (
               <>
 
-                <Row className='d-none d-lg-flex' key={"row" + webcount + w.name}>
+                <Row className='d-none d-lg-flex' key={"row-lg" + webcount + w.name}>
                   <Col md={12} lg={5}>
                     <ImageCard imgClass="h-100" src={w.image} />
                   </Col>

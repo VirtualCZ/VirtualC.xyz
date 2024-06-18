@@ -12,7 +12,7 @@ const IconCard = ({ link, src, alt = "", gradientCol = "", children = "" }) => {
                     null
                 }
                 {link ?
-                    <a href={link} class="stretched-link"></a>
+                    <a href={link} className="stretched-link"></a>
                     :
                     null
                 }

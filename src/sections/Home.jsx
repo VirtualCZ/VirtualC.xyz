@@ -1,6 +1,3 @@
-import { useEffect, useRef } from 'react';
-
-import { API } from 'aws-amplify';
 import { useTranslation } from 'react-i18next';
 
 import Carousel from 'react-multi-carousel';
@@ -128,14 +125,15 @@ const Home = ({ homeSection }) => {
               infinite={true}
               itemClass='carouselItem'
             >
+              <ImageCardAR1 link="https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-8.0" src={dotNetLogo} />
               <ImageCardAR1 link="https://react.dev/" src={reactLogo} />
               <ImageCardAR1 link="https://www.w3.org/Style/CSS/Overview.en.html" src={cssLogo} />
-              <ImageCardAR1 link="https://github.com/" src={ghLogo} />
               <ImageCardAR1 link="https://developer.mozilla.org/en-US/docs/Web/HTML" src={htmlLogo} />
-              <ImageCardAR1 link="https://github.com/" src={antdesignLogo} />
-              <ImageCardAR1 link="https://github.com/" src={colorHuntLogo} />
-              <ImageCardAR1 link="https://github.com/" src={dotNetLogo} />
-              <ImageCardAR1 link="https://github.com/" src={figmaLogo} />
+              <ImageCardAR1 link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" src={jsLogo} />
+              <ImageCardAR1 link="https://github.com/" src={ghLogo} />
+              <ImageCardAR1 link="https://ant.design/" src={antdesignLogo} />
+              <ImageCardAR1 link="https://colorhunt.co/" src={colorHuntLogo} />
+              <ImageCardAR1 link="https://www.figma.com/" src={figmaLogo} />
             </Carousel>
           </Card.Body>
         </Card>

@@ -1,18 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-import { API } from 'aws-amplify';
 import { useTranslation } from 'react-i18next';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const Contact = () => {
+const Contact = ({ contactSection }) => {
   const { t } = useTranslation();
-  document.title = `${t('navigation.components')} - VirtualC`;
 
   const regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "g")
 
@@ -67,7 +63,10 @@ const Contact = () => {
   }
 
   return (
-    <section id='contact'>
+    <section 
+      id='contact'
+      ref={contactSection}
+    >
       <Card body>
         <Stack gap={2}>
           <h1 className='text-center'>CONTACT ME</h1>
