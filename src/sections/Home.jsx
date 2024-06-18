@@ -89,19 +89,19 @@ const Home = ({ homeSection }) => {
               <Card.Body className="d-flex flex-column">
                 <p className='hi'>Hey there 👋 I'm</p>
                 <p className='my-name'>Tomáš Gabriel</p>
-                <p className='i-am'>and I'm a web and app developer!</p>
-                <div className='mt-auto'>
-                  <Button href="#contact" variant='secondary'className="self-end">Hire Me 👋🏼</Button>
-                </div>
+                <p className='i-am'>developing web, desktop, and mobile apps!</p>
+                <Button href="#projects" variant='info' className="align-self-start">Check out my projects</Button>
               </Card.Body>
             </Card>
           </Col>
           <Col className='row-gap-3 d-flex flex-column' lg={12} xl={5}>
-            <Card body >
-              <Card.Text className='check-out-text' style={{ width: "95%" }}>
-                If You Are In Need Of A Web Page Or App Get In Touch And Let Your Ideas Come To Life.
-              </Card.Text>
-              <Button href="#projects" variant='info'>Check Out My Projects</Button>
+            <Card>
+              <Card.Body className="d-flex flex-column">
+                <Card.Text className='check-out-text flex-grow-1' style={{ width: "95%" }}>
+                  Need a web page or app? Get in touch and bring your ideas to life.
+                </Card.Text>
+                <Button href="#contact" variant='secondary' className="align-self-start">Hire me 🤗</Button>
+              </Card.Body>
             </Card>
             <Stack direction='horizontal' className='d-none d-md-flex d-xl-none' gap={3}>
               <ImageCard link="https://www.facebook.com/SomeoneCZ/" className='flex-fill align-items-center' src={BlueFacebook} />
