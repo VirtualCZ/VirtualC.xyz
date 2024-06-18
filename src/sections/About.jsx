@@ -40,7 +40,9 @@ const About = () => {
               <Card.Body className='gap-2 d-flex flex-column' >
                 <AccentTextCard>About me</AccentTextCard>
                 <p className='ntmy'>NICE TO MEET YOU, I'M TOMÁŠ</p>
-                <p>I'm A Web Developer Based In Czechia. I'm Mainly A Front End Web And App Developer</p>
+                <p>
+                  I'm a web developer based in Czechia, specializing in front-end web and app development. With a passion for creating intuitive user experiences, I strive to bring ideas to life through clean and efficient code.
+                </p>
                 <Stack gap={3}>
                   <Row className='row-gap-3'>
                     <Col xl={6}>
@@ -60,7 +62,7 @@ const About = () => {
             <ImageCard className='d-flex d-lg-none' src={MyPhoto} />
           </Col>
         </Row>
-        <h2 className='mt-4'>I Have Acquired Following Certificates:</h2>
+        <h2 className='mt-4'>Certificates I've acquired:</h2>
         <Row className='row-gap-3'>
           <Col lg={6}>
             <Card className='rounded-pill' body>
@@ -80,7 +82,7 @@ const About = () => {
             </AccentTextCard>
             <div>
               <p>
-                I have a preference for minimalistic web pages but am always open to exploring new concepts and styles. The tools I commonly use for design include Figma, AntDesign, and Color Hunt.
+                I lean towards minimalistic web design but enjoy exploring new concepts and styles. My design approach is enhanced by using tools like Figma, Ant Design, and Color Hunt.
               </p>
               <p className='fw-bolder fs-3 text-primary text-uppercase'>Design tools</p>
               <Row className='row-gap-3'>
@@ -105,9 +107,10 @@ const About = () => {
                   Web Development
                 </AccentTextCard>
                 <p className="mb-0">
-                  I primarily use React JS and HTML for front-end development, with Tailwind and Bootstrap for styling. My database of choice is MySQL, and I'm currently learning Amazon's solutions. I host my web projects on Amazon Web Services (AWS).                </p>
+                  I specialize in front-end development using React JS and HTML, complemented by Tailwind CSS and Bootstrap for styling. My preferred database is MySQL, and I'm actively learning Amazon Web Services (AWS) solutions for hosting and scalability.                
+                </p>
                 <p>
-                  Additionally, I explore new technologies like Gluestack and am always eager to try out the latest tools and frameworks.
+                  I also enjoy exploring emerging technologies such as Gluestack and stay updated with the latest tools and frameworks.
                 </p>
               </Stack>
             </Card>
@@ -150,7 +153,7 @@ const About = () => {
             </AccentTextCard>
             <div>
               <p>
-                I utilize React Native, a framework similar to React, which allows me to create Android and iOS apps using a single code base. Additionally, I can use MAUI with Blazor to develop cross-platform applications efficiently.
+                For mobile app development, my focus lies in utilizing React Native to build robust applications for both Android and iOS platforms. Additionally, I employ MAUI with Blazor for seamless cross-platform development.
               </p>
               <Row className='row-gap-3'>
                 <Col lg={4}>
