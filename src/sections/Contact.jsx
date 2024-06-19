@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import { useTranslation } from 'react-i18next';
 
@@ -39,27 +40,43 @@ const Contact = ({ contactSection }) => {
   const sendEmail = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
-    if (form.checkValidity() === false) {
-      e.stopPropagation();
-      setTouched({
-        email: true,
-        subject: true,
-        text: true,
-      })
+  if (form.checkValidity() === false) {
+    e.stopPropagation();
+    setTouched({
+      email: true,
+      subject: true,
+      text: true,
+    })
+  }
+  if (form.checkValidity() === true) {
+    emailJS(form)
+    setFormData({
+      email: "",
+      subject: "",
+      text: "",
+    })
+    setTouched({
+      email: false,
+      subject: false,
+      text: false,
+    })
     }
-    if (form.checkValidity() === true) {
-      setFormData({
-        email: "",
-        subject: "",
-        text: "",
-      })
-      setTouched({
-        email: false,
-        subject: false,
-        text: false,
-      })
-      alert("sent")
-    }
+  }
+
+  const emailJS = (superforma) => {
+    // https://dashboard.emailjs.com/admin
+    emailjs
+    .sendForm(import.meta.env.VITE_EMAILJS_SERVICE, import.meta.env.VITE_EMAILJS_TEMPLATE, superforma, {
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    })
+    .then(
+      () => {
+        console.log('Email sent!');
+      },
+      (error) => {
+        console.log('Request failed...', error.text);
+      },
+    );
   }
 
   return (
@@ -71,7 +88,7 @@ const Contact = ({ contactSection }) => {
         <Stack gap={2}>
           <h1 className='text-center'>CONTACT ME</h1>
           <p className='text-center'>If You Are Interested In A Web Page Contact Me Using The Form Below</p>
-          <Form noValidate onSubmit={sendEmail}>
+          <Form id="contact-form" noValidate onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email Address</Form.Label>
               <Form.Control
