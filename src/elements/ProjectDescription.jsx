@@ -15,7 +15,7 @@ const ProjectDescription = ({ w, className = "" }) => {
                     <Row className='row-gap-3'>
                         {w.icons.map((icon) => {
                             return (
-                                <Col lg={12} xl={4} key={w.name + icon.text}>
+                                <Col lg={12} xl={4} key={icon.text}>
                                     <IconCard link={icon.link} src={icon.image}>{icon.text}</IconCard>
                                 </Col>
                             )

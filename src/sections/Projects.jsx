@@ -1,3 +1,4 @@
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Row from 'react-bootstrap/Row';
@@ -72,44 +73,44 @@ const Projects = ({ projectsSection }) => {
           webcount++
           if (webcount % 2) {
             return (
-              <>
+              <React.Fragment key={webcount}>
 
-                <Row className='d-none d-lg-flex' key={"row-lg" + webcount + w.name}>
-                  <ProjectDescription w={w} key={webcount + w.name} />
+                <Row className='d-none d-lg-flex'>
+                  <ProjectDescription w={w} />
                   <Col md={12} lg={5}>
                     <ImageCard imgClass="h-100" src={w.image} />
                   </Col>
                 </Row>
 
-                <Row className='d-flex d-lg-none' key={"row" + webcount + w.name}>
-                  <ProjectDescription className='rounded-bottom-0' w={w} key={webcount + w.name} />
+                <Row className='d-flex d-lg-none'>
+                  <ProjectDescription className='rounded-bottom-0' w={w} />
                   <Col md={12} lg={5}>
                     <ImageCard className='rounded-top-0' src={w.image} />
                   </Col>
                 </Row>
 
-              </>
+              </React.Fragment>
             )
           }
           else {
             return (
-              <>
+              <React.Fragment key={webcount}>
 
-                <Row className='d-none d-lg-flex' key={"row-lg" + webcount + w.name}>
+                <Row className='d-none d-lg-flex'>
                   <Col md={12} lg={5}>
                     <ImageCard imgClass="h-100" src={w.image} />
                   </Col>
-                  <ProjectDescription w={w} key={webcount + w.name} />
+                  <ProjectDescription w={w} />
                 </Row>
 
-                <Row className='d-flex d-lg-none' key={"row" + webcount + w.name}>
+                <Row className='d-flex d-lg-none'>
                   <Col md={12} lg={5}>
                     <ImageCard className='rounded-bottom-0' src={w.image} />
                   </Col>
-                  <ProjectDescription className='rounded-top-0' w={w} key={webcount + w.name} />
+                  <ProjectDescription className='rounded-top-0' w={w} />
                 </Row>
 
-              </>
+              </React.Fragment>
             )
           }
         })
