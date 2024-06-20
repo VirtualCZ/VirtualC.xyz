@@ -24,15 +24,7 @@ function CustomNavbar() {
           <Nav.Link href='/#projects'>Projects</Nav.Link>
           <Nav.Link href='/#contact'>Contact me</Nav.Link>
           <Nav.Link href='/#contact'>
-            <Button
-              variant='secondary'
-              // onClick={(e) => {
-              //   e.preventDefault();
-              //   window.location.href = '#contact';
-              // }}
-            >
-              Hire Me
-            </Button>
+            <Button variant='secondary'>Hire me</Button>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

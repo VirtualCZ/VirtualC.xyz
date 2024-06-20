@@ -6,9 +6,14 @@ nav
 .navbar-brand
     font-weight: 900
     text-transform: uppercase
+    &:hover
+        color: var(--bs-nav-link-hover-color) !important
+        
 
 .nav-link
     font-weight: 500
+    &:hover
+        color: var(--bs-nav-link-hover-color) !important
 
 .navbar-nav
     margin-right: -1rem
@@ -25,4 +30,4 @@ $nav-link-hover-color: #FF5765
 $nav-link-color: #fff
 $navbar-dark-color: #fff
 $navbar-dark-hover-color: darken(#FF5765, 20%)
-$navbar-dark-active-color: #FF5765
+$navbar-dark-active-color: #fff
