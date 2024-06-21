@@ -7,6 +7,8 @@ import Stack from 'react-bootstrap/Stack';
 import ProjectDescription from '../elements/ProjectDescription';
 
 import NicCalc from "../assets/project-imgs/niccalc.jpg"
+import VirtualCxyz from "../assets/project-imgs/virtualcxyz.png"
+import oldVirtualCxyz from "../assets/project-imgs/oldvirtualcxyz.png"
 import figmaLogo from '../assets/logos/wh_figma_logo.svg';
 import ghLogo from '../assets/logos/wh_gh_logo.svg';
 import xdLogo from '../assets/logos/wh_xd_logo.svg';
@@ -23,19 +25,19 @@ const Projects = ({ projectsSection }) => {
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz" },
         { image: figmaLogo, text: "Figma", link: "https://www.figma.com/design/Cmee24TyGDnX3BuSmGVRVy/TOMAS-GABRIEL-PORTFOLIO?node-id=0-1&t=f6nS8yRtdLO5dsql-0" },
-        { image: globeLogo, text: "Visit", link: "https://www.virtualc.xyz/niccalc" }
+        { image: globeLogo, text: "Visit", link: "https://www.virtualc.xyz/" }
       ],
-      image: NicCalc,
+      image: VirtualCxyz,
     },
     {
       name: "Old VirtualC.xyz",
-      text: "Explore old.virtualc.xyz, a dynamic web platform built using ReactJS with a custom Windows 11-inspired design. The site incorporates Bootstrap and Tailwind CSS for a responsive interface that adapts seamlessly across different devices. Navigation is enhanced with React Router for smooth transitions between pages. This project is hosted securely on Amazon Web Services (AWS) and includes internationalization support through react-i18next. Users can customize their experience with theme switching options.",
+      text: "Explore old.virtualc.xyz, a dynamic web platform designed to showcase the functionality of various elements. Built using ReactJS with a custom Windows 11-inspired design, the site incorporates Bootstrap and Tailwind CSS for a responsive interface that adapts seamlessly across different devices. Navigation is enhanced with React Router for smooth transitions between pages. Hosted securely on Amazon Web Services (AWS), this project includes internationalization support through react-i18next and allows users to customize their experience with theme switching options.",
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz" },
         { image: xdLogo, text: "Adobe XD" },
         { image: globeLogo, text: "Visit", link: "https://old.virtualc.xyz" }
       ],
-      image: NicCalc,
+      image: oldVirtualCxyz,
     },
     {
       name: "NicCalc",
