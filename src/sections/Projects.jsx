@@ -25,7 +25,7 @@ const Projects = ({ projectsSection }) => {
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz" },
         { image: figmaLogo, text: "Figma", link: "https://www.figma.com/design/Cmee24TyGDnX3BuSmGVRVy/TOMAS-GABRIEL-PORTFOLIO?node-id=0-1&t=f6nS8yRtdLO5dsql-0" },
-        { image: globeLogo, text: "Visit", link: "https://www.virtualc.xyz/" }
+        { image: globeLogo, text: t('projects.visit'), link: "https://www.virtualc.xyz/" }
       ],
       image: VirtualCxyz,
     },
@@ -34,7 +34,7 @@ const Projects = ({ projectsSection }) => {
       text: "Explore WinUI playground, a dynamic web platform designed to showcase the functionality of various elements. Built using ReactJS with a custom Windows 11-inspired design, the site incorporates Bootstrap and Tailwind CSS for a responsive interface that adapts seamlessly across different devices. Navigation is enhanced with React Router for smooth transitions between pages. Hosted securely on Amazon Web Services (AWS), this project includes internationalization support through react-i18next and allows users to customize their experience with theme switching options.",
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz" },
-        { image: globeLogo, text: "Visit", link: "https://old.virtualc.xyz" }
+        { image: globeLogo, text: t('projects.visit'), link: "https://old.virtualc.xyz" }
       ],
       image: oldVirtualCxyz,
     },
@@ -43,7 +43,7 @@ const Projects = ({ projectsSection }) => {
       text: "A ReactJS application built with DaisyUI for quick ticket price calculations. Add custom ticket types with prices in CZK and EUR, then calculate large ticket sales easily. The UI features a currency selector, fields for money received, number of tickets, type selection, total price, and change calculation. You can also clear inputs and manage ticket types (edit, delete, add).",
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/TicketCalc" },
-        { image: globeLogo, text: "Visit", link: "https://ticket.virtualc.xyz/" }
+        { image: globeLogo, text: t('projects.visit'), link: "https://ticket.virtualc.xyz/" }
       ],
       image: TicketCalculator,
     },
@@ -52,7 +52,7 @@ const Projects = ({ projectsSection }) => {
       text: "Discover NicCalc, a robust e-liquid mixing calculator crafted with JavaScript and ReactJS. This intuitive tool empowers users to create personalized e-liquid blends effortlessly. Customize VG/PG ratios, aroma percentages, ice levels, and nicotine content with ease. NicCalc also features cost estimation and profit margin settings, catering to hobbyists and industry professionals alike. Developed with React Hooks and custom CSS, NicCalc ensures a seamless user experience for streamlined e-liquid mixing.",
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz/tree/niccalc" },
-        { image: globeLogo, text: "Visit", link: "https://niccalc.virtualc.xyz/" }
+        { image: globeLogo, text: t('projects.visit'), link: "https://niccalc.virtualc.xyz/" }
       ],
       image: NicCalc,
     },
@@ -61,12 +61,11 @@ const Projects = ({ projectsSection }) => {
   return (
     <section
       id='projects'
-      // style={{ paddingTop: '109px' }}
       className='d-flex flex-column'
       ref={projectsSection}
     >
       <Stack gap={3}>
-        <h1>WEB PROJECTS</h1>
+        <h1>{t('projects.webProjects')}</h1>
 
         {webProjectsArr.map((w) => {
           webcount++

@@ -86,15 +86,15 @@ const Contact = ({ contactSection }) => {
     >
       <Card body>
         <Stack gap={2}>
-          <h1 className='text-center'>CONTACT ME</h1>
-          <p className='text-center'>If You Are Interested In A Web Page Contact Me Using The Form Below</p>
+          <h1 className='text-center'>{t('contact.title')}</h1>
+          <p className='text-center'>{t('contact.subtitle')}</p>
           <Form id="contact-form" noValidate onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="email">
-              <Form.Label>Email Address</Form.Label>
+              <Form.Label>{t('contact.emailLabel')}</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
-                placeholder="Enter Email Address"
+                placeholder={t('contact.emailPlaceholder')}
                 value={formData.email}
                 onChange={chngFn}
                 required
@@ -105,16 +105,16 @@ const Contact = ({ contactSection }) => {
                 }
               />
               <Form.Control.Feedback type="invalid">
-                Please enter a valid email address.
+                {t('contact.emailInvalid')}
               </Form.Control.Feedback>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicText">
-              <Form.Label>Subject</Form.Label>
+              <Form.Label>{t('contact.subjectLabel')}</Form.Label>
               <Form.Control
                 type="text"
                 name="subject"
-                placeholder="Enter Your Subject"
+                placeholder={t('contact.subjectPlaceholder')}
                 value={formData.subject}
                 onChange={chngFn}
                 required
@@ -126,14 +126,14 @@ const Contact = ({ contactSection }) => {
                 }
               />
               <Form.Control.Feedback type="invalid">
-                Please enter a subject that's longer than 3 letters.
+                {t('contact.subjectInvalid')}
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Control
                 as="textarea"
                 name="text"
-                placeholder='Write Message...'
+                placeholder={t('contact.contentPlaceholder')}
                 value={formData.text}
                 onChange={chngFn}
                 required
@@ -145,12 +145,12 @@ const Contact = ({ contactSection }) => {
                 }
               />
               <Form.Control.Feedback type="invalid">
-                Please enter text that's longer than 3 letters.
+                {t('contact.contentInvalid')}
               </Form.Control.Feedback>
             </Form.Group>
             <div className='d-flex justify-content-center'>
               <Button variant="info" type="submit">
-                Send Message
+                {t('contact.sendButton')}
               </Button>
             </div>
           </Form>

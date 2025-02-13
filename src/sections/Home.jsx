@@ -63,31 +63,15 @@ const Home = ({ homeSection }) => {
 
   return (
     <section id="home" ref={homeSection}>
-      {/* <p style={{fontWeight: 200, fontStyle: 'normal'}}>200 thin</p>
-          <p style={{fontWeight: 200, fontStyle: 'italic'}}>200 thin italic</p>
-          <p style={{fontWeight: 300, fontStyle: 'normal'}}>300 light</p>
-          <p style={{fontWeight: 300, fontStyle: 'italic'}}>300 light italic</p>
-          <p style={{fontWeight: 400, fontStyle: 'normal'}}>400 regular</p>
-          <p style={{fontWeight: 400, fontStyle: 'italic'}}>400 regular italic</p>
-          <p style={{fontWeight: 500, fontStyle: 'normal'}}>500 medium</p>
-          <p style={{fontWeight: 500, fontStyle: 'italic'}}>500 medium italic</p>
-          <p style={{fontWeight: 600, fontStyle: 'normal'}}>600 semibold</p>
-          <p style={{fontWeight: 600, fontStyle: 'italic'}}>600 semibold italic</p>
-          <p style={{fontWeight: 700, fontStyle: 'normal'}}>700 bold</p>
-          <p style={{fontWeight: 700, fontStyle: 'italic'}}>700 bold italic</p>
-          <p style={{fontWeight: 900, fontStyle: 'normal'}}>900 black</p>
-          <p style={{fontWeight: 900, fontStyle: 'italic'}}>900 black italic</p> */}
-
       <Stack gap={3}>
-        {/* <h1>{t('navigation.home')}</h1> */}
         <Row className=''>
           <Col lg={12} xl={7} className='mb-3 mb-xl-0'>
             <Card>
               <Card.Body className="d-flex flex-column">
-                <p className='hi'>Hey there 👋 I'm</p>
+                <p className='hi'>{t('home.heyThere')}</p>
                 <p className='my-name'>Tomáš Gabriel</p>
-                <p className='i-am'>developing web, desktop, and mobile apps!</p>
-                <Button href="#projects" variant='info' className="align-self-start">Check out my projects</Button>
+                <p className='i-am'>{t('home.whatIDo')}</p>
+                <Button href="#projects" variant='info' className="align-self-start">{t('home.checkOutButton')}</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -95,9 +79,9 @@ const Home = ({ homeSection }) => {
             <Card>
               <Card.Body className="d-flex flex-column">
                 <Card.Text className='pe-2 fs-3 flex-grow-1'>
-                  Need a web page or app? Get in touch and bring your ideas to life.
+                  {t('home.offerService')}
                 </Card.Text>
-                <Button href="#contact" variant='secondary' className="align-self-start">Hire me 🤗</Button>
+                <Button href="#contact" variant='secondary' className="align-self-start">{t('home.offerButton')}</Button>
               </Card.Body>
             </Card>
             <Stack direction='horizontal' className='d-none d-md-flex d-xl-none' gap={3}>
@@ -116,7 +100,7 @@ const Home = ({ homeSection }) => {
             </Stack>
           </Col>
         </Row>
-        <h1>TECHNOLOGIES I USE:</h1>
+        <h1>{t('home.technologiesIUse')}</h1>
         <Card>
           <Card.Body className='px-0'>
             <Carousel

@@ -22,9 +22,10 @@ import wideJSLogo from '../assets/logos/wide_js_logo.svg';
 import reactLogo from '../assets/logos/react_logo.svg';
 import wideTailwindogo from '../assets/logos/wide_tailwind_logo.svg';
 import wideBootstrapLogo from '../assets/logos/wide_bootstrap_logo.svg';
+import { useTranslation } from 'react-i18next';
 
 const About = ({ aboutSection }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section
@@ -38,21 +39,21 @@ const About = ({ aboutSection }) => {
           <Col lg={7}>
             <Card>
               <Card.Body className='gap-2 d-flex flex-column' >
-                <AccentTextCard>About me</AccentTextCard>
-                <p className='ntmy'>NICE TO MEET YOU, I'M TOMÁŠ</p>
+                <AccentTextCard>{t('about.title')}</AccentTextCard>
+                <p className='ntmy'>{t('about.niceToMeetYou')}</p>
                 <p>
-                  I'm a web developer based in Czechia, specializing in front-end web and app development. With a passion for creating intuitive user experiences, I strive to bring ideas to life through clean and efficient code.
+                {t('about.iAm')}
                 </p>
                 <Stack gap={3}>
                   <Row className='row-gap-3'>
                     <Col xl={6}>
-                      <IconCard link="https://github.com/VirtualCZ" gradientCol="primary" src={ghLogo}>My GitHub Account</IconCard>
+                      <IconCard link="https://github.com/VirtualCZ" gradientCol="primary" src={ghLogo}>{t('about.my')} GitHub {t('about.account')}</IconCard>
                     </Col>
                     <Col xl={6}>
-                      <IconCard link="https://www.instagram.com/tomas_v_chill/" gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
+                      <IconCard link="https://www.instagram.com/tomas_v_chill/" gradientCol="secondary" src={igLogo}>{t('about.my')} Instagram {t('about.account')}</IconCard>
                     </Col>
                   </Row>
-                  <IconCard link="https://www.linkedin.com/in/tomasgab" gradientCol="danger" src={linkedinLogo}>My Linked In Account</IconCard>
+                  <IconCard link="https://www.linkedin.com/in/tomasgab" gradientCol="danger" src={linkedinLogo}>{t('about.my')} Linked In {t('about.account')}</IconCard>
                 </Stack>
               </Card.Body>
             </Card>
@@ -78,13 +79,13 @@ const About = ({ aboutSection }) => {
         <Card body>
           <Stack gap={3}>
             <AccentTextCard color='danger'>
-              Design
+              {t('about.designTitle')}
             </AccentTextCard>
             <div>
               <p>
-                I lean towards minimalistic web design but enjoy exploring new concepts and styles. My design approach is enhanced by using tools like Figma, Ant Design, and Color Hunt.
+                {t('about.designText')}
               </p>
-              <p className='fw-bolder fs-3 text-primary text-uppercase'>Design tools</p>
+              <p className='fw-bolder fs-3 text-primary text-uppercase'>{t('about.designTools')}</p>
               <Row className='row-gap-3'>
                 <Col sm={12} lg={4}>
                   <IconCard link="https://www.figma.com/" src={figmaLogo}>Figma</IconCard>
@@ -104,13 +105,13 @@ const About = ({ aboutSection }) => {
             <Card body>
               <Stack gap={3}>
                 <AccentTextCard color='secondary'>
-                  Web Development
+                  {t('about.webDevTitle')}
                 </AccentTextCard>
                 <p className="mb-0">
-                  I specialize in front-end development using React JS and HTML, complemented by Tailwind CSS and Bootstrap for styling. My preferred database is MySQL, and I'm actively learning Amazon Web Services (AWS) solutions for hosting and scalability.                
+                  {t('about.webDevText1')}  
                 </p>
                 <p>
-                  I also enjoy exploring emerging technologies such as Gluestack and stay updated with the latest tools and frameworks.
+                  {t('about.webDevText2')}  
                 </p>
               </Stack>
             </Card>
@@ -149,11 +150,11 @@ const About = ({ aboutSection }) => {
         <Card body>
           <Stack gap={3}>
             <AccentTextCard color='success'>
-              Mobile app development
+              {t('about.mobileDevTitle')}
             </AccentTextCard>
             <div>
               <p>
-                For mobile app development, my focus lies in utilizing React Native to build robust applications for both Android and iOS platforms. Additionally, I employ MAUI with Blazor for seamless cross-platform development.
+                {t('about.mobileDevText')}
               </p>
               <Row className='row-gap-3'>
                 <Col lg={4}>

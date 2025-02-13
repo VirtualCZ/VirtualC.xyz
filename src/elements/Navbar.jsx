@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -19,12 +18,12 @@ function CustomNavbar() {
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='ms-auto align-items-center'>
-          <Nav.Link href='/#top'>Home</Nav.Link>
-          <Nav.Link href='/#about'>About me</Nav.Link>
-          <Nav.Link href='/#projects'>Projects</Nav.Link>
-          <Nav.Link href='/#contact'>Contact me</Nav.Link>
+          <Nav.Link href='/#top'>{t('navbar.home')}</Nav.Link>
+          <Nav.Link href='/#about'>{t('navbar.about')}</Nav.Link>
+          <Nav.Link href='/#projects'>{t('navbar.projects')}</Nav.Link>
+          <Nav.Link href='/#contact'>{t('navbar.contact')}</Nav.Link>
           <Nav.Link href='/#contact'>
-            <Button variant='secondary'>Hire me</Button>
+            <Button variant='secondary'>{t('navbar.hireMe')}</Button>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

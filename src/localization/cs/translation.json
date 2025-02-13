@@ -1,76 +1,53 @@
 {
-    "navigation": {
-        "open": "Otevřít menu",
-        "close": "Zavřít menu",
-        "home": "Domovská stránka",
-        "contact": "Kontakty",
-        "settings": "Nastavení"
+    "navbar": {
+        "home": "Domů",
+        "about": "O mně",
+        "projects": "Projekty",
+        "contact": "Kontakt",
+        "hireMe": "Najmout mě"
     },
-    "skill": {
-        "novice": "Začátečník",
-        "developing": "Rozvíjející se",
-        "proficient": "Odborný",
-        "skilled": "Zkušený",
-        "advanced": "Pokročilý"
+    "home": {
+        "heyThere": "Ahoj 👋 Jsem",
+        "whatIDo": "vyvíjím webové, desktopové a mobilní aplikace!",
+        "checkOutButton": "Podívejte se na mé projekty",
+        "offerService": "Potřebujete webovou stránku nebo aplikaci? Ozvěte se a přiveďte své nápady k životu.",
+        "offerButton": "Najměte mě 🤗",
+        "technologiesIUse": "TECHNOLOGIE, KTERÉ POUŽÍVÁM:"
     },
-    "react": {
-        "1": "Jako zkušený webový vývojář jsem zběhlý v používání JavaScriptové knihovny React.js k vytváření dynamických a interaktivních uživatelských rozhraní pro webové aplikace. Díky mé střední až pokročilé úrovni odborných znalostí v Reactu jsem schopen efektivně kódovat webové stránky pomocí tohoto výkonného a oblíbeného front-end frameworku.",
-        "2": "React.js je deklarativní knihovna založená na komponentách, která umožňuje efektivní vykreslování prvků uživatelského rozhraní a snadnou správu stavu a rekvizit. Mám rozsáhlé zkušenosti s vytvářením jednostránkových aplikací (SPA) s Reactem s využitím jeho základních konceptů, jako je virtuální DOM, syntaxe JSX a háky React.",
-        "3": "Kromě vytváření SPA jsem také zběhlý v integraci React.js do větších webových projektů pomocí nástrojů jako React Router pro směrování na straně klienta. Pravidelně využívám knihovny jako React-icons k přidávání ikon do svých aplikací.",
-        "4": "Jsem schopen pracovat s Reactem ve spojení s dalšími front-end technologiemi, jako jsou CSS a LESS. Jsem také spokojen s používáním populárních knihoven uživatelského rozhraní, jako jsou Bootstrap a Tailwind, které mohu využít k vytváření vlastních komponent uživatelského rozhraní, které jsou intuitivní, reagující a vizuálně přitažlivé. Například kontejner použitý na této stránce je inspirován kontejnerem Bootstrap.",
-        "5": "Jedním z nejzajímavějších aspektů práce s React.js je schopnost vytvářet opakovaně použitelné a škálovatelné komponenty. Mám bystré oko pro design a jsem schopen vytvářet vlastní komponenty uživatelského rozhraní, které bez problémů zapadnou do jakékoli webové aplikace.",
-        "6": "Také znám koncept tématiky v Reactu a implementoval jsem ho do projektů. Tato stránka je například inspirována designem Windows 11 a lze ji snadno přizpůsobit pomocí různých motivů, které lze nastavit v nastavení.",
-        "7": "Celkově jsou mé dovednosti v oblasti React.js cenným přínosem pro jakýkoli tým pro vývoj webu a jsem si jistý svou schopností vytvářet vysoce kvalitní a efektivní webové aplikace pomocí tohoto výkonného front-end frameworku."
+    "about": {
+        "title": "O mně",
+        "niceToMeetYou": "RÁD VÁS POZNÁVÁM, JSEM TOMÁŠ",
+        "iAm": "Jsem webový vývojář z Česka, specializující se na front-end vývoj webů a aplikací. Mám vášeň pro vytváření intuitivních uživatelských prostředí a snažím se přivádět nápady k životu pomocí čistého a efektivního kódu.",
+        "my": "Můj",
+        "account": "Účet",
+        "certificates": "Certifikáty, které jsem získal:",
+        "designTitle": "Design",
+        "designText": "Mám sklon k minimalistickému webovému designu, ale rád zkoumám nové koncepty a styly. Můj designový přístup je vylepšen používáním nástrojů jako Figma, Ant Design a Color Hunt.",
+        "designTools": "Designové nástroje",
+        "webDevTitle": "Vývoj webu",
+        "webDevText1": "Specializuji se na front-end vývoj pomocí React JS a HTML, doplněný o Tailwind CSS a Bootstrap pro stylování. Moje preferovaná databáze je MySQL a aktivně se učím řešení Amazon Web Services (AWS) pro hosting a škálovatelnost.",
+        "webDevText2": "Také mě baví zkoušet nové technologie, jako je Gluestack, a držet krok s nejnovějšími nástroji a frameworky.",
+        "mobileDevTitle": "Vývoj mobilních aplikací",
+        "mobileDevText": "Pro vývoj mobilních aplikací se zaměřuji na React Native na tvorbu pro Android i iOS. Kromě toho používám MAUI s Blazor."
     },
-    "react_native": {
-        "1": "Jako zkušený vývojář mobilních aplikací jsem zběhlý v používání React Native k vytváření dynamických a interaktivních uživatelských rozhraní pro aplikace iOS a Android. Díky mé střední až pokročilé úrovni odborných znalostí v React Native jsem schopen efektivně kódovat mobilní aplikace pomocí tohoto výkonného a oblíbeného front-end frameworku.",
-        "2": "React Native je deklarativní knihovna založená na komponentách, která umožňuje efektivní vykreslování prvků uživatelského rozhraní a snadnou správu stavu a rekvizit. Mám rozsáhlé zkušenosti s budováním komplexních mobilních aplikací s React Native, využívající jeho základní koncepty, jako je virtuální DOM, JSX syntaxe a React hooks.",
-        "3": "Kromě vytváření mobilních aplikací jsem také zběhlý v integraci React Native do větších projektů pomocí nástrojů jako NativeBase pro návrh a komponenty uživatelského rozhraní. NativeBase je přístupná knihovna first-party komponentů, která umožňuje snadnou implementaci motivů a vlastních stylů.",
-        "4": "Jsem schopen pracovat s React Native ve spojení s dalšími front-end technologiemi, jako je JavaScript a StyleSheets. Mám bystré oko pro design a jsem schopen vytvářet vlastní komponenty uživatelského rozhraní, které bez problémů zapadnou do jakékoli mobilní aplikace.",
-        "5": "Jedním z nejzajímavějších aspektů práce s React Native je schopnost vytvářet opakovaně použitelné a škálovatelné komponenty. S NativeBase mohu využít jeho předpřipravené komponenty uživatelského rozhraní k vytváření intuitivních, responzivních a vizuálně přitažlivých mobilních aplikací.",
-        "6": "Celkově jsou mé dovednosti a zkušenosti s React Native s NativeBase cenným přínosem pro jakýkoli mobilní vývojový tým a jsem si jistý svou schopností vytvářet vysoce kvalitní a efektivní mobilní aplikace pomocí tohoto výkonného front-end frameworku."
+    "projects": {
+        "webProjects": "WEBOVÉ PROJEKTY",
+        "visit": "Navštívit"
     },
-    "blender": {
-        "1": "Jako zkušený 3D modelář jsem zběhlý v používání Blenderu k vytváření dynamických a vysoce kvalitních 3D modelů pro různé účely. Díky mé střední odborné znalosti v Blenderu jsem schopen efektivně vytvářet 3D modely pro animace, 3D tisk a další základní použití.",
-        "2": "Jednou z klíčových předností Blenderu je jeho schopnost vytvářet realistické materiály pro 3D modely. I když mám schopnost vytvářet základní materiály sám, často využívám BlenderKit, výkonnou online databázi vysoce kvalitních materiálů, kterou lze snadno integrovat do mých projektů.",
-        "3": "Kromě modelování jsem schopen pomocí Blenderu vytvářet animace, které modely oživují. Znám simulaci látek, hooks a další animační nástroje, které mi umožňují vytvářet realistické pohyby a interakce v 3D prostředí.",
-        "4": "Blender také nabízí výkonné simulační schopnosti, jako je simulace látky a částicové efekty. Mám zkušenosti s používáním těchto funkcí k vytváření úžasných vizuálních efektů v mých projektech.",
-        "5": "Kromě svých technických dovedností mám oko pro design a jsem schopen vytvářet 3D modely, které jsou vizuálně přitažlivé a esteticky příjemné. Také mi vyhovuje pracovat s klienty, abych pochopil jejich specifické potřeby a začlenil je do svých návrhů.",
-        "6": "Celkově jsou mé dovednosti v Blenderu cenným přínosem pro jakýkoli 3D modelovací tým a jsem schopný se svými schopnostmi vytvářet vysoce kvalitní, vizuálně ohromující 3D modely pomocí tohoto výkonného softwaru."
+    "contact": {
+        "title": "KONTAKTUJTE MĚ",
+        "subtitle": "Pokud máte zájem o webovou stránku, kontaktujte mě pomocí formuláře níže",
+        "emailLabel": "E-mailová adresa",
+        "emailPlaceholder": "Zadejte e-mailovou adresu",
+        "emailInvalid": "Zadejte prosím platnou e-mailovou adresu.",
+        "subjectLabel": "Předmět",
+        "subjectPlaceholder": "Zadejte svůj předmět",
+        "subjectInvalid": "Zadejte prosím předmět, který má více než 3 písmena.",
+        "contentPlaceholder": "Napište zprávu...",
+        "contentInvalid": "Zadejte prosím text, který má více než 3 písmena.",
+        "sendButton": "Odeslat zprávu"
     },
-    "404": {
-        "error": "Chyba 404",
-        "text": "Stránka nebyla nalezena"
-    },
-    "niccalc": {
-        "heading": "Kalkulačka pro míchání e-liquidů",
-        "base": {
-            "text": "E-Liquid báze",
-            "amount": "Požadované množství e-liquidu",
-            "ratio": "Požadovaný poměr VG/PG"
-        },
-        "aroma": {
-            "text": "Aroma",
-            "strength": "Požadovaná síla aroma"
-        },
-        "ice": {
-            "text": "Led",
-            "strength": "Požadovaná síla ledu"
-        },
-        "nicotine": {
-            "text": "Nikotin",
-            "desired": "Požadovaná síla nikotinu",
-            "base": "Síla nikotinové báze",
-            "ratio": "Poměr VG/PG nikotinové báze"
-        },
-        "pricing": "Stanovte ceny za ml",
-        "add_costs": "Další výdaje",
-        "margin": "Zisková marže",
-        "results": {
-            "text": "Konečné výsledky",
-            "price": "Cena",
-            "profit": "Zisk",
-            "total": "Celkem"
-        }
+    "footer": {
+        "text": "VÝVOJÁŘ WEBU A APLIKACÍ"
     }
 }
