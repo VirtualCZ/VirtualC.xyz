@@ -17,6 +17,15 @@ $border-radius: 1.4rem
     .circular-blur-4
         background: rgba(255, 87, 101, 0.05) !important
 
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.fade-in
+  animation: fadeIn 1s ease-in-out forwards
+
 .circular-blur-1, .circular-blur-4
     display: block
     border-radius: 100%
