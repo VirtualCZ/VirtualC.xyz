@@ -2,6 +2,7 @@ nav
     height: 5rem
     background: linear-gradient(to right, rgba(152, 21, 255, 0.1), rgba(35, 201, 238, 0.1))
     margin: 2rem 0
+    border-radius: 2.5rem
 
 .navbar-brand
     font-weight: 900
@@ -17,6 +18,28 @@ nav
 
 .navbar-nav
     margin-right: -1rem
+
+@media (max-width: 991px)
+    nav
+        transition: border-radius 0.3s 
+    nav:has(>.show)
+        position: relative
+        border-bottom-right-radius: 0 !important
+        border-bottom-left-radius: 0 !important
+    nav:has(>.collapsing)
+        position: relative
+        border-radius: 2.5rem 2.5rem 0 0 !important
+    .navbar-collapse
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        z-index: 1
+        padding: 1.4rem
+        border-radius: 0 0 2.5rem 2.5rem
+        overflow: hidden
+        background: linear-gradient(to right, rgba(152, 21, 255, 0.1), rgba(35, 201, 238, 0.1))
+        backdrop-filter: blur(20px)
 
 $navbar-nav-link-padding-x: 1rem
 $nav-link-padding-y: 0rem
