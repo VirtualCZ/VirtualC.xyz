@@ -19,7 +19,7 @@ import htmlLogo from '../assets/logos/html_logo.svg';
 import jsLogo from '../assets/logos/js_logo.svg';
 import reactLogo from '../assets/logos/react_logo.svg';
 
-import BlueDribbble from '../assets/logos/bl_dribbble.svg';
+import BlueTelegram from '../assets/logos/bl_telegram.svg';
 import BlueFacebook from '../assets/logos/bl_facebook.svg';
 import BlueInstagram from '../assets/logos/bl_instagram.svg';
 import BlueLinkedIn from '../assets/logos/bl_linkedin.svg';
@@ -94,7 +94,7 @@ const Home = ({ homeSection }) => {
           <Col className='row-gap-3 d-flex flex-column' lg={12} xl={5}>
             <Card>
               <Card.Body className="d-flex flex-column">
-                <Card.Text className='check-out-text flex-grow-1' style={{ width: "95%" }}>
+                <Card.Text className='pe-2 fs-3 flex-grow-1'>
                   Need a web page or app? Get in touch and bring your ideas to life.
                 </Card.Text>
                 <Button href="#contact" variant='secondary' className="align-self-start">Hire me 🤗</Button>
@@ -104,15 +104,15 @@ const Home = ({ homeSection }) => {
               <ImageCard link="https://www.facebook.com/SomeoneCZ/" className='flex-fill align-items-center' src={BlueFacebook} />
               <ImageCard link="https://www.instagram.com/tomas_v_chill/" className='flex-fill align-items-center' src={BlueInstagram} />
               <ImageCard link="https://x.com/_Tomas_Gabriel_" className='flex-fill align-items-center' src={BlueTwitter} />
-              <ImageCard className='flex-fill align-items-center' src={BlueLinkedIn} />
-              <ImageCard className='flex-fill align-items-center' src={BlueDribbble} />
+              <ImageCard link="https://t.me/AkiraGoldFang" className='flex-fill align-items-center' src={BlueTelegram} />
+              <ImageCard link="https://www.linkedin.com/in/tomasgab" className='flex-fill align-items-center' src={BlueLinkedIn} />
             </Stack>
             <Stack direction='horizontal' className='d-flex d-md-none d-xl-flex' gap={3}>
               <ImageCardAR1 link="https://www.facebook.com/SomeoneCZ/" src={BlueFacebook} />
               <ImageCardAR1 link="https://www.instagram.com/tomas_v_chill/" src={BlueInstagram} />
               <ImageCardAR1 link="https://x.com/_Tomas_Gabriel_" src={BlueTwitter} />
-              <ImageCardAR1 src={BlueLinkedIn} />
-              <ImageCardAR1 src={BlueDribbble} />
+              <ImageCardAR1 link="https://t.me/AkiraGoldFang" src={BlueTelegram} />
+              <ImageCardAR1 link="https://www.linkedin.com/in/tomasgab" src={BlueLinkedIn} />
             </Stack>
           </Col>
         </Row>

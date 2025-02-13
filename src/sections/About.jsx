@@ -52,7 +52,7 @@ const About = ({ aboutSection }) => {
                       <IconCard link="https://www.instagram.com/tomas_v_chill/" gradientCol="secondary" src={igLogo}>My Instagram Account</IconCard>
                     </Col>
                   </Row>
-                  <IconCard gradientCol="danger" src={linkedinLogo}>My Linked In Account</IconCard>
+                  <IconCard link="https://www.linkedin.com/in/tomasgab" gradientCol="danger" src={linkedinLogo}>My Linked In Account</IconCard>
                 </Stack>
               </Card.Body>
             </Card>

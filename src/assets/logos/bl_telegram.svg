@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="bl_telegram.svg" transform="matrix(0.0458622,0,0,0.0458622,14.074,14.074)">
+        <g transform="matrix(1,0,0,1,-256,-256)">
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="512" height="512"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path id="Telegram" d="M477,43.86L13.32,223.29C13.044,223.396 12.777,223.523 12.52,223.67C8.76,225.8 -17.48,241.85 19.52,256.24L19.9,256.38L130.31,292.05C132.014,292.604 133.879,292.376 135.4,291.43L409.25,120.57C409.921,120.151 410.669,119.869 411.45,119.74C415.26,119.11 426.23,117.93 419.29,126.74C411.44,136.74 224.39,304.36 203.63,322.95C202.433,324.024 201.692,325.517 201.56,327.12L192.5,435.12C192.498,437.349 193.548,439.452 195.33,440.79C197.886,442.4 201.216,442.147 203.5,440.17L269.1,381.54C271.228,379.639 274.42,379.476 276.73,381.15L391.18,464.25L391.55,464.5C394.32,466.21 424.24,483.62 432.88,444.74L511.88,69.09C511.99,67.9 513.06,54.82 503.71,47.09C493.89,39.01 479.99,43.09 477.9,43.53C477.592,43.616 477.291,43.726 477,43.86Z" style="fill:rgb(35,201,238);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>
