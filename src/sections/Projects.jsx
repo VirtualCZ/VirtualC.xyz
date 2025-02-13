@@ -21,7 +21,7 @@ const Projects = ({ projectsSection }) => {
   var webcount = 0
   const webProjectsArr = [
     {
-      name: "VirtualC.xyz",
+      name: "Personal website (virtualc.xyz)",
       text: "Welcome to VirtualC.xyz, my personal portfolio showcasing advanced web technologies and modern design. Built with ReactJS, this site features a responsive layout using Bootstrap and React Bootstrap, with custom styles crafted in SASS. Dynamic content is displayed with react-multi-carousel, and EmailJS handles email functionalities. Hosted securely on AWS, the site supports multiple languages through react-i18next. The glass design was created by Fiverr designer @usamach579, with the functional implementation by me.",
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz" },
@@ -31,8 +31,8 @@ const Projects = ({ projectsSection }) => {
       image: VirtualCxyz,
     },
     {
-      name: "Old VirtualC.xyz",
-      text: "Explore old.virtualc.xyz, a dynamic web platform designed to showcase the functionality of various elements. Built using ReactJS with a custom Windows 11-inspired design, the site incorporates Bootstrap and Tailwind CSS for a responsive interface that adapts seamlessly across different devices. Navigation is enhanced with React Router for smooth transitions between pages. Hosted securely on Amazon Web Services (AWS), this project includes internationalization support through react-i18next and allows users to customize their experience with theme switching options.",
+      name: "WinUI playground",
+      text: "Explore WinUI playground, a dynamic web platform designed to showcase the functionality of various elements. Built using ReactJS with a custom Windows 11-inspired design, the site incorporates Bootstrap and Tailwind CSS for a responsive interface that adapts seamlessly across different devices. Navigation is enhanced with React Router for smooth transitions between pages. Hosted securely on Amazon Web Services (AWS), this project includes internationalization support through react-i18next and allows users to customize their experience with theme switching options.",
       icons: [
         { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/VirtualC.xyz" },
         { image: xdLogo, text: "Adobe XD" },
