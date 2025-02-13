@@ -8,6 +8,7 @@ import ProjectDescription from '../elements/ProjectDescription';
 
 import NicCalc from "../assets/project-imgs/niccalc.jpg"
 import VirtualCxyz from "../assets/project-imgs/virtualcxyz.png"
+import TicketCalculator from "../assets/project-imgs/ticketcalculator.png"
 import oldVirtualCxyz from "../assets/project-imgs/oldvirtualcxyz.png"
 import figmaLogo from '../assets/logos/wh_figma_logo.svg';
 import ghLogo from '../assets/logos/wh_gh_logo.svg';
@@ -40,6 +41,16 @@ const Projects = ({ projectsSection }) => {
       image: oldVirtualCxyz,
     },
     {
+      name: "Ticket calculator",
+      text: "A ReactJS application built with DaisyUI for quick ticket price calculations. Add custom ticket types with prices in CZK and EUR, then calculate large ticket sales easily. The UI features a currency selector, fields for money received, number of tickets, type selection, total price, and change calculation. You can also clear inputs and manage ticket types (edit, delete, add).",
+      icons: [
+        { image: ghLogo, text: "GitHub", link: "https://github.com/VirtualCZ/TicketCalc" },
+        // { image: xdLogo, text: "Adobe XD" },
+        { image: globeLogo, text: "Visit", link: "https://ticket.virtualc.xyz/" }
+      ],
+      image: TicketCalculator,
+    },
+    {
       name: "NicCalc",
       text: "Discover NicCalc, a robust e-liquid mixing calculator crafted with JavaScript and ReactJS. This intuitive tool empowers users to create personalized e-liquid blends effortlessly. Customize VG/PG ratios, aroma percentages, ice levels, and nicotine content with ease. NicCalc also features cost estimation and profit margin settings, catering to hobbyists and industry professionals alike. Developed with React Hooks and custom CSS, NicCalc ensures a seamless user experience for streamlined e-liquid mixing.",
       icons: [
@@ -49,16 +60,6 @@ const Projects = ({ projectsSection }) => {
       ],
       image: NicCalc,
     },
-    {
-      name: "Shrt VirtualC.xyz in dev",
-      text: "Introducing NicCalc, A Comprehensive E-liquid Mixing Calculator Built With JavaScript/ReactJS. NicCalc Empowers Users To Effortlessly Create Customized E-liquid Blends By Selecting The Desired VG/PG Ratios, Aroma Content Percentage, Ice Level And Nicotine Content With Additional Features Like Cost Calculation And Profit Margin Options. NicCalc Provides A Holistic Solution For Both Hobbyists And Professionals In The E-liquid Industry. Developed Using React Hooks And Custom CSS , This Intuitive And Versatile Calculate Offers A Seamless User Experience . Making E-liquid Mixing A Breeze",
-      icons: [
-        { image: ghLogo, text: "GitHub update", link: "https://github.com/VirtualCZ/shrt.virtualc.xyz" },
-        { image: xdLogo, text: "Adobe XD" },
-        { image: globeLogo, text: "Visit", link: "https://shrt.virtualc.xyz/" }
-      ],
-      image: NicCalc,
-    }
   ]
 
   return (
