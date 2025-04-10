@@ -7,9 +7,9 @@ import Stack from 'react-bootstrap/Stack';
 import ProjectDescription from '../elements/ProjectDescription';
 
 import NicCalc from "../assets/project-imgs/niccalc.jpg"
-import VirtualCxyz from "../assets/project-imgs/virtualcxyz.png"
-import TicketCalculator from "../assets/project-imgs/ticketcalculator.png"
-import oldVirtualCxyz from "../assets/project-imgs/oldvirtualcxyz.png"
+import VirtualCxyz from "../assets/project-imgs/virtualcxyz.webp"
+import TicketCalculator from "../assets/project-imgs/ticketcalculator.webp"
+import oldVirtualCxyz from "../assets/project-imgs/oldvirtualcxyz.webp"
 import figmaLogo from '../assets/logos/wh_figma_logo.svg';
 import ghLogo from '../assets/logos/wh_gh_logo.svg';
 import globeLogo from '../assets/logos/wh_globe_logo.svg';
